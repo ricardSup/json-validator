@@ -1,0 +1,56 @@
+# Ignore build directories
+bin/
+obj/
+
+# Ignore user-specific files
+*.user
+*.suo
+
+# Ignore OS-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE-specific files
+.vscode/
+.idea/
+
+# Ignore log files
+*.log
+
+# Ignore compiled DLLs
+*.dll
+
+# Ignore NuGet packages
+*.nupkg
+
+# Ignore publish directory
+publish/
+
+# Ignore temporary files
+*.tmp
+*.temp
+
+# Ignore test results
+TestResults/
+
+# Ignore coverage reports
+coverage/
+*.coverage
+*.coveragexml
+
+# Ignore Rider project files
+.idea/
+*.iml
+
+# Ignore JetBrains Rider config
+.idea/
+
+# Ignore Visual Studio Code config
+.vscode/
+
+# Ignore Visual Studio working directory
+.vs/
+
+# Ignore Resharper files
+_ReSharper.Caches/
+*.DotSettings.user
