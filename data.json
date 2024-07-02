@@ -1,0 +1,10605 @@
+{
+  "Education": [
+    {
+      "R3Data": "MAPPER-DEFAULT",
+      "R1Data": "LAIN"
+    },
+    {
+      "R3Data": "SLTA",
+      "R1Data": "SLTA"
+    },
+    {
+      "R3Data": "SLTP",
+      "R1Data": "SLTP"
+    },
+    {
+      "R3Data": "OTH",
+      "R1Data": "OTH"
+    },
+    {
+      "R3Data": "SD",
+      "R1Data": "SD"
+    },
+    {
+      "R3Data": "SMP",
+      "R1Data": "SMP"
+    },
+    {
+      "R3Data": "SMK",
+      "R1Data": "SMK"
+    },
+    {
+      "R3Data": "SMA",
+      "R1Data": "SMA"
+    },
+    {
+      "R3Data": "D1",
+      "R1Data": "D1"
+    },
+    {
+      "R3Data": "D2",
+      "R1Data": "D2"
+    },
+    {
+      "R3Data": "D3",
+      "R1Data": "D3"
+    },
+    {
+      "R3Data": "D4",
+      "R1Data": "D4"
+    },
+    {
+      "R3Data": "S1",
+      "R1Data": "S1"
+    },
+    {
+      "R3Data": "S2",
+      "R1Data": "S2"
+    },
+    {
+      "R3Data": "S3",
+      "R1Data": "S3"
+    },
+    {
+      "R3Data": "LAIN",
+      "R1Data": "LAIN"
+    }
+  ],
+  "CustomerType": [
+    {
+      "R3Data": "PERSONAL",
+      "R1Data": "P"
+    },
+    {
+      "R3Data": "COMPANY",
+      "R1Data": "C"
+    },
+    {
+      "R3Data": "P",
+      "R1Data": "P"
+    },
+    {
+      "R3Data": "C",
+      "R1Data": "C"
+    }
+  ],
+  "PersonalCustomerType": [ //create rule [RU_PersonalCustomerType] as @col IN ('M', 'N', 'P')  -- M: Employee  -- N: Entrepreneur  -- P: Professinal
+    {
+      "R3Data": "MAPPER-DEFAULT-CUST-GRP",
+      "R1Data": "N"
+    },
+    {
+      "R3Data": "EMP",
+      "R1Data": "M"
+    },
+    {
+      "R3Data": "SME",
+      "R1Data": "N"
+    },
+    {
+      "R3Data": "PROF",
+      "R1Data": "P"
+    },
+    {
+      "R3Data": "N",
+      "R1Data": "N"
+    },
+    {
+      "R3Data": "P",
+      "R1Data": "P"
+    },
+    {
+      "R3Data": "M",
+      "R1Data": "M"
+    }
+  ],
+  "Gender": [ //create rule [RU_Gender] as @col IN ('M', 'F','C')  -- M: Male  -- F: Female  -- C: Conversion
+    {
+      "R3Data": "MAPPER-DEFAULT-CUST-GRP",
+      "R1Data": "C"
+    },
+    {
+      "R3Data": "FEMALE",
+      "R1Data": "F"
+    },
+    {
+      "R3Data": "MALE",
+      "R1Data": "M"
+    },
+    {
+      "R3Data": "CONVERSION",
+      "R1Data": "C"
+    },
+    {
+      "R3Data": "F",
+      "R1Data": "F"
+    },
+    {
+      "R3Data": "M",
+      "R1Data": "M"
+    },
+    {
+      "R3Data": "C",
+      "R1Data": "C"
+    }
+  ],
+  "Nationality": [ // CREATE RULE RU_Nationality AS @col IN ('WNI', 'WNA')  -- WNI: Warga Negara Indonesia  -- WNA: Warga Negara Asing
+    {
+      "R3Data": "MAPPER-DEFAULT-CUST-GRP",
+      "R1Data": "WNI"
+    },
+    {
+      "R3Data": "FOREIGNER",
+      "R1Data": "WNA"
+    },
+    {
+      "R3Data": "LOCAL",
+      "R1Data": "WNI"
+    },
+    {
+      "R3Data": "WNA",
+      "R1Data": "WNA"
+    },
+    {
+      "R3Data": "WNI",
+      "R1Data": "WNI"
+    }
+  ],
+  "CustomerGroup": [
+    {
+      "R3Data": "True",
+      "R1Data": "1"
+    },
+    {
+      "R3Data": "False",
+      "R1Data": "2"
+    }
+  ],
+  "Religion": [ //TblReligion - select * from ref_master WHERE REF_MASTER_TYPE_CODE = 'RELIGION'
+    {
+      "R3Data": "MAPPER-DEFAULT",
+      "R1Data": ""
+    },
+    {
+      "R3Data": "ISLAM",
+      "R1Data": "ISLAM"
+    },
+    {
+      "R3Data": "CHRISTIAN",
+      "R1Data": "CHRISTIAN"
+    },
+    {
+      "R3Data": "CATHOLIC",
+      "R1Data": "CATHOLIC"
+    },
+    {
+      "R3Data": "HINDU",
+      "R1Data": "HINDU"
+    },
+    {
+      "R3Data": "BUDDHA",
+      "R1Data": "BUDDHA"
+    },
+    {
+      "R3Data": "KONGHUCU",
+      "R1Data": "KONGHUCU"
+    },
+    {
+      "R3Data": "OTHER",
+      "R1Data": "OTHER"
+    },
+    {
+      "R3Data": "BU",
+      "R1Data": "BU"
+    },
+    {
+      "R3Data": "HI",
+      "R1Data": "HI"
+    },
+    {
+      "R3Data": "IS",
+      "R1Data": "IS"
+    },
+    {
+      "R3Data": "KC",
+      "R1Data": "KC"
+    },
+    {
+      "R3Data": "KR",
+      "R1Data": "KR"
+    },
+    {
+      "R3Data": "KT",
+      "R1Data": "KT"
+    },
+    {
+      "R3Data": "OT",
+      "R1Data": "OT"
+    }
+  ],
+  "MaritalStatus": [ //TblMaritalStatus - select * from ref_master WHERE REF_MASTER_TYPE_CODE = 'MARITAL_STAT'
+    {
+      "R3Data": "MAPPER-DEFAULT",
+      "R1Data": "SINGLE"
+    },
+    {
+      "R3Data": "MAPPER-DEFAULT-CUST-GRP",
+      "R1Data": "SINGLE"
+    },
+    {
+      "R3Data": "MARRIED",
+      "R1Data": "M"
+    },
+    {
+      "R3Data": "SINGLE",
+      "R1Data": "S"
+    },
+    {
+      "R3Data": "WIDOW",
+      "R1Data": "D"
+    },
+    {
+      "R3Data": "DIVORCE",
+      "R1Data": "D"
+    },
+    {
+      "R3Data": "D",
+      "R1Data": "D"
+    },
+    {
+      "R3Data": "M",
+      "R1Data": "M"
+    },
+    {
+      "R3Data": "S",
+      "R1Data": "S"
+    }
+  ],
+  "BankID": [
+    {
+      "R3Data": "MAPPER-DEFAULT",
+      "R1Data": ""
+    },
+    {
+      "R3Data": "MAPPER-DEFAULT-CUST-GRP",
+      "R1Data": "DUMMY"
+    },
+    {
+      "R3Data": "KSWAN",
+      "R1Data": "KSWAN"
+    },
+    {
+      "R3Data": "MAYOR",
+      "R1Data": "MAYOR"
+    },
+    {
+      "R3Data": "PUNDI",
+      "R1Data": "PUNDI"
+    },
+    {
+      "R3Data": "AKITA",
+      "R1Data": "AKITA"
+    },
+    {
+      "R3Data": "AMEX",
+      "R1Data": "AMEX"
+    },
+    {
+      "R3Data": "BA",
+      "R1Data": "BA"
+    },
+    {
+      "R3Data": "BAD",
+      "R1Data": "BAD"
+    },
+    {
+      "R3Data": "BB",
+      "R1Data": "BB"
+    },
+    {
+      "R3Data": "BDGNS",
+      "R1Data": "BDGNS"
+    },
+    {
+      "R3Data": "BFAMA",
+      "R1Data": "BFAMA"
+    },
+    {
+      "R3Data": "BHI",
+      "R1Data": "BHI"
+    },
+    {
+      "R3Data": "BII",
+      "R1Data": "BII"
+    },
+    {
+      "R3Data": "BINDO",
+      "R1Data": "BINDO"
+    },
+    {
+      "R3Data": "BJA",
+      "R1Data": "BJA"
+    },
+    {
+      "R3Data": "BJJ",
+      "R1Data": "BJJ"
+    },
+    {
+      "R3Data": "BL",
+      "R1Data": "BL"
+    },
+    {
+      "R3Data": "BME",
+      "R1Data": "BME"
+    },
+    {
+      "R3Data": "BMUTI",
+      "R1Data": "BMUTI"
+    },
+    {
+      "R3Data": "BNPR",
+      "R1Data": "BNPR"
+    },
+    {
+      "R3Data": "BSAP",
+      "R1Data": "BSAP"
+    },
+    {
+      "R3Data": "TES",
+      "R1Data": "TES"
+    },
+    {
+      "R3Data": "ANZ",
+      "R1Data": "ANZ"
+    },
+    {
+      "R3Data": "CCBC",
+      "R1Data": "CCBC"
+    },
+    {
+      "R3Data": "CHNTR",
+      "R1Data": "CHNTR"
+    },
+    {
+      "R3Data": "CIMBN",
+      "R1Data": "CIMBN"
+    },
+    {
+      "R3Data": "CITIB",
+      "R1Data": "CITIB"
+    },
+    {
+      "R3Data": "COMMZ",
+      "R1Data": "COMMZ"
+    },
+    {
+      "R3Data": "COMWT",
+      "R1Data": "COMWT"
+    },
+    {
+      "R3Data": "CTBC",
+      "R1Data": "CTBC"
+    },
+    {
+      "R3Data": "DBS",
+      "R1Data": "DBS"
+    },
+    {
+      "R3Data": "DEUTS",
+      "R1Data": "DEUTS"
+    },
+    {
+      "R3Data": "DKI",
+      "R1Data": "DKI"
+    },
+    {
+      "R3Data": "DKIS",
+      "R1Data": "DKIS"
+    },
+    {
+      "R3Data": "DMNS",
+      "R1Data": "DMNS"
+    },
+    {
+      "R3Data": "DNM",
+      "R1Data": "DNM"
+    },
+    {
+      "R3Data": "EKONM",
+      "R1Data": "EKONM"
+    },
+    {
+      "R3Data": "GANES",
+      "R1Data": "GANES"
+    },
+    {
+      "R3Data": "HANA",
+      "R1Data": "HANA"
+    },
+    {
+      "R3Data": "HSBC",
+      "R1Data": "HSBC"
+    },
+    {
+      "R3Data": "IBK",
+      "R1Data": "IBK"
+    },
+    {
+      "R3Data": "ICBC",
+      "R1Data": "ICBC"
+    },
+    {
+      "R3Data": "INA",
+      "R1Data": "INA"
+    },
+    {
+      "R3Data": "INDXS",
+      "R1Data": "INDXS"
+    },
+    {
+      "R3Data": "JABAR",
+      "R1Data": "JABAR"
+    },
+    {
+      "R3Data": "JPMOR",
+      "R1Data": "JPMOR"
+    },
+    {
+      "R3Data": "JTM",
+      "R1Data": "JTM"
+    },
+    {
+      "R3Data": "JTRU",
+      "R1Data": "JTRU"
+    },
+    {
+      "R3Data": "KALTG",
+      "R1Data": "KALTG"
+    },
+    {
+      "R3Data": "KEB",
+      "R1Data": "KEB"
+    },
+    {
+      "R3Data": "MANDR",
+      "R1Data": "MANDR"
+    },
+    {
+      "R3Data": "MASPN",
+      "R1Data": "MASPN"
+    },
+    {
+      "R3Data": "MEGA",
+      "R1Data": "MEGA"
+    },
+    {
+      "R3Data": "MESTK",
+      "R1Data": "MESTK"
+    },
+    {
+      "R3Data": "MLKU",
+      "R1Data": "MLKU"
+    },
+    {
+      "R3Data": "MNC",
+      "R1Data": "MNC"
+    },
+    {
+      "R3Data": "MUAMA",
+      "R1Data": "MUAMA"
+    },
+    {
+      "R3Data": "MYBA2",
+      "R1Data": "MYBA2"
+    },
+    {
+      "R3Data": "MZH",
+      "R1Data": "MZH"
+    },
+    {
+      "R3Data": "NIAGA",
+      "R1Data": "NIAGA"
+    },
+    {
+      "R3Data": "NNB",
+      "R1Data": "NNB"
+    },
+    {
+      "R3Data": "NTT",
+      "R1Data": "NTT"
+    },
+    {
+      "R3Data": "PANIN",
+      "R1Data": "PANIN"
+    },
+    {
+      "R3Data": "PAPUA",
+      "R1Data": "PAPUA"
+    },
+    {
+      "R3Data": "PERMT",
+      "R1Data": "PERMT"
+    },
+    {
+      "R3Data": "PRMSY",
+      "R1Data": "PRMSY"
+    },
+    {
+      "R3Data": "Qnb",
+      "R1Data": "Qnb"
+    },
+    {
+      "R3Data": "RABO",
+      "R1Data": "RABO"
+    },
+    {
+      "R3Data": "BOCBC",
+      "R1Data": "BOCBC"
+    },
+    {
+      "R3Data": "BP",
+      "R1Data": "BP"
+    },
+    {
+      "R3Data": "BPDB",
+      "R1Data": "BPDB"
+    },
+    {
+      "R3Data": "BPDJM",
+      "R1Data": "BPDJM"
+    },
+    {
+      "R3Data": "BPDKB",
+      "R1Data": "BPDKB"
+    },
+    {
+      "R3Data": "BPDKG",
+      "R1Data": "BPDKG"
+    },
+    {
+      "R3Data": "BPDKK",
+      "R1Data": "BPDKK"
+    },
+    {
+      "R3Data": "BPDNT",
+      "R1Data": "BPDNT"
+    },
+    {
+      "R3Data": "BPDPJ",
+      "R1Data": "BPDPJ"
+    },
+    {
+      "R3Data": "BPDS",
+      "R1Data": "BPDS"
+    },
+    {
+      "R3Data": "BPDSB",
+      "R1Data": "BPDSB"
+    },
+    {
+      "R3Data": "BPDST",
+      "R1Data": "BPDST"
+    },
+    {
+      "R3Data": "BPKTL",
+      "R1Data": "BPKTL"
+    },
+    {
+      "R3Data": "BPKTR",
+      "R1Data": "BPKTR"
+    },
+    {
+      "R3Data": "BPPJM",
+      "R1Data": "BPPJM"
+    },
+    {
+      "R3Data": "AGRIS",
+      "R1Data": "AGRIS"
+    },
+    {
+      "R3Data": "BPST",
+      "R1Data": "BPST"
+    },
+    {
+      "R3Data": "BRAYA",
+      "R1Data": "BRAYA"
+    },
+    {
+      "R3Data": "BRI",
+      "R1Data": "BRI"
+    },
+    {
+      "R3Data": "BRIA",
+      "R1Data": "BRIA"
+    },
+    {
+      "R3Data": "BRISY",
+      "R1Data": "BRISY"
+    },
+    {
+      "R3Data": "BSI",
+      "R1Data": "BSI"
+    },
+    {
+      "R3Data": "BSM",
+      "R1Data": "BSM"
+    },
+    {
+      "R3Data": "BSMT",
+      "R1Data": "BSMT"
+    },
+    {
+      "R3Data": "BSSMA",
+      "R1Data": "BSSMA"
+    },
+    {
+      "R3Data": "BTN",
+      "R1Data": "BTN"
+    },
+    {
+      "R3Data": "BTNS",
+      "R1Data": "BTNS"
+    },
+    {
+      "R3Data": "BNPPARIBAS",
+      "R1Data": "BNPPARIBAS"
+    },
+    {
+      "R3Data": "ABNAM",
+      "R1Data": "ABNAM"
+    },
+    {
+      "R3Data": "BUMIP",
+      "R1Data": "BUMIP"
+    },
+    {
+      "R3Data": "BWK",
+      "R1Data": "BWK"
+    },
+    {
+      "R3Data": "CIC",
+      "R1Data": "CIC"
+    },
+    {
+      "R3Data": "CPT",
+      "R1Data": "CPT"
+    },
+    {
+      "R3Data": "DIPO",
+      "R1Data": "DIPO"
+    },
+    {
+      "R3Data": "DKIKB",
+      "R1Data": "DKIKB"
+    },
+    {
+      "R3Data": "EXIM",
+      "R1Data": "EXIM"
+    },
+    {
+      "R3Data": "ICB",
+      "R1Data": "ICB"
+    },
+    {
+      "R3Data": "BTPN",
+      "R1Data": "BTPN"
+    },
+    {
+      "R3Data": "BUKPN",
+      "R1Data": "BUKPN"
+    },
+    {
+      "R3Data": "BUMIA",
+      "R1Data": "BUMIA"
+    },
+    {
+      "R3Data": "ATG",
+      "R1Data": "ATG"
+    },
+    {
+      "R3Data": "BAS",
+      "R1Data": "BAS"
+    },
+    {
+      "R3Data": "BCA",
+      "R1Data": "BCA"
+    },
+    {
+      "R3Data": "BCAS",
+      "R1Data": "BCAS"
+    },
+    {
+      "R3Data": "BJ",
+      "R1Data": "BJ"
+    },
+    {
+      "R3Data": "BKAL",
+      "R1Data": "BKAL"
+    },
+    {
+      "R3Data": "BLAM",
+      "R1Data": "BLAM"
+    },
+    {
+      "R3Data": "BMAS",
+      "R1Data": "BMAS"
+    },
+    {
+      "R3Data": "BMAYA",
+      "R1Data": "BMAYA"
+    },
+    {
+      "R3Data": "BNI",
+      "R1Data": "BNI"
+    },
+    {
+      "R3Data": "BNISY",
+      "R1Data": "BNISY"
+    },
+    {
+      "R3Data": "BNP",
+      "R1Data": "BNP"
+    },
+    {
+      "R3Data": "BNTB",
+      "R1Data": "BNTB"
+    },
+    {
+      "R3Data": "Bntt",
+      "R1Data": "Bntt"
+    },
+    {
+      "R3Data": "BOAMR",
+      "R1Data": "BOAMR"
+    },
+    {
+      "R3Data": "BOC",
+      "R1Data": "BOC"
+    },
+    {
+      "R3Data": "BOCBS",
+      "R1Data": "BOCBS"
+    },
+    {
+      "R3Data": "RESON",
+      "R1Data": "RESON"
+    },
+    {
+      "R3Data": "RHB",
+      "R1Data": "RHB"
+    },
+    {
+      "R3Data": "RIAU",
+      "R1Data": "RIAU"
+    },
+    {
+      "R3Data": "SBI",
+      "R1Data": "SBI"
+    },
+    {
+      "R3Data": "SBNK",
+      "R1Data": "SBNK"
+    },
+    {
+      "R3Data": "SDRA",
+      "R1Data": "SDRA"
+    },
+    {
+      "R3Data": "SHIN",
+      "R1Data": "SHIN"
+    },
+    {
+      "R3Data": "STAND",
+      "R1Data": "STAND"
+    },
+    {
+      "R3Data": "SULSE",
+      "R1Data": "SULSE"
+    },
+    {
+      "R3Data": "SULUT",
+      "R1Data": "SULUT"
+    },
+    {
+      "R3Data": "SUMSL",
+      "R1Data": "SUMSL"
+    },
+    {
+      "R3Data": "SWADS",
+      "R1Data": "SWADS"
+    },
+    {
+      "R3Data": "SYAME",
+      "R1Data": "SYAME"
+    },
+    {
+      "R3Data": "SYANI",
+      "R1Data": "SYANI"
+    },
+    {
+      "R3Data": "SYARI",
+      "R1Data": "SYARI"
+    },
+    {
+      "R3Data": "UOB",
+      "R1Data": "UOB"
+    },
+    {
+      "R3Data": "VICTR",
+      "R1Data": "VICTR"
+    },
+    {
+      "R3Data": "WBC",
+      "R1Data": "WBC"
+    },
+    {
+      "R3Data": "WOORI",
+      "R1Data": "WOORI"
+    },
+    {
+      "R3Data": "SULSELBARSYA",
+      "R1Data": "SULSELBARSYA"
+    },
+    {
+      "R3Data": "SHINT",
+      "R1Data": "SHINT"
+    }
+  ],
+  "TitleId": [ //PersonalTitle - select * from ref_master WHERE REF_MASTER_TYPE_CODE = 'EDUCATION'
+    {
+      "R3Data": "MAPPER-DEFAULT",
+      "R1Data": "MR"
+    },
+    {
+      "R3Data": "MAPPER-DEFAULT-CUST-GRP",
+      "R1Data": "MR"
+    },
+    {
+      "R3Data": "MR",
+      "R1Data": "MR"
+    },
+    {
+      "R3Data": "MRS",
+      "R1Data": "MRS"
+    },
+    {
+      "R3Data": "MS",
+      "R1Data": "MS"
+    }
+  ],
+  "BranchID": [ //Branch - REF_OFFICE
+    {
+      "R3Data": "MAPPER-DEFAULT",
+      "R1Data": "999" //HEAD OFFICE
+    },
+    {
+      "R3Data": "HSB001",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "0002_SG",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "HO",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "0001",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "OFFICE003",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "FCG_001",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "TTN",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "BDG_REM_GRP",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "TEST_CG_1",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "HSB05",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "0004",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "0005",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "HSB06",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "0007",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "FCW 1",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "0009",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "0013",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "0016",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "0017",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "0018",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "0019",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "OFFICE001",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "CGJBDTBK",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "OFFICE002",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "TESTINGSIT",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "0014",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "0003",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "STV",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "OFFICE005",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "OfficeCodeTesting",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "CG_BEKASI",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "NAPGRP012",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "OvisKod",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "TANAH ABANG",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "0001asd",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "GAMBIR",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "CIWIDEY",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "testadd1",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "TEST1",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "BDG_COLL_GRP",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "DC_JABODETABEK",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "DESK_COLL_GRP_2",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "SBY_COLL_GRP",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "LEMBANG",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "WIYUNG",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "WONOCOLO",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "KRATON",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "KOTAGEDE",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "tes",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "TESTBRANCH",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "TEST1231231",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "TESHO123",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "TESBRANCHLAGI123",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "FCW 2",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "DENPASAR",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "BADUNG",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "SURVEYORGRP2",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "SG0001",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "TEST_TOMANG",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "TEST_CAWANG",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "FIELD_COLL_GRP_3",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "FIELD_COLL_GRP_4",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "FIELD_COLL_GRP_5",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "FIELD_COLL_GRP_6",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "OFFICE TST MON",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "TEST CG CG 2",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "TEST_CG_DESK_2",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "TEST_CG_DESK_3",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "TEST_333",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "REGSUMATRA",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "MRA_0301",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "PKU001",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "MRA_AREA",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "NEW_BRANCH_TEST",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "TEST_CG_003",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "TXST",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "OFFICE_CENGKARENG",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "OFC_CKG",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "DC_001",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "921_MRA_CENTERGROUP",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "MRA OFFICE BRANCH",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "DC_N",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "TNG_COLL_GRP",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "0008",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "DCG01",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "CG_001_BDG",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "CG_COLL_TEST",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "0020",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "BKSCG",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "asd",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "DCG1337",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "FCG1337",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "OFAGNES",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "01AGNES",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "TESTING11",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "CGTEST",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "UDIN-OFFICE",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "OFC0011",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "MLG_COLL_GRP",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "SOL_REM_GRP",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "BDG_REC_GRP",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "BDO",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "BDG",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "DESK_COLL_OFFICE_1",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "BDG_RCV_GRP",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "BDGS",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "NDOD",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "OFFICE_JASEL",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "PDG",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "PLMBG",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "CG_SUMATERA",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "CG_JABODETABEK",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "DCG_SUMATERA",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "RG_SUMATERA",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "RG_JABODETABEK",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "DCG_NAT",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "OFFICE_CODE",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "RCV_JABODETABEK",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "C0787",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "365",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "363",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "343",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "324",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "CG_IB",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "CG_ITA",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "CG_IT",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "CG_TEST_DATA",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "UDIN-OFFICE-03",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "ACP_NEW_APPLICATION_GROUP",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "TESTCHRIS1",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "TESTOFFICE",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "01TEST",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "UN",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "OFC",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "ZE",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "01ABC",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "TESTOFFICECODE",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "MAR_OFFICER",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "123",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "TESTJUL1",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "CDE_OFFICE",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "CDE_BRANCH_2",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "CDE_3",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "12361514",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "HSB03",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "CNR",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "0020",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "FOU-011",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "0002",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "UDIN-CHILD-OFFICE-01",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "0015",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "1",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "921_MRA_OFFICE",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "ADA",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "ADAS",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "1234",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "899899",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "0006",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "0001_REGRESI",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "GADING SERPONG",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "PMLNG",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "BSD1",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "OFFICE_KEMANGGISAN",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "OFFICE TST",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "ADMS_OFFICE_1 ",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "UDIN-OFFICE-04",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "MAR_OFF",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "OFFICE-FOU-011",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "BSD23",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "TEST OFFICE MEMBER SIT CSUL ",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "OFFICE011223",
+      "R1Data": "999"
+    },
+    {
+      "R3Data": "OFFICE CODE - DILA",
+      "R1Data": "999"
+    }
+
+  ],
+  "CompanyType": [ //TblCompanyType - select * from ref_master WHERE REF_MASTER_TYPE_CODE IN('COMPANY_TYPE')
+    {
+      "R3Data": "MAPPER-DEFAULT",
+      "R1Data": ""
+    },
+	{
+      "R3Data": "MAPPER-DEFAULT-CUST-GRP",
+      "R1Data": "PT"
+    },
+    {
+      "R3Data": "BUMDES",
+      "R1Data": "BUMDES"
+    },
+    {
+      "R3Data": "LA",
+      "R1Data": "LA"
+    },
+    {
+      "R3Data": "LI",
+      "R1Data": "LI"
+    },
+    {
+      "R3Data": "PDA",
+      "R1Data": "PDA"
+    },
+    {
+      "R3Data": "PKO",
+      "R1Data": "PKO"
+    },
+    {
+      "R3Data": "PT",
+      "R1Data": "PT"
+    },
+    {
+      "R3Data": "CV",
+      "R1Data": "CV"
+    },
+    {
+      "R3Data": "YAYASAN",
+      "R1Data": "YAYASAN"
+    },
+    {
+      "R3Data": "FA",
+      "R1Data": "FA"
+    },
+    {
+      "R3Data": "KOPERASI",
+      "R1Data": "KOPERASI"
+    },
+    {
+      "R3Data": "UD",
+      "R1Data": "UD"
+    },
+    {
+      "R3Data": "BUMD",
+      "R1Data": "BUMD"
+    },
+    {
+      "R3Data": "DK",
+      "R1Data": "DK"
+    },
+    {
+      "R3Data": "EMKL",
+      "R1Data": "EMKL"
+    },
+    {
+      "R3Data": "GK",
+      "R1Data": "GK"
+    },
+    {
+      "R3Data": "IK",
+      "R1Data": "IK"
+    },
+    {
+      "R3Data": "KUD",
+      "R1Data": "KUD"
+    },
+    {
+      "R3Data": "LIMITED",
+      "R1Data": "LIMITED"
+    },
+    {
+      "R3Data": "MAI",
+      "R1Data": "MAI"
+    },
+    {
+      "R3Data": "NV",
+      "R1Data": "NV"
+    },
+    {
+      "R3Data": "PD",
+      "R1Data": "PD"
+    },
+    {
+      "R3Data": "PERSERO",
+      "R1Data": "PERSERO"
+    },
+    {
+      "R3Data": "PP",
+      "R1Data": "PP"
+    },
+    {
+      "R3Data": "PU",
+      "R1Data": "PU"
+    },
+    {
+      "R3Data": "PK",
+      "R1Data": "PK"
+    },
+    {
+      "R3Data": "PUK",
+      "R1Data": "PUK"
+    },
+    {
+      "R3Data": "PKUD",
+      "R1Data": "PKUD"
+    },
+    {
+      "R3Data": "UDKP",
+      "R1Data": "UDKP"
+    },
+    {
+      "R3Data": "PPD",
+      "R1Data": "PPD"
+    },
+    {
+      "R3Data": "PUD",
+      "R1Data": "PUD"
+    },
+    {
+      "R3Data": "LAINNYA",
+      "R1Data": "LAINNYA"
+    }
+  ],
+  "BankAccountType": [ //TblBankAccount - tbc
+    {
+      "R3Data": "MAPPER-DEFAULT",
+      "R1Data": "TABUNGAN"
+    },
+    {
+      "R3Data": "TABUNGAN",
+      "R1Data": "TABUNGAN"
+    },
+    {
+      "R3Data": "GIRO",
+      "R1Data": "GIRO"
+    }
+  ],
+  "HomeStatus": [ //TblHomeStatus - select * from ref_master WHERE REF_MASTER_TYPE_CODE IN('BUILDING_OWNERSHIP')
+    {
+      "R3Data": "MAPPER-DEFAULT",
+      "R1Data": "OWN"
+    },
+    {
+      "R3Data": "OWN",
+      "R1Data": "OWN"
+    },
+    {
+      "R3Data": "FAMILY",
+      "R1Data": "FAMILY"
+    },
+    {
+      "R3Data": "CONTRACT",
+      "R1Data": "CONTRACT"
+    },
+    {
+      "R3Data": "RENTED",
+      "R1Data": "RENTED"
+    },
+    {
+      "R3Data": "DINAS",
+      "R1Data": "DINAS"
+    },
+    {
+      "R3Data": "AM",
+      "R1Data": "AM"
+    },
+    {
+      "R3Data": "SU",
+      "R1Data": "SU"
+    }
+  ],
+  "CompanyStatus": [ //TblCompanyStatus - select * from ref_master WHERE REF_MASTER_TYPE_CODE IN('BUILDING_OWNERSHIP_COMPANY')
+    {
+      "R3Data": "MAPPER-DEFAULT",
+      "R1Data": ""
+    },
+    {
+      "R3Data": "KR",
+      "R1Data": "KR"
+    },
+    {
+      "R3Data": "SD",
+      "R1Data": "SD"
+    },
+    {
+      "R3Data": "SENDIRI",
+      "R1Data": "SENDIRI"
+    },
+    {
+      "R3Data": "SEWA",
+      "R1Data": "SEWA"
+    }
+
+  ],
+  "HomeLocation": [ //TblHomeLocation - tidak ada di R3
+    {
+      "R3Data": "MAPPER-DEFAULT",
+      "R1Data": "N"
+    }
+  ],
+  "JobPos": [ //TblJobPosition - select * from ref_master WHERE REF_MASTER_TYPE_CODE = 'JOB_POSITION'
+    {
+      "R3Data": "MAPPER-DEFAULT",
+      "R1Data": ""
+    },
+    {
+      "R3Data": "PK-PROF",
+      "R1Data": "PK-PROF"
+    },
+    {
+      "R3Data": "PENG-PROF",
+      "R1Data": "PENG-PROF"
+    },
+    {
+      "R3Data": "PEMB-PROF",
+      "R1Data": "PEMB-PROF"
+    },
+    {
+      "R3Data": "PRO-PROF",
+      "R1Data": "PRO-PROF"
+    },
+    {
+      "R3Data": "PEN-PROF",
+      "R1Data": "PEN-PROF"
+    },
+    {
+      "R3Data": "MGR-PROF",
+      "R1Data": "MGR-PROF"
+    },
+    {
+      "R3Data": "SPV-PROF",
+      "R1Data": "SPV-PROF"
+    },
+    {
+      "R3Data": "STF-PROF",
+      "R1Data": "STF-PROF"
+    },
+    {
+      "R3Data": "Dir",
+      "R1Data": "Dir"
+    },
+    {
+      "R3Data": "In",
+      "R1Data": "In"
+    },
+    {
+      "R3Data": "M",
+      "R1Data": "M"
+    },
+    {
+      "R3Data": "PM",
+      "R1Data": "PM"
+    },
+    {
+      "R3Data": "PP",
+      "R1Data": "PP"
+    },
+    {
+      "R3Data": "S",
+      "R1Data": "S"
+    },
+    {
+      "R3Data": "SK",
+      "R1Data": "SK"
+    },
+    {
+      "R3Data": "PEM-CI",
+      "R1Data": "PEM-CI"
+    },
+    {
+      "R3Data": "DIR-CI",
+      "R1Data": "DIR-CI"
+    },
+    {
+      "R3Data": "MGR-CI",
+      "R1Data": "MGR-CI"
+    },
+    {
+      "R3Data": "SPV-CI",
+      "R1Data": "SPV-CI"
+    },
+    {
+      "R3Data": "STF-CI",
+      "R1Data": "STF-CI"
+    },
+    {
+      "R3Data": "PRO-CI",
+      "R1Data": "PRO-CI"
+    },
+    {
+      "R3Data": "IND-CI",
+      "R1Data": "IND-CI"
+    },
+    {
+      "R3Data": "PEM-SME",
+      "R1Data": "PEM-SME"
+    },
+    {
+      "R3Data": "PEM-PROF",
+      "R1Data": "PEM-PROF"
+    },
+    {
+      "R3Data": "DIRUT-PROF",
+      "R1Data": "DIRUT-PROF"
+    },
+    {
+      "R3Data": "DIR-PROF",
+      "R1Data": "DIR-PROF"
+    },
+    {
+      "R3Data": "KOMUT-PROF",
+      "R1Data": "KOMUT-PROF"
+    },
+    {
+      "R3Data": "KOM-PROF",
+      "R1Data": "KOM-PROF"
+    },
+    {
+      "R3Data": "KOMID-PROF",
+      "R1Data": "KOMID-PROF"
+    }
+  ],
+  "DocumentType": [ //TblLegalDocument - select * from ref_master WHERE REF_MASTER_TYPE_CODE = 'LEGAL_DOC_TYPE'
+    {
+      "R3Data": "MAPPER-DEFAULT",
+      "R1Data": ""
+    },
+    {
+      "R3Data": "NIP",
+      "R1Data": "NIP"
+    },
+    {
+      "R3Data": "SIUP",
+      "R1Data": "SIUP"
+    },
+    {
+      "R3Data": "TDP",
+      "R1Data": "TDP"
+    },
+    {
+      "R3Data": "IJUSH",
+      "R1Data": "IJUSH"
+    },
+    {
+      "R3Data": "AKTA_X",
+      "R1Data": "AKTA_X"
+    },
+    {
+      "R3Data": "PAD",
+      "R1Data": "PAD"
+    },
+    {
+      "R3Data": "APTK",
+      "R1Data": "APTK"
+    },
+    {
+      "R3Data": "APM",
+      "R1Data": "APM"
+    },
+    {
+      "R3Data": "APN",
+      "R1Data": "APN"
+    },
+    {
+      "R3Data": "APMT",
+      "R1Data": "APMT"
+    },
+    {
+      "R3Data": "APSP",
+      "R1Data": "APSP"
+    },
+    {
+      "R3Data": "APSPS",
+      "R1Data": "APSPS"
+    },
+    {
+      "R3Data": "APUP",
+      "R1Data": "APUP"
+    },
+    {
+      "R3Data": "APKD",
+      "R1Data": "APKD"
+    },
+    {
+      "R3Data": "PAD",
+      "R1Data": "PAD"
+    },
+    {
+      "R3Data": "SITU",
+      "R1Data": "SITU"
+    },
+    {
+      "R3Data": "NPWP",
+      "R1Data": "NPWP"
+    },
+    {
+      "R3Data": "AKTA",
+      "R1Data": "AKTA"
+    },
+    {
+      "R3Data": "NIB",
+      "R1Data": "NIB"
+    },
+    {
+      "R3Data": "AKTAPER",
+      "R1Data": "AKTAPER"
+    },
+    {
+      "R3Data": "AD",
+      "R1Data": "AD"
+    },
+    {
+      "R3Data": "AD2",
+      "R1Data": "AD2"
+    },
+    {
+      "R3Data": "AD3",
+      "R1Data": "AD3"
+    },
+    {
+      "R3Data": "AD4",
+      "R1Data": "AD4"
+    },
+    {
+      "R3Data": "AD5",
+      "R1Data": "AD5"
+    },
+    {
+      "R3Data": "AD6",
+      "R1Data": "AD6"
+    },
+    {
+      "R3Data": "AD7",
+      "R1Data": "AD7"
+    },
+    {
+      "R3Data": "AD8",
+      "R1Data": "AD8"
+    },
+    {
+      "R3Data": "AK",
+      "R1Data": "AK"
+    },
+    {
+      "R3Data": "SI",
+      "R1Data": "SI"
+    },
+    {
+      "R3Data": "ST",
+      "R1Data": "ST"
+    },
+    {
+      "R3Data": "TD",
+      "R1Data": "TD"
+    }
+  ],
+  "CategoryAPUPPT": [ //TblCatAPUPPT - select * from ref_master WHERE REF_MASTER_TYPE_CODE = 'APU_PPT_CATEGORY'
+    {
+      "R3Data": "MAPPER-DEFAULT",
+      "R1Data": ""
+    },
+    {
+      "R3Data": "BIS1",
+      "R1Data": "BIS1"
+    },
+    {
+      "R3Data": "BIS10",
+      "R1Data": "BIS10"
+    },
+    {
+      "R3Data": "BIS11",
+      "R1Data": "BIS11"
+    },
+    {
+      "R3Data": "BIS12",
+      "R1Data": "BIS12"
+    },
+    {
+      "R3Data": "BIS13A",
+      "R1Data": "BIS13A"
+    },
+    {
+      "R3Data": "BIS13B",
+      "R1Data": "BIS13B"
+    },
+    {
+      "R3Data": "BIS14",
+      "R1Data": "BIS14"
+    },
+    {
+      "R3Data": "BIS15",
+      "R1Data": "BIS15"
+    },
+    {
+      "R3Data": "BIS2",
+      "R1Data": "BIS2"
+    },
+    {
+      "R3Data": "BIS3",
+      "R1Data": "BIS3"
+    },
+    {
+      "R3Data": "BIS4",
+      "R1Data": "BIS4"
+    },
+    {
+      "R3Data": "BIS5",
+      "R1Data": "BIS5"
+    },
+    {
+      "R3Data": "BIS6",
+      "R1Data": "BIS6"
+    },
+    {
+      "R3Data": "BIS7",
+      "R1Data": "BIS7"
+    },
+    {
+      "R3Data": "BIS8",
+      "R1Data": "BIS8"
+    },
+    {
+      "R3Data": "BIS9",
+      "R1Data": "BIS9"
+    },
+    {
+      "R3Data": "BNS",
+      "R1Data": "BNS"
+    },
+    {
+      "R3Data": "NEG1",
+      "R1Data": "NEG1"
+    },
+    {
+      "R3Data": "NEG2",
+      "R1Data": "NEG2"
+    },
+    {
+      "R3Data": "PO16",
+      "R1Data": "PO16"
+    },
+    {
+      "R3Data": "PO16A",
+      "R1Data": "PO16A"
+    },
+    {
+      "R3Data": "PO16B",
+      "R1Data": "PO16B"
+    },
+    {
+      "R3Data": "PO16C",
+      "R1Data": "PO16C"
+    },
+    {
+      "R3Data": "PO16D",
+      "R1Data": "PO16D"
+    },
+    {
+      "R3Data": "PO17",
+      "R1Data": "PO17"
+    },
+    {
+      "R3Data": "PO18",
+      "R1Data": "PO18"
+    },
+    {
+      "R3Data": "PO19",
+      "R1Data": "PO19"
+    },
+    {
+      "R3Data": "PROA",
+      "R1Data": "PROA"
+    },
+    {
+      "R3Data": "PROB",
+      "R1Data": "PROB"
+    },
+    {
+      "R3Data": "PROC",
+      "R1Data": "PROC"
+    },
+    {
+      "R3Data": "PROD",
+      "R1Data": "PROD"
+    },
+    {
+      "R3Data": "PROE",
+      "R1Data": "PROE"
+    },
+    {
+      "R3Data": "PROF",
+      "R1Data": "PROF"
+    },
+    {
+      "R3Data": "PROG1",
+      "R1Data": "PROG1"
+    },
+    {
+      "R3Data": "PROG2",
+      "R1Data": "PROG2"
+    },
+    {
+      "R3Data": "PROH",
+      "R1Data": "PROH"
+    },
+    {
+      "R3Data": "PROI",
+      "R1Data": "PROI"
+    },
+    {
+      "R3Data": "PROJ",
+      "R1Data": "PROJ"
+    },
+    {
+      "R3Data": "APUCAT001",
+      "R1Data": "APUCAT001"
+    },
+    {
+      "R3Data": "APUCAT002",
+      "R1Data": "APUCAT002"
+    },
+    {
+      "R3Data": "APUCAT003",
+      "R1Data": "APUCAT003"
+    },
+    {
+      "R3Data": "APUCAT004",
+      "R1Data": "APUCAT004"
+    },
+    {
+      "R3Data": "APUCAT005",
+      "R1Data": "APUCAT005"
+    },
+    {
+      "R3Data": "APUCAT006",
+      "R1Data": "APUCAT006"
+    },
+    {
+      "R3Data": "APUCAT007",
+      "R1Data": "APUCAT007"
+    },
+    {
+      "R3Data": "APUCAT008",
+      "R1Data": "APUCAT008"
+    },
+    {
+      "R3Data": "APUCAT009",
+      "R1Data": "APUCAT009"
+    },
+    {
+      "R3Data": "APUCAT010",
+      "R1Data": "APUCAT010"
+    },
+    {
+      "R3Data": "APUCAT035",
+      "R1Data": "APUCAT035"
+    },
+    {
+      "R3Data": "APUCAT036",
+      "R1Data": "APUCAT036"
+    },
+    {
+      "R3Data": "APUCAT037",
+      "R1Data": "APUCAT037"
+    },
+    {
+      "R3Data": "APUCAT011",
+      "R1Data": "APUCAT011"
+    },
+    {
+      "R3Data": "APUCAT012",
+      "R1Data": "APUCAT012"
+    },
+    {
+      "R3Data": "APUCAT013",
+      "R1Data": "APUCAT013"
+    },
+    {
+      "R3Data": "APUCAT014",
+      "R1Data": "APUCAT014"
+    },
+    {
+      "R3Data": "APUCAT015",
+      "R1Data": "APUCAT015"
+    },
+    {
+      "R3Data": "APUCAT016",
+      "R1Data": "APUCAT016"
+    },
+    {
+      "R3Data": "APUCAT017",
+      "R1Data": "APUCAT017"
+    },
+    {
+      "R3Data": "APUCAT018",
+      "R1Data": "APUCAT018"
+    },
+    {
+      "R3Data": "APUCAT019",
+      "R1Data": "APUCAT019"
+    },
+    {
+      "R3Data": "APUCAT020",
+      "R1Data": "APUCAT020"
+    },
+    {
+      "R3Data": "APUCAT021",
+      "R1Data": "APUCAT021"
+    },
+    {
+      "R3Data": "APUCAT022",
+      "R1Data": "APUCAT022"
+    },
+    {
+      "R3Data": "APUCAT023",
+      "R1Data": "APUCAT023"
+    },
+    {
+      "R3Data": "APUCAT024",
+      "R1Data": "APUCAT024"
+    },
+    {
+      "R3Data": "APUCAT025",
+      "R1Data": "APUCAT025"
+    },
+    {
+      "R3Data": "APUCAT026",
+      "R1Data": "APUCAT026"
+    },
+    {
+      "R3Data": "APUCAT027",
+      "R1Data": "APUCAT027"
+    },
+    {
+      "R3Data": "APUCAT029",
+      "R1Data": "APUCAT029"
+    },
+    {
+      "R3Data": "APUCAT031",
+      "R1Data": "APUCAT031"
+    },
+    {
+      "R3Data": "APUCAT028",
+      "R1Data": "APUCAT028"
+    },
+    {
+      "R3Data": "APUCAT030",
+      "R1Data": "APUCAT030"
+    },
+    {
+      "R3Data": "APUCAT032",
+      "R1Data": "APUCAT032"
+    },
+    {
+      "R3Data": "APUCAT033",
+      "R1Data": "APUCAT033"
+    },
+    {
+      "R3Data": "APUCAT034",
+      "R1Data": "APUCAT034"
+    }
+  ],
+  "CustomerGroupID": [
+    {
+      "R3Data": "MAPPER-DEFAULT",
+      "R1Data": ""
+    }
+  ],
+  "DeptBusinessCode": [
+	{
+			"R3Data": "MAPPER-DEFAULT-CUST-GRP",
+			"R1Data": "UMKM005"
+	},
+    {
+      "R3Data": "UMKM001",
+      "R1Data": "UMKM001"
+    },
+    {
+      "R3Data": "UMKM002",
+      "R1Data": "UMKM002"
+    },
+    {
+      "R3Data": "UMKM003",
+      "R1Data": "UMKM003"
+    },
+    {
+      "R3Data": "UMKM004",
+      "R1Data": "UMKM004"
+    },
+    {
+      "R3Data": "UMKM005",
+      "R1Data": "UMKM005"
+    }
+  ],
+  "CompanyAddress": [
+    {
+      "R3Data": "MAPPER-DEFAULT-CUST-GRP",
+      "R1Data": "-"
+    }
+  ],
+  "LbppmsCntrprtLbppCode": [
+    {
+      "R3Data": "MAPPER-DEFAULT",
+      "R1Data": "212"
+    },
+    {
+      "R3Data": "MAPPER-DEFAULT-CUST-GRP",
+      "R1Data": "212"
+    },
+    {
+      "R3Data": "226",
+      "R1Data": "226"
+    },
+    {
+      "R3Data": "234",
+      "R1Data": "234"
+    },
+    {
+      "R3Data": "190",
+      "R1Data": "190"
+    },
+    {
+      "R3Data": "247",
+      "R1Data": "247"
+    },
+    {
+      "R3Data": "187",
+      "R1Data": "187"
+    },
+    {
+      "R3Data": "183",
+      "R1Data": "183"
+    },
+    {
+      "R3Data": "228",
+      "R1Data": "228"
+    },
+    {
+      "R3Data": "281",
+      "R1Data": "281"
+    },
+    {
+      "R3Data": "256",
+      "R1Data": "256"
+    },
+    {
+      "R3Data": "299",
+      "R1Data": "299"
+    },
+    {
+      "R3Data": "197",
+      "R1Data": "197"
+    },
+    {
+      "R3Data": "171",
+      "R1Data": "171"
+    },
+    {
+      "R3Data": "275",
+      "R1Data": "275"
+    },
+    {
+      "R3Data": "196",
+      "R1Data": "196"
+    },
+    {
+      "R3Data": "205",
+      "R1Data": "205"
+    },
+    {
+      "R3Data": "287",
+      "R1Data": "287"
+    },
+    {
+      "R3Data": "259",
+      "R1Data": "259"
+    },
+    {
+      "R3Data": "217",
+      "R1Data": "217"
+    },
+    {
+      "R3Data": "175",
+      "R1Data": "175"
+    },
+    {
+      "R3Data": "310",
+      "R1Data": "310"
+    },
+    {
+      "R3Data": "312",
+      "R1Data": "312"
+    },
+    {
+      "R3Data": "280",
+      "R1Data": "280"
+    },
+    {
+      "R3Data": "191",
+      "R1Data": "191"
+    },
+    {
+      "R3Data": "223",
+      "R1Data": "223"
+    },
+    {
+      "R3Data": "293",
+      "R1Data": "293"
+    },
+    {
+      "R3Data": "219",
+      "R1Data": "219"
+    },
+    {
+      "R3Data": "211",
+      "R1Data": "211"
+    },
+    {
+      "R3Data": "250",
+      "R1Data": "250"
+    },
+    {
+      "R3Data": "202",
+      "R1Data": "202"
+    },
+    {
+      "R3Data": "314",
+      "R1Data": "314"
+    },
+    {
+      "R3Data": "177",
+      "R1Data": "177"
+    },
+    {
+      "R3Data": "243",
+      "R1Data": "243"
+    },
+    {
+      "R3Data": "294",
+      "R1Data": "294"
+    },
+    {
+      "R3Data": "204",
+      "R1Data": "204"
+    },
+    {
+      "R3Data": "324",
+      "R1Data": "324"
+    },
+    {
+      "R3Data": "304",
+      "R1Data": "304"
+    },
+    {
+      "R3Data": "317",
+      "R1Data": "317"
+    },
+    {
+      "R3Data": "258",
+      "R1Data": "258"
+    },
+    {
+      "R3Data": "186",
+      "R1Data": "186"
+    },
+    {
+      "R3Data": "224",
+      "R1Data": "224"
+    },
+    {
+      "R3Data": "188",
+      "R1Data": "188"
+    },
+    {
+      "R3Data": "208",
+      "R1Data": "208"
+    },
+    {
+      "R3Data": "313",
+      "R1Data": "313"
+    },
+    {
+      "R3Data": "330",
+      "R1Data": "330"
+    },
+    {
+      "R3Data": "305",
+      "R1Data": "305"
+    },
+    {
+      "R3Data": "278",
+      "R1Data": "278"
+    },
+    {
+      "R3Data": "276",
+      "R1Data": "276"
+    },
+    {
+      "R3Data": "271",
+      "R1Data": "271"
+    },
+    {
+      "R3Data": "334",
+      "R1Data": "334"
+    },
+    {
+      "R3Data": "260",
+      "R1Data": "260"
+    },
+    {
+      "R3Data": "244",
+      "R1Data": "244"
+    },
+    {
+      "R3Data": "233",
+      "R1Data": "233"
+    },
+    {
+      "R3Data": "230",
+      "R1Data": "230"
+    },
+    {
+      "R3Data": "172",
+      "R1Data": "172"
+    },
+    {
+      "R3Data": "285",
+      "R1Data": "285"
+    },
+    {
+      "R3Data": "335",
+      "R1Data": "335"
+    },
+    {
+      "R3Data": "246",
+      "R1Data": "246"
+    },
+    {
+      "R3Data": "194",
+      "R1Data": "194"
+    },
+    {
+      "R3Data": "237",
+      "R1Data": "237"
+    },
+    {
+      "R3Data": "333",
+      "R1Data": "333"
+    },
+    {
+      "R3Data": "326",
+      "R1Data": "326"
+    },
+    {
+      "R3Data": "198",
+      "R1Data": "198"
+    },
+    {
+      "R3Data": "320",
+      "R1Data": "320"
+    },
+    {
+      "R3Data": "238",
+      "R1Data": "238"
+    },
+    {
+      "R3Data": "239",
+      "R1Data": "239"
+    },
+    {
+      "R3Data": "295",
+      "R1Data": "295"
+    },
+    {
+      "R3Data": "241",
+      "R1Data": "241"
+    },
+    {
+      "R3Data": "262",
+      "R1Data": "262"
+    },
+    {
+      "R3Data": "296",
+      "R1Data": "296"
+    },
+    {
+      "R3Data": "257",
+      "R1Data": "257"
+    },
+    {
+      "R3Data": "254",
+      "R1Data": "254"
+    },
+    {
+      "R3Data": "222",
+      "R1Data": "222"
+    },
+    {
+      "R3Data": "218",
+      "R1Data": "218"
+    },
+    {
+      "R3Data": "240",
+      "R1Data": "240"
+    },
+    {
+      "R3Data": "303",
+      "R1Data": "303"
+    },
+    {
+      "R3Data": "221",
+      "R1Data": "221"
+    },
+    {
+      "R3Data": "329",
+      "R1Data": "329"
+    },
+    {
+      "R3Data": "322",
+      "R1Data": "322"
+    },
+    {
+      "R3Data": "307",
+      "R1Data": "307"
+    },
+    {
+      "R3Data": "263",
+      "R1Data": "263"
+    },
+    {
+      "R3Data": "178",
+      "R1Data": "178"
+    },
+    {
+      "R3Data": "185",
+      "R1Data": "185"
+    },
+    {
+      "R3Data": "318",
+      "R1Data": "318"
+    },
+    {
+      "R3Data": "212",
+      "R1Data": "212"
+    },
+    {
+      "R3Data": "273",
+      "R1Data": "273"
+    },
+    {
+      "R3Data": "203",
+      "R1Data": "203"
+    },
+    {
+      "R3Data": "229",
+      "R1Data": "229"
+    },
+    {
+      "R3Data": "216",
+      "R1Data": "216"
+    },
+    {
+      "R3Data": "309",
+      "R1Data": "309"
+    },
+    {
+      "R3Data": "270",
+      "R1Data": "270"
+    },
+    {
+      "R3Data": "283",
+      "R1Data": "283"
+    },
+    {
+      "R3Data": "297",
+      "R1Data": "297"
+    },
+    {
+      "R3Data": "308",
+      "R1Data": "308"
+    },
+    {
+      "R3Data": "220",
+      "R1Data": "220"
+    },
+    {
+      "R3Data": "328",
+      "R1Data": "328"
+    },
+    {
+      "R3Data": "245",
+      "R1Data": "245"
+    },
+    {
+      "R3Data": "170",
+      "R1Data": "170"
+    },
+    {
+      "R3Data": "182",
+      "R1Data": "182"
+    },
+    {
+      "R3Data": "306",
+      "R1Data": "306"
+    },
+    {
+      "R3Data": "174",
+      "R1Data": "174"
+    },
+    {
+      "R3Data": "323",
+      "R1Data": "323"
+    },
+    {
+      "R3Data": "210",
+      "R1Data": "210"
+    },
+    {
+      "R3Data": "173",
+      "R1Data": "173"
+    },
+    {
+      "R3Data": "284",
+      "R1Data": "284"
+    },
+    {
+      "R3Data": "195",
+      "R1Data": "195"
+    },
+    {
+      "R3Data": "311",
+      "R1Data": "311"
+    },
+    {
+      "R3Data": "298",
+      "R1Data": "298"
+    },
+    {
+      "R3Data": "232",
+      "R1Data": "232"
+    },
+    {
+      "R3Data": "332",
+      "R1Data": "332"
+    },
+    {
+      "R3Data": "253",
+      "R1Data": "253"
+    },
+    {
+      "R3Data": "193",
+      "R1Data": "193"
+    },
+    {
+      "R3Data": "301",
+      "R1Data": "301"
+    },
+    {
+      "R3Data": "181",
+      "R1Data": "181"
+    },
+    {
+      "R3Data": "176",
+      "R1Data": "176"
+    },
+    {
+      "R3Data": "214",
+      "R1Data": "214"
+    },
+    {
+      "R3Data": "266",
+      "R1Data": "266"
+    },
+    {
+      "R3Data": "209",
+      "R1Data": "209"
+    },
+    {
+      "R3Data": "255",
+      "R1Data": "255"
+    },
+    {
+      "R3Data": "251",
+      "R1Data": "251"
+    },
+    {
+      "R3Data": "252",
+      "R1Data": "252"
+    },
+    {
+      "R3Data": "291",
+      "R1Data": "291"
+    },
+    {
+      "R3Data": "274",
+      "R1Data": "274"
+    },
+    {
+      "R3Data": "10001",
+      "R1Data": "10001"
+    },
+    {
+      "R3Data": "10002",
+      "R1Data": "10002"
+    },
+    {
+      "R3Data": "10003",
+      "R1Data": "10003"
+    },
+    {
+      "R3Data": "10004",
+      "R1Data": "10004"
+    },
+    {
+      "R3Data": "10005",
+      "R1Data": "10005"
+    },
+    {
+      "R3Data": "10006",
+      "R1Data": "10006"
+    },
+    {
+      "R3Data": "10007",
+      "R1Data": "10007"
+    },
+    {
+      "R3Data": "10008",
+      "R1Data": "10008"
+    },
+    {
+      "R3Data": "10009",
+      "R1Data": "10009"
+    },
+    {
+      "R3Data": "10010",
+      "R1Data": "10010"
+    },
+    {
+      "R3Data": "10011",
+      "R1Data": "10011"
+    },
+    {
+      "R3Data": "10012",
+      "R1Data": "10012"
+    },
+    {
+      "R3Data": "10013",
+      "R1Data": "10013"
+    },
+    {
+      "R3Data": "10014",
+      "R1Data": "10014"
+    },
+    {
+      "R3Data": "10015",
+      "R1Data": "10015"
+    },
+    {
+      "R3Data": "10016",
+      "R1Data": "10016"
+    },
+    {
+      "R3Data": "10017",
+      "R1Data": "10017"
+    },
+    {
+      "R3Data": "10018",
+      "R1Data": "10018"
+    },
+    {
+      "R3Data": "10019",
+      "R1Data": "10019"
+    },
+    {
+      "R3Data": "10020",
+      "R1Data": "10020"
+    },
+    {
+      "R3Data": "10021",
+      "R1Data": "10021"
+    },
+    {
+      "R3Data": "10022",
+      "R1Data": "10022"
+    },
+    {
+      "R3Data": "10023",
+      "R1Data": "10023"
+    },
+    {
+      "R3Data": "10024",
+      "R1Data": "10024"
+    },
+    {
+      "R3Data": "10025",
+      "R1Data": "10025"
+    },
+    {
+      "R3Data": "10026",
+      "R1Data": "10026"
+    },
+    {
+      "R3Data": "10027",
+      "R1Data": "10027"
+    },
+    {
+      "R3Data": "10028",
+      "R1Data": "10028"
+    },
+    {
+      "R3Data": "10029",
+      "R1Data": "10029"
+    },
+    {
+      "R3Data": "10030",
+      "R1Data": "10030"
+    },
+    {
+      "R3Data": "10031",
+      "R1Data": "10031"
+    },
+    {
+      "R3Data": "10032",
+      "R1Data": "10032"
+    },
+    {
+      "R3Data": "10033",
+      "R1Data": "10033"
+    },
+    {
+      "R3Data": "10034",
+      "R1Data": "10034"
+    },
+    {
+      "R3Data": "10035",
+      "R1Data": "10035"
+    },
+    {
+      "R3Data": "10036",
+      "R1Data": "10036"
+    },
+    {
+      "R3Data": "10037",
+      "R1Data": "10037"
+    },
+    {
+      "R3Data": "10038",
+      "R1Data": "10038"
+    },
+    {
+      "R3Data": "10039",
+      "R1Data": "10039"
+    },
+    {
+      "R3Data": "10040",
+      "R1Data": "10040"
+    },
+    {
+      "R3Data": "10041",
+      "R1Data": "10041"
+    },
+    {
+      "R3Data": "10042",
+      "R1Data": "10042"
+    },
+    {
+      "R3Data": "10043",
+      "R1Data": "10043"
+    },
+    {
+      "R3Data": "10044",
+      "R1Data": "10044"
+    },
+    {
+      "R3Data": "10045",
+      "R1Data": "10045"
+    },
+    {
+      "R3Data": "10046",
+      "R1Data": "10046"
+    },
+    {
+      "R3Data": "10047",
+      "R1Data": "10047"
+    },
+    {
+      "R3Data": "10048",
+      "R1Data": "10048"
+    },
+    {
+      "R3Data": "10049",
+      "R1Data": "10049"
+    },
+    {
+      "R3Data": "10050",
+      "R1Data": "10050"
+    },
+    {
+      "R3Data": "10051",
+      "R1Data": "10051"
+    },
+    {
+      "R3Data": "10052",
+      "R1Data": "10052"
+    },
+    {
+      "R3Data": "10053",
+      "R1Data": "10053"
+    },
+    {
+      "R3Data": "10054",
+      "R1Data": "10054"
+    },
+    {
+      "R3Data": "10055",
+      "R1Data": "10055"
+    },
+    {
+      "R3Data": "10056",
+      "R1Data": "10056"
+    },
+    {
+      "R3Data": "10057",
+      "R1Data": "10057"
+    },
+    {
+      "R3Data": "10058",
+      "R1Data": "10058"
+    },
+    {
+      "R3Data": "10059",
+      "R1Data": "10059"
+    },
+    {
+      "R3Data": "10060",
+      "R1Data": "10060"
+    },
+    {
+      "R3Data": "10061",
+      "R1Data": "10061"
+    },
+    {
+      "R3Data": "10062",
+      "R1Data": "10062"
+    },
+    {
+      "R3Data": "10063",
+      "R1Data": "10063"
+    },
+    {
+      "R3Data": "10064",
+      "R1Data": "10064"
+    },
+    {
+      "R3Data": "10065",
+      "R1Data": "10065"
+    },
+    {
+      "R3Data": "10066",
+      "R1Data": "10066"
+    },
+    {
+      "R3Data": "10067",
+      "R1Data": "10067"
+    },
+    {
+      "R3Data": "10068",
+      "R1Data": "10068"
+    },
+    {
+      "R3Data": "10069",
+      "R1Data": "10069"
+    },
+    {
+      "R3Data": "10070",
+      "R1Data": "10070"
+    },
+    {
+      "R3Data": "10071",
+      "R1Data": "10071"
+    },
+    {
+      "R3Data": "10072",
+      "R1Data": "10072"
+    },
+    {
+      "R3Data": "10073",
+      "R1Data": "10073"
+    },
+    {
+      "R3Data": "10074",
+      "R1Data": "10074"
+    },
+    {
+      "R3Data": "10075",
+      "R1Data": "10075"
+    },
+    {
+      "R3Data": "10076",
+      "R1Data": "10076"
+    },
+    {
+      "R3Data": "10077",
+      "R1Data": "10077"
+    },
+    {
+      "R3Data": "10078",
+      "R1Data": "10078"
+    },
+    {
+      "R3Data": "10079",
+      "R1Data": "10079"
+    },
+    {
+      "R3Data": "10080",
+      "R1Data": "10080"
+    },
+    {
+      "R3Data": "10081",
+      "R1Data": "10081"
+    },
+    {
+      "R3Data": "10082",
+      "R1Data": "10082"
+    },
+    {
+      "R3Data": "10083",
+      "R1Data": "10083"
+    },
+    {
+      "R3Data": "10084",
+      "R1Data": "10084"
+    },
+    {
+      "R3Data": "10085",
+      "R1Data": "10085"
+    },
+    {
+      "R3Data": "10086",
+      "R1Data": "10086"
+    },
+    {
+      "R3Data": "10087",
+      "R1Data": "10087"
+    },
+    {
+      "R3Data": "10088",
+      "R1Data": "10088"
+    },
+    {
+      "R3Data": "10089",
+      "R1Data": "10089"
+    },
+    {
+      "R3Data": "10145",
+      "R1Data": "10145"
+    },
+    {
+      "R3Data": "10090",
+      "R1Data": "10090"
+    },
+    {
+      "R3Data": "10091",
+      "R1Data": "10091"
+    },
+    {
+      "R3Data": "10092",
+      "R1Data": "10092"
+    },
+    {
+      "R3Data": "10093",
+      "R1Data": "10093"
+    },
+    {
+      "R3Data": "10094",
+      "R1Data": "10094"
+    },
+    {
+      "R3Data": "10095",
+      "R1Data": "10095"
+    },
+    {
+      "R3Data": "10096",
+      "R1Data": "10096"
+    },
+    {
+      "R3Data": "10097",
+      "R1Data": "10097"
+    },
+    {
+      "R3Data": "10098",
+      "R1Data": "10098"
+    },
+    {
+      "R3Data": "10099",
+      "R1Data": "10099"
+    },
+    {
+      "R3Data": "10100",
+      "R1Data": "10100"
+    },
+    {
+      "R3Data": "10101",
+      "R1Data": "10101"
+    },
+    {
+      "R3Data": "10102",
+      "R1Data": "10102"
+    },
+    {
+      "R3Data": "10103",
+      "R1Data": "10103"
+    },
+    {
+      "R3Data": "10104",
+      "R1Data": "10104"
+    },
+    {
+      "R3Data": "10105",
+      "R1Data": "10105"
+    },
+    {
+      "R3Data": "10106",
+      "R1Data": "10106"
+    },
+    {
+      "R3Data": "10107",
+      "R1Data": "10107"
+    },
+    {
+      "R3Data": "10108",
+      "R1Data": "10108"
+    },
+    {
+      "R3Data": "10109",
+      "R1Data": "10109"
+    },
+    {
+      "R3Data": "10110",
+      "R1Data": "10110"
+    },
+    {
+      "R3Data": "10111",
+      "R1Data": "10111"
+    },
+    {
+      "R3Data": "10112",
+      "R1Data": "10112"
+    },
+    {
+      "R3Data": "10113",
+      "R1Data": "10113"
+    },
+    {
+      "R3Data": "10114",
+      "R1Data": "10114"
+    },
+    {
+      "R3Data": "10115",
+      "R1Data": "10115"
+    },
+    {
+      "R3Data": "10116",
+      "R1Data": "10116"
+    },
+    {
+      "R3Data": "10117",
+      "R1Data": "10117"
+    },
+    {
+      "R3Data": "10118",
+      "R1Data": "10118"
+    },
+    {
+      "R3Data": "10119",
+      "R1Data": "10119"
+    },
+    {
+      "R3Data": "10120",
+      "R1Data": "10120"
+    },
+    {
+      "R3Data": "10121",
+      "R1Data": "10121"
+    },
+    {
+      "R3Data": "10122",
+      "R1Data": "10122"
+    },
+    {
+      "R3Data": "10123",
+      "R1Data": "10123"
+    },
+    {
+      "R3Data": "10124",
+      "R1Data": "10124"
+    },
+    {
+      "R3Data": "10125",
+      "R1Data": "10125"
+    },
+    {
+      "R3Data": "10126",
+      "R1Data": "10126"
+    },
+    {
+      "R3Data": "10127",
+      "R1Data": "10127"
+    },
+    {
+      "R3Data": "10128",
+      "R1Data": "10128"
+    },
+    {
+      "R3Data": "10129",
+      "R1Data": "10129"
+    },
+    {
+      "R3Data": "10130",
+      "R1Data": "10130"
+    },
+    {
+      "R3Data": "10131",
+      "R1Data": "10131"
+    },
+    {
+      "R3Data": "10132",
+      "R1Data": "10132"
+    },
+    {
+      "R3Data": "10133",
+      "R1Data": "10133"
+    },
+    {
+      "R3Data": "10134",
+      "R1Data": "10134"
+    },
+    {
+      "R3Data": "10135",
+      "R1Data": "10135"
+    },
+    {
+      "R3Data": "10136",
+      "R1Data": "10136"
+    },
+    {
+      "R3Data": "10137",
+      "R1Data": "10137"
+    },
+    {
+      "R3Data": "10138",
+      "R1Data": "10138"
+    },
+    {
+      "R3Data": "10139",
+      "R1Data": "10139"
+    },
+    {
+      "R3Data": "10140",
+      "R1Data": "10140"
+    },
+    {
+      "R3Data": "10141",
+      "R1Data": "10141"
+    },
+    {
+      "R3Data": "10142",
+      "R1Data": "10142"
+    },
+    {
+      "R3Data": "10143",
+      "R1Data": "10143"
+    },
+    {
+      "R3Data": "10144",
+      "R1Data": "10144"
+    },
+    {
+      "R3Data": "10146",
+      "R1Data": "10146"
+    },
+    {
+      "R3Data": "10147",
+      "R1Data": "10147"
+    },
+    {
+      "R3Data": "10148",
+      "R1Data": "10148"
+    },
+    {
+      "R3Data": "10149",
+      "R1Data": "10149"
+    },
+    {
+      "R3Data": "10150",
+      "R1Data": "10150"
+    },
+    {
+      "R3Data": "10151",
+      "R1Data": "10151"
+    },
+    {
+      "R3Data": "10152",
+      "R1Data": "10152"
+    },
+    {
+      "R3Data": "10153",
+      "R1Data": "10153"
+    },
+    {
+      "R3Data": "10154",
+      "R1Data": "10154"
+    },
+    {
+      "R3Data": "10155",
+      "R1Data": "10155"
+    },
+    {
+      "R3Data": "10156",
+      "R1Data": "10156"
+    },
+    {
+      "R3Data": "10157",
+      "R1Data": "10157"
+    },
+    {
+      "R3Data": "10158",
+      "R1Data": "10158"
+    },
+    {
+      "R3Data": "10159",
+      "R1Data": "10159"
+    },
+    {
+      "R3Data": "10160",
+      "R1Data": "10160"
+    },
+    {
+      "R3Data": "10161",
+      "R1Data": "10161"
+    },
+    {
+      "R3Data": "10162",
+      "R1Data": "10162"
+    },
+    {
+      "R3Data": "10163",
+      "R1Data": "10163"
+    },
+    {
+      "R3Data": "10164",
+      "R1Data": "10164"
+    },
+    {
+      "R3Data": "10165",
+      "R1Data": "10165"
+    },
+    {
+      "R3Data": "10166",
+      "R1Data": "10166"
+    },
+    {
+      "R3Data": "10167",
+      "R1Data": "10167"
+    },
+    {
+      "R3Data": "10168",
+      "R1Data": "10168"
+    },
+    {
+      "R3Data": "10169",
+      "R1Data": "10169"
+    },
+    {
+      "R3Data": "10170",
+      "R1Data": "10170"
+    },
+    {
+      "R3Data": "10171",
+      "R1Data": "10171"
+    },
+    {
+      "R3Data": "10172",
+      "R1Data": "10172"
+    },
+    {
+      "R3Data": "10173",
+      "R1Data": "10173"
+    },
+    {
+      "R3Data": "10174",
+      "R1Data": "10174"
+    },
+    {
+      "R3Data": "10175",
+      "R1Data": "10175"
+    },
+    {
+      "R3Data": "10176",
+      "R1Data": "10176"
+    },
+    {
+      "R3Data": "10177",
+      "R1Data": "10177"
+    },
+    {
+      "R3Data": "10178",
+      "R1Data": "10178"
+    },
+    {
+      "R3Data": "10179",
+      "R1Data": "10179"
+    },
+    {
+      "R3Data": "10180",
+      "R1Data": "10180"
+    },
+    {
+      "R3Data": "10181",
+      "R1Data": "10181"
+    },
+    {
+      "R3Data": "10182",
+      "R1Data": "10182"
+    },
+    {
+      "R3Data": "10183",
+      "R1Data": "10183"
+    },
+    {
+      "R3Data": "10184",
+      "R1Data": "10184"
+    },
+    {
+      "R3Data": "10185",
+      "R1Data": "10185"
+    },
+    {
+      "R3Data": "10186",
+      "R1Data": "10186"
+    },
+    {
+      "R3Data": "10187",
+      "R1Data": "10187"
+    },
+    {
+      "R3Data": "10188",
+      "R1Data": "10188"
+    },
+    {
+      "R3Data": "10189",
+      "R1Data": "10189"
+    },
+    {
+      "R3Data": "10190",
+      "R1Data": "10190"
+    },
+    {
+      "R3Data": "10191",
+      "R1Data": "10191"
+    },
+    {
+      "R3Data": "10192",
+      "R1Data": "10192"
+    },
+    {
+      "R3Data": "10193",
+      "R1Data": "10193"
+    },
+    {
+      "R3Data": "10194",
+      "R1Data": "10194"
+    },
+    {
+      "R3Data": "10195",
+      "R1Data": "10195"
+    },
+    {
+      "R3Data": "10196",
+      "R1Data": "10196"
+    },
+    {
+      "R3Data": "10197",
+      "R1Data": "10197"
+    },
+    {
+      "R3Data": "10198",
+      "R1Data": "10198"
+    },
+    {
+      "R3Data": "10199",
+      "R1Data": "10199"
+    },
+    {
+      "R3Data": "10200",
+      "R1Data": "10200"
+    },
+    {
+      "R3Data": "10201",
+      "R1Data": "10201"
+    },
+    {
+      "R3Data": "10202",
+      "R1Data": "10202"
+    },
+    {
+      "R3Data": "10203",
+      "R1Data": "10203"
+    },
+    {
+      "R3Data": "10204",
+      "R1Data": "10204"
+    },
+    {
+      "R3Data": "10205",
+      "R1Data": "10205"
+    },
+    {
+      "R3Data": "10206",
+      "R1Data": "10206"
+    },
+    {
+      "R3Data": "10207",
+      "R1Data": "10207"
+    },
+    {
+      "R3Data": "10208",
+      "R1Data": "10208"
+    },
+    {
+      "R3Data": "10209",
+      "R1Data": "10209"
+    },
+    {
+      "R3Data": "10210",
+      "R1Data": "10210"
+    },
+    {
+      "R3Data": "10211",
+      "R1Data": "10211"
+    },
+    {
+      "R3Data": "272",
+      "R1Data": "272"
+    },
+    {
+      "R3Data": "242",
+      "R1Data": "242"
+    },
+    {
+      "R3Data": "277",
+      "R1Data": "277"
+    },
+    {
+      "R3Data": "279",
+      "R1Data": "279"
+    },
+    {
+      "R3Data": "248",
+      "R1Data": "248"
+    },
+    {
+      "R3Data": "215",
+      "R1Data": "215"
+    },
+    {
+      "R3Data": "264",
+      "R1Data": "264"
+    },
+    {
+      "R3Data": "282",
+      "R1Data": "282"
+    },
+    {
+      "R3Data": "300",
+      "R1Data": "300"
+    },
+    {
+      "R3Data": "286",
+      "R1Data": "286"
+    },
+    {
+      "R3Data": "169",
+      "R1Data": "169"
+    },
+    {
+      "R3Data": "289",
+      "R1Data": "289"
+    },
+    {
+      "R3Data": "268",
+      "R1Data": "268"
+    },
+    {
+      "R3Data": "207",
+      "R1Data": "207"
+    },
+    {
+      "R3Data": "200",
+      "R1Data": "200"
+    },
+    {
+      "R3Data": "302",
+      "R1Data": "302"
+    },
+    {
+      "R3Data": "201",
+      "R1Data": "201"
+    },
+    {
+      "R3Data": "180",
+      "R1Data": "180"
+    },
+    {
+      "R3Data": "179",
+      "R1Data": "179"
+    },
+    {
+      "R3Data": "227",
+      "R1Data": "227"
+    },
+    {
+      "R3Data": "325",
+      "R1Data": "325"
+    },
+    {
+      "R3Data": "206",
+      "R1Data": "206"
+    },
+    {
+      "R3Data": "331",
+      "R1Data": "331"
+    },
+    {
+      "R3Data": "269",
+      "R1Data": "269"
+    },
+    {
+      "R3Data": "236",
+      "R1Data": "236"
+    },
+    {
+      "R3Data": "199",
+      "R1Data": "199"
+    },
+    {
+      "R3Data": "249",
+      "R1Data": "249"
+    },
+    {
+      "R3Data": "231",
+      "R1Data": "231"
+    },
+    {
+      "R3Data": "184",
+      "R1Data": "184"
+    },
+    {
+      "R3Data": "288",
+      "R1Data": "288"
+    },
+    {
+      "R3Data": "261",
+      "R1Data": "261"
+    },
+    {
+      "R3Data": "316",
+      "R1Data": "316"
+    },
+    {
+      "R3Data": "235",
+      "R1Data": "235"
+    },
+    {
+      "R3Data": "265",
+      "R1Data": "265"
+    },
+    {
+      "R3Data": "290",
+      "R1Data": "290"
+    },
+    {
+      "R3Data": "225",
+      "R1Data": "225"
+    },
+    {
+      "R3Data": "189",
+      "R1Data": "189"
+    },
+    {
+      "R3Data": "267",
+      "R1Data": "267"
+    },
+    {
+      "R3Data": "213",
+      "R1Data": "213"
+    },
+    {
+      "R3Data": "319",
+      "R1Data": "319"
+    },
+    {
+      "R3Data": "192",
+      "R1Data": "192"
+    },
+    {
+      "R3Data": "315",
+      "R1Data": "315"
+    },
+    {
+      "R3Data": "327",
+      "R1Data": "327"
+    },
+    {
+      "R3Data": "321",
+      "R1Data": "321"
+    },
+    {
+      "R3Data": "292",
+      "R1Data": "292"
+    }
+  ],
+  "LbppmsBizSustainLbppCode": [
+    {
+      "R3Data": "MAPPER-DEFAULT",
+      "R1Data": "e3831"
+    },
+    {
+      "R3Data": "MAPPER-DEFAULT-CUST-GRP",
+      "R1Data": "e3831"
+    },
+    {
+      "R3Data": "e3819",
+      "R1Data": "e3819"
+    },
+    {
+      "R3Data": "e3820",
+      "R1Data": "e3820"
+    },
+    {
+      "R3Data": "e3821",
+      "R1Data": "e3821"
+    },
+    {
+      "R3Data": "e3822",
+      "R1Data": "e3822"
+    },
+    {
+      "R3Data": "e3823",
+      "R1Data": "e3823"
+    },
+    {
+      "R3Data": "e3824",
+      "R1Data": "e3824"
+    },
+    {
+      "R3Data": "e3825",
+      "R1Data": "e3825"
+    },
+    {
+      "R3Data": "e3826",
+      "R1Data": "e3826"
+    },
+    {
+      "R3Data": "e3827",
+      "R1Data": "e3827"
+    },
+    {
+      "R3Data": "e3828",
+      "R1Data": "e3828"
+    },
+    {
+      "R3Data": "e3829",
+      "R1Data": "e3829"
+    },
+    {
+      "R3Data": "e3830",
+      "R1Data": "e3830"
+    },
+    {
+      "R3Data": "e3831",
+      "R1Data": "e3831"
+    }
+  ],
+  "IDNumber": [
+    {
+      "R3Data": "MAPPER-DEFAULT-CUST-GRP",
+      "R1Data": "IDNumber"
+    }
+  ],
+  "BirthPlace": [
+    {
+      "R3Data": "MAPPER-DEFAULT-CUST-GRP",
+      "R1Data": "-"
+    }
+  ],
+  "WNACountry": [
+    {
+      "R3Data": "MAPPER-DEFAULT-CUST-GRP",
+      "R1Data": null
+    }
+  ],
+  "ProfessionID": [
+    {
+      "R3Data": "MAPPER-DEFAULT",
+      "R1Data": "DLL"
+    },
+    {
+      "R3Data": "MAPPER-DEFAULT-CUST-GRP",
+      "R1Data": "099-SME"
+    },
+    {
+      "R3Data": "035",
+      "R1Data": "035"
+    },
+    {
+      "R3Data": "036",
+      "R1Data": "036"
+    },
+    {
+      "R3Data": "037",
+      "R1Data": "037"
+    },
+    {
+      "R3Data": "099-PROF",
+      "R1Data": "099-PROF"
+    },
+    {
+      "R3Data": "099-SME",
+      "R1Data": "099-SME"
+    },
+    {
+      "R3Data": "AKUN",
+      "R1Data": "AKUN"
+    },
+    {
+      "R3Data": "APT",
+      "R1Data": "APT"
+    },
+    {
+      "R3Data": "ARS",
+      "R1Data": "ARS"
+    },
+    {
+      "R3Data": "ART",
+      "R1Data": "ART"
+    },
+    {
+      "R3Data": "ASAPT",
+      "R1Data": "ASAPT"
+    },
+    {
+      "R3Data": "ASO",
+      "R1Data": "ASO"
+    },
+    {
+      "R3Data": "ATS",
+      "R1Data": "ATS"
+    },
+    {
+      "R3Data": "AUDIT",
+      "R1Data": "AUDIT"
+    },
+    {
+      "R3Data": "BID",
+      "R1Data": "BID"
+    },
+    {
+      "R3Data": "BROK",
+      "R1Data": "BROK"
+    },
+    {
+      "R3Data": "BUMND",
+      "R1Data": "BUMND"
+    },
+    {
+      "R3Data": "BURBGN",
+      "R1Data": "BURBGN"
+    },
+    {
+      "R3Data": "BURDLL",
+      "R1Data": "BURDLL"
+    },
+    {
+      "R3Data": "BURPBK",
+      "R1Data": "BURPBK"
+    },
+    {
+      "R3Data": "BURTN",
+      "R1Data": "BURTN"
+    },
+    {
+      "R3Data": "DIST",
+      "R1Data": "DIST"
+    },
+    {
+      "R3Data": "DLL",
+      "R1Data": "DLL"
+    },
+    {
+      "R3Data": "DOK",
+      "R1Data": "DOK"
+    },
+    {
+      "R3Data": "DOS",
+      "R1Data": "DOS"
+    },
+    {
+      "R3Data": "DRG",
+      "R1Data": "DRG"
+    },
+    {
+      "R3Data": "DSN",
+      "R1Data": "DSN"
+    },
+    {
+      "R3Data": "GUR",
+      "R1Data": "GUR"
+    },
+    {
+      "R3Data": "HKM",
+      "R1Data": "HKM"
+    },
+    {
+      "R3Data": "HOTRES",
+      "R1Data": "HOTRES"
+    },
+    {
+      "R3Data": "INFDLL",
+      "R1Data": "INFDLL"
+    },
+    {
+      "R3Data": "IRT",
+      "R1Data": "IRT"
+    },
+    {
+      "R3Data": "JKACC",
+      "R1Data": "JKACC"
+    },
+    {
+      "R3Data": "JKADM",
+      "R1Data": "JKADM"
+    },
+    {
+      "R3Data": "JKCS",
+      "R1Data": "JKCS"
+    },
+    {
+      "R3Data": "JKDLL",
+      "R1Data": "JKDLL"
+    },
+    {
+      "R3Data": "JKEKS",
+      "R1Data": "JKEKS"
+    },
+    {
+      "R3Data": "JKMKT",
+      "R1Data": "JKMKT"
+    },
+    {
+      "R3Data": "JKPGM",
+      "R1Data": "JKPGM"
+    },
+    {
+      "R3Data": "JKS",
+      "R1Data": "JKS"
+    },
+    {
+      "R3Data": "JKTI",
+      "R1Data": "JKTI"
+    },
+    {
+      "R3Data": "KONDLL",
+      "R1Data": "KONDLL"
+    },
+    {
+      "R3Data": "MHSW",
+      "R1Data": "MHSW"
+    },
+    {
+      "R3Data": "MUS",
+      "R1Data": "MUS"
+    },
+    {
+      "R3Data": "NEL",
+      "R1Data": "NEL"
+    },
+    {
+      "R3Data": "NJKACC",
+      "R1Data": "NJKACC"
+    },
+    {
+      "R3Data": "NJKADM",
+      "R1Data": "NJKADM"
+    },
+    {
+      "R3Data": "NJKCS",
+      "R1Data": "NJKCS"
+    },
+    {
+      "R3Data": "NJKDLL",
+      "R1Data": "NJKDLL"
+    },
+    {
+      "R3Data": "NJKEKS",
+      "R1Data": "NJKEKS"
+    },
+    {
+      "R3Data": "NJKENG",
+      "R1Data": "NJKENG"
+    },
+    {
+      "R3Data": "NJKMKT",
+      "R1Data": "NJKMKT"
+    },
+    {
+      "R3Data": "NJKPGM",
+      "R1Data": "NJKPGM"
+    },
+    {
+      "R3Data": "NJKTI",
+      "R1Data": "NJKTI"
+    },
+    {
+      "R3Data": "NOT",
+      "R1Data": "NOT"
+    },
+    {
+      "R3Data": "PARPOL",
+      "R1Data": "PARPOL"
+    },
+    {
+      "R3Data": "PDGMKN",
+      "R1Data": "PDGMKN"
+    },
+    {
+      "R3Data": "PDGMWH",
+      "R1Data": "PDGMWH"
+    },
+    {
+      "R3Data": "PEL",
+      "R1Data": "PEL"
+    },
+    {
+      "R3Data": "PENDLL",
+      "R1Data": "PENDLL"
+    },
+    {
+      "R3Data": "PENEG",
+      "R1Data": "PENEG"
+    },
+    {
+      "R3Data": "PENHUK",
+      "R1Data": "PENHUK"
+    },
+    {
+      "R3Data": "PENPNS",
+      "R1Data": "PENPNS"
+    },
+    {
+      "R3Data": "PENTNIPOL",
+      "R1Data": "PENTNIPOL"
+    },
+    {
+      "R3Data": "PER",
+      "R1Data": "PER"
+    },
+    {
+      "R3Data": "PGHJAS",
+      "R1Data": "PGHJAS"
+    },
+    {
+      "R3Data": "PGHJK",
+      "R1Data": "PGHJK"
+    },
+    {
+      "R3Data": "PGHPBR",
+      "R1Data": "PGHPBR"
+    },
+    {
+      "R3Data": "PGHPRO",
+      "R1Data": "PGHPRO"
+    },
+    {
+      "R3Data": "PGHPTN",
+      "R1Data": "PGHPTN"
+    },
+    {
+      "R3Data": "PJLVLT",
+      "R1Data": "PJLVLT"
+    },
+    {
+      "R3Data": "PNG",
+      "R1Data": "PNG"
+    },
+    {
+      "R3Data": "001",
+      "R1Data": "001"
+    },
+    {
+      "R3Data": "002",
+      "R1Data": "002"
+    },
+    {
+      "R3Data": "003",
+      "R1Data": "003"
+    },
+    {
+      "R3Data": "004",
+      "R1Data": "004"
+    },
+    {
+      "R3Data": "005",
+      "R1Data": "005"
+    },
+    {
+      "R3Data": "006",
+      "R1Data": "006"
+    },
+    {
+      "R3Data": "007",
+      "R1Data": "007"
+    },
+    {
+      "R3Data": "008",
+      "R1Data": "008"
+    },
+    {
+      "R3Data": "009",
+      "R1Data": "009"
+    },
+    {
+      "R3Data": "010",
+      "R1Data": "010"
+    },
+    {
+      "R3Data": "011",
+      "R1Data": "011"
+    },
+    {
+      "R3Data": "012",
+      "R1Data": "012"
+    },
+    {
+      "R3Data": "013",
+      "R1Data": "013"
+    },
+    {
+      "R3Data": "014",
+      "R1Data": "014"
+    },
+    {
+      "R3Data": "015",
+      "R1Data": "015"
+    },
+    {
+      "R3Data": "016",
+      "R1Data": "016"
+    },
+    {
+      "R3Data": "017",
+      "R1Data": "017"
+    },
+    {
+      "R3Data": "018",
+      "R1Data": "018"
+    },
+    {
+      "R3Data": "019",
+      "R1Data": "019"
+    },
+    {
+      "R3Data": "020",
+      "R1Data": "020"
+    },
+    {
+      "R3Data": "021",
+      "R1Data": "021"
+    },
+    {
+      "R3Data": "022",
+      "R1Data": "022"
+    },
+    {
+      "R3Data": "023",
+      "R1Data": "023"
+    },
+    {
+      "R3Data": "024",
+      "R1Data": "024"
+    },
+    {
+      "R3Data": "025",
+      "R1Data": "025"
+    },
+    {
+      "R3Data": "026",
+      "R1Data": "026"
+    },
+    {
+      "R3Data": "027",
+      "R1Data": "027"
+    },
+    {
+      "R3Data": "028",
+      "R1Data": "028"
+    },
+    {
+      "R3Data": "029",
+      "R1Data": "029"
+    },
+    {
+      "R3Data": "030",
+      "R1Data": "030"
+    },
+    {
+      "R3Data": "031",
+      "R1Data": "031"
+    },
+    {
+      "R3Data": "032",
+      "R1Data": "032"
+    },
+    {
+      "R3Data": "033",
+      "R1Data": "033"
+    },
+    {
+      "R3Data": "034",
+      "R1Data": "034"
+    },
+    {
+      "R3Data": "099-EMP",
+      "R1Data": "099-EMP"
+    },
+    {
+      "R3Data": "PNLI",
+      "R1Data": "PNLI"
+    },
+    {
+      "R3Data": "PNS",
+      "R1Data": "PNS"
+    },
+    {
+      "R3Data": "POL",
+      "R1Data": "POL"
+    },
+    {
+      "R3Data": "PRG",
+      "R1Data": "PRG"
+    },
+    {
+      "R3Data": "PRJDLL",
+      "R1Data": "PRJDLL"
+    },
+    {
+      "R3Data": "PRJKLT",
+      "R1Data": "PRJKLT"
+    },
+    {
+      "R3Data": "PROD",
+      "R1Data": "PROD"
+    },
+    {
+      "R3Data": "PRODLL",
+      "R1Data": "PRODLL"
+    },
+    {
+      "R3Data": "PTK",
+      "R1Data": "PTK"
+    },
+    {
+      "R3Data": "PTN",
+      "R1Data": "PTN"
+    },
+    {
+      "R3Data": "SENDLL",
+      "R1Data": "SENDLL"
+    },
+    {
+      "R3Data": "TKDLL",
+      "R1Data": "TKDLL"
+    },
+    {
+      "R3Data": "TKKY",
+      "R1Data": "TKKY"
+    },
+    {
+      "R3Data": "TNI",
+      "R1Data": "TNI"
+    },
+    {
+      "R3Data": "TRANSD",
+      "R1Data": "TRANSD"
+    },
+    {
+      "R3Data": "TRANSL",
+      "R1Data": "TRANSL"
+    },
+    {
+      "R3Data": "TRANSU",
+      "R1Data": "TRANSU"
+    },
+    {
+      "R3Data": "TTR",
+      "R1Data": "TTR"
+    },
+    {
+      "R3Data": "WRSTDLL",
+      "R1Data": "WRSTDLL"
+    }
+
+  ],
+  "IDType": [
+    {
+      "R3Data": "MAPPER-DEFAULT-CUST-GRP",
+      "R1Data": "LAIN"
+    },
+    {
+      "R3Data": "KTP",
+      "R1Data": "KTP"
+    },
+    {
+      "R3Data": "LAIN",
+      "R1Data": "LAIN"
+    },
+    {
+      "R3Data": "PAS",
+      "R1Data": "PAS"
+    },
+    {
+      "R3Data": "EKTP",
+      "R1Data": "EKTP"
+    },
+    {
+      "R3Data": "NPWP",
+      "R1Data": "NPWP"
+    },
+    {
+      "R3Data": "LAIN",
+      "R1Data": "LAIN"
+    },
+    {
+      "R3Data": "AKTA",
+      "R1Data": "AKTA"
+    }
+  ],
+  "ShareholderPosition": [
+    {
+      "R3Data": "MAPPER-DEFAULT",
+      "R1Data": ""
+    },
+    {
+      "R3Data": "COMMISIO2",
+      "R1Data": "COMMISIO2"
+    },
+    {
+      "R3Data": "PKDIRUT",
+      "R1Data": "PKDIRUT"
+    },
+    {
+      "R3Data": "BPKETUM",
+      "R1Data": "BPKETUM"
+    },
+    {
+      "R3Data": "KET2",
+      "R1Data": "KET2"
+    },
+    {
+      "R3Data": "SEK2",
+      "R1Data": "SEK2"
+    },
+    {
+      "R3Data": "BEND2",
+      "R1Data": "BEND2"
+    },
+    {
+      "R3Data": "OTHER",
+      "R1Data": "OTHER"
+    },
+    {
+      "R3Data": "DIRECTOR3",
+      "R1Data": "DIRECTOR3"
+    },
+    {
+      "R3Data": "PRESDIR",
+      "R1Data": "PRESDIR"
+    },
+    {
+      "R3Data": "DIRECTOR",
+      "R1Data": "DIRECTOR"
+    },
+    {
+      "R3Data": "PC",
+      "R1Data": "PC"
+    },
+    {
+      "R3Data": "COMMISIO",
+      "R1Data": "COMMISIO"
+    },
+    {
+      "R3Data": "KUASADIR",
+      "R1Data": "KUASADIR"
+    },
+    {
+      "R3Data": "OWNER",
+      "R1Data": "OWNER"
+    },
+    {
+      "R3Data": "MASY",
+      "R1Data": "MASY"
+    },
+    {
+      "R3Data": "KETUM",
+      "R1Data": "KETUM"
+    },
+    {
+      "R3Data": "KET",
+      "R1Data": "KET"
+    },
+    {
+      "R3Data": "SEK",
+      "R1Data": "SEK"
+    },
+    {
+      "R3Data": "BEND",
+      "R1Data": "BEND"
+    },
+    {
+      "R3Data": "PMLKL",
+      "R1Data": "PMLKL"
+    },
+    {
+      "R3Data": "PRESDIR2",
+      "R1Data": "PRESDIR2"
+    },
+    {
+      "R3Data": "DIRECTOR2",
+      "R1Data": "DIRECTOR2"
+    },
+    {
+      "R3Data": "PC2",
+      "R1Data": "PC2"
+    },
+    {
+      "R3Data": "PDIR2",
+      "R1Data": "PDIR2"
+    },
+    {
+      "R3Data": "PDIR1",
+      "R1Data": "PDIR1"
+    },
+    {
+      "R3Data": "PEMBNA",
+      "R1Data": "PEMBNA"
+    },
+    {
+      "R3Data": "VICEPRES",
+      "R1Data": "VICEPRES"
+    },
+    {
+      "R3Data": "BPKEPCAB",
+      "R1Data": "BPKEPCAB"
+    },
+    {
+      "R3Data": "KOM1",
+      "R1Data": "KOM1"
+    },
+    {
+      "R3Data": "BPBEDUM",
+      "R1Data": "BPBEDUM"
+    },
+    {
+      "R3Data": "PENGWS",
+      "R1Data": "PENGWS"
+    },
+    {
+      "R3Data": "VICEPRES1",
+      "R1Data": "VICEPRES1"
+    },
+    {
+      "R3Data": "PRESDIR4",
+      "R1Data": "PRESDIR4"
+    },
+    {
+      "R3Data": "KOMANDITER",
+      "R1Data": "KOMANDITER"
+    },
+    {
+      "R3Data": "BPWKETUM",
+      "R1Data": "BPWKETUM"
+    },
+    {
+      "R3Data": "DIRECTOR4",
+      "R1Data": "DIRECTOR4"
+    },
+    {
+      "R3Data": "KUASA",
+      "R1Data": "KUASA"
+    },
+    {
+      "R3Data": "BPSEKUM",
+      "R1Data": "BPSEKUM"
+    },
+    {
+      "R3Data": "BPWAKOM",
+      "R1Data": "BPWAKOM"
+    },
+    {
+      "R3Data": "COMMISIO",
+      "R1Data": "COMMISIO"
+    },
+    {
+      "R3Data": "BPWAKDIRUT",
+      "R1Data": "BPWAKDIRUT"
+    },
+    {
+      "R3Data": "SHAREHLDR",
+      "R1Data": "SHAREHLDR"
+    },
+    {
+      "R3Data": "PENGRS",
+      "R1Data": "PENGRS"
+    },
+    {
+      "R3Data": "VICEPRES2",
+      "R1Data": "VICEPRES2"
+    },
+    {
+      "R3Data": "PRESDIR",
+      "R1Data": "PRESDIR"
+    },
+    {
+      "R3Data": "BPDIR2",
+      "R1Data": "BPDIR2"
+    },
+    {
+      "R3Data": "WAPRES1",
+      "R1Data": "WAPRES1"
+    },
+    {
+      "R3Data": "PRESDIR3",
+      "R1Data": "PRESDIR3"
+    },
+    {
+      "R3Data": "DIRECTOR",
+      "R1Data": "DIRECTOR"
+    },
+    {
+      "R3Data": "BPDIR1",
+      "R1Data": "BPDIR1"
+    }
+  ],
+  "FamilyRelation": [
+    {
+      "R3Data": "MAPPER-DEFAULT",
+      "R1Data": ""
+    },
+    {
+      "R3Data": "48",
+      "R1Data": "48"
+    },
+    {
+      "R3Data": "ECC1",
+      "R1Data": "ECC1"
+    },
+    {
+      "R3Data": "ECC2",
+      "R1Data": "ECC2"
+    },
+    {
+      "R3Data": "ECC3",
+      "R1Data": "ECC3"
+    },
+    {
+      "R3Data": "ECC4",
+      "R1Data": "ECC4"
+    },
+    {
+      "R3Data": "ECC5",
+      "R1Data": "ECC5"
+    },
+    {
+      "R3Data": "ECC6",
+      "R1Data": "ECC6"
+    },
+    {
+      "R3Data": "ECC7",
+      "R1Data": "ECC7"
+    },
+    {
+      "R3Data": "ECP1",
+      "R1Data": "ECP1"
+    },
+    {
+      "R3Data": "ECP2",
+      "R1Data": "ECP2"
+    },
+    {
+      "R3Data": "ECP3",
+      "R1Data": "ECP3"
+    },
+    {
+      "R3Data": "ECP4",
+      "R1Data": "ECP4"
+    },
+    {
+      "R3Data": "ECP5",
+      "R1Data": "ECP5"
+    },
+    {
+      "R3Data": "FD1",
+      "R1Data": "FD1"
+    },
+    {
+      "R3Data": "FD2",
+      "R1Data": "FD2"
+    },
+    {
+      "R3Data": "FD3",
+      "R1Data": "FD3"
+    },
+    {
+      "R3Data": "FD4",
+      "R1Data": "FD4"
+    },
+    {
+      "R3Data": "FD5",
+      "R1Data": "FD5"
+    },
+    {
+      "R3Data": "FD6",
+      "R1Data": "FD6"
+    },
+    {
+      "R3Data": "FD7",
+      "R1Data": "FD7"
+    },
+    {
+      "R3Data": "FD8",
+      "R1Data": "FD8"
+    },
+    {
+      "R3Data": "GR1",
+      "R1Data": "GR1"
+    },
+    {
+      "R3Data": "GR10",
+      "R1Data": "GR10"
+    },
+    {
+      "R3Data": "GR11",
+      "R1Data": "GR11"
+    },
+    {
+      "R3Data": "GR12",
+      "R1Data": "GR12"
+    },
+    {
+      "R3Data": "GR13",
+      "R1Data": "GR13"
+    },
+    {
+      "R3Data": "GR14",
+      "R1Data": "GR14"
+    },
+    {
+      "R3Data": "GR15",
+      "R1Data": "GR15"
+    },
+    {
+      "R3Data": "GR16",
+      "R1Data": "GR16"
+    },
+    {
+      "R3Data": "GR17",
+      "R1Data": "GR17"
+    },
+    {
+      "R3Data": "GR18",
+      "R1Data": "GR18"
+    },
+    {
+      "R3Data": "GR19",
+      "R1Data": "GR19"
+    },
+    {
+      "R3Data": "GR2",
+      "R1Data": "GR2"
+    },
+    {
+      "R3Data": "GR20",
+      "R1Data": "GR20"
+    },
+    {
+      "R3Data": "GR21",
+      "R1Data": "GR21"
+    },
+    {
+      "R3Data": "GR22",
+      "R1Data": "GR22"
+    },
+    {
+      "R3Data": "GR23",
+      "R1Data": "GR23"
+    },
+    {
+      "R3Data": "GR24",
+      "R1Data": "GR24"
+    },
+    {
+      "R3Data": "GR25",
+      "R1Data": "GR25"
+    },
+    {
+      "R3Data": "GR26",
+      "R1Data": "GR26"
+    },
+    {
+      "R3Data": "GR27",
+      "R1Data": "GR27"
+    },
+    {
+      "R3Data": "GR28",
+      "R1Data": "GR28"
+    },
+    {
+      "R3Data": "GR29",
+      "R1Data": "GR29"
+    },
+    {
+      "R3Data": "GR3",
+      "R1Data": "GR3"
+    },
+    {
+      "R3Data": "GR30",
+      "R1Data": "GR30"
+    },
+    {
+      "R3Data": "GR31",
+      "R1Data": "GR31"
+    },
+    {
+      "R3Data": "GR32",
+      "R1Data": "GR32"
+    },
+    {
+      "R3Data": "GR33",
+      "R1Data": "GR33"
+    },
+    {
+      "R3Data": "GR34",
+      "R1Data": "GR34"
+    },
+    {
+      "R3Data": "GR35",
+      "R1Data": "GR35"
+    },
+    {
+      "R3Data": "GR36",
+      "R1Data": "GR36"
+    },
+    {
+      "R3Data": "GR37",
+      "R1Data": "GR37"
+    },
+    {
+      "R3Data": "GR38",
+      "R1Data": "GR38"
+    },
+    {
+      "R3Data": "GR39",
+      "R1Data": "GR39"
+    },
+    {
+      "R3Data": "GR4",
+      "R1Data": "GR4"
+    },
+    {
+      "R3Data": "GR40",
+      "R1Data": "GR40"
+    },
+    {
+      "R3Data": "GR41",
+      "R1Data": "GR41"
+    },
+    {
+      "R3Data": "GR42",
+      "R1Data": "GR42"
+    },
+    {
+      "R3Data": "GR43",
+      "R1Data": "GR43"
+    },
+    {
+      "R3Data": "GR44",
+      "R1Data": "GR44"
+    },
+    {
+      "R3Data": "GR45",
+      "R1Data": "GR45"
+    },
+    {
+      "R3Data": "GR46",
+      "R1Data": "GR46"
+    },
+    {
+      "R3Data": "GR47",
+      "R1Data": "GR47"
+    },
+    {
+      "R3Data": "GR48",
+      "R1Data": "GR48"
+    },
+    {
+      "R3Data": "GR49",
+      "R1Data": "GR49"
+    },
+    {
+      "R3Data": "GR5",
+      "R1Data": "GR5"
+    },
+    {
+      "R3Data": "GR50",
+      "R1Data": "GR50"
+    },
+    {
+      "R3Data": "GR51",
+      "R1Data": "GR51"
+    },
+    {
+      "R3Data": "GR52",
+      "R1Data": "GR52"
+    },
+    {
+      "R3Data": "GR6",
+      "R1Data": "GR6"
+    },
+    {
+      "R3Data": "GR7",
+      "R1Data": "GR7"
+    },
+    {
+      "R3Data": "GR8",
+      "R1Data": "GR8"
+    },
+    {
+      "R3Data": "GR9",
+      "R1Data": "GR9"
+    },
+    {
+      "R3Data": "CHILD",
+      "R1Data": "CHILD"
+    },
+    {
+      "R3Data": "SELF",
+      "R1Data": "SELF"
+    },
+    {
+      "R3Data": "SISTER",
+      "R1Data": "SISTER"
+    },
+    {
+      "R3Data": "BROTHER",
+      "R1Data": "BROTHER"
+    },
+    {
+      "R3Data": "SPOUSE",
+      "R1Data": "SPOUSE"
+    },
+    {
+      "R3Data": "SIBLING",
+      "R1Data": "SIBLING"
+    },
+    {
+      "R3Data": "FATHER",
+      "R1Data": "FATHER"
+    },
+    {
+      "R3Data": "MOTHER",
+      "R1Data": "MOTHER"
+    },
+    {
+      "R3Data": "AUNT",
+      "R1Data": "AUNT"
+    },
+    {
+      "R3Data": "UNCLE",
+      "R1Data": "UNCLE"
+    },
+    {
+      "R3Data": "GRANDFAT",
+      "R1Data": "GRANDFAT"
+    },
+    {
+      "R3Data": "GRANDMOT",
+      "R1Data": "GRANDMOT"
+    },
+    {
+      "R3Data": "OTHERS",
+      "R1Data": "OTHERS"
+    },
+    {
+      "R3Data": "CHILD",
+      "R1Data": "CHILD"
+    },
+    {
+      "R3Data": "SISTER",
+      "R1Data": "SISTER"
+    },
+    {
+      "R3Data": "BROTHER",
+      "R1Data": "BROTHER"
+    },
+    {
+      "R3Data": "SPOUSE",
+      "R1Data": "SPOUSE"
+    },
+    {
+      "R3Data": "SIBLING",
+      "R1Data": "SIBLING"
+    },
+    {
+      "R3Data": "FATHER",
+      "R1Data": "FATHER"
+    },
+    {
+      "R3Data": "MOTHER",
+      "R1Data": "MOTHER"
+    },
+    {
+      "R3Data": "AUNT",
+      "R1Data": "AUNT"
+    },
+    {
+      "R3Data": "UNCLE",
+      "R1Data": "UNCLE"
+    },
+    {
+      "R3Data": "GRANDFAT",
+      "R1Data": "GRANDFAT"
+    },
+    {
+      "R3Data": "GRANDMOT",
+      "R1Data": "GRANDMOT"
+    },
+    {
+      "R3Data": "OTHERS",
+      "R1Data": "OTHERS"
+    },
+    {
+      "R3Data": "SELF",
+      "R1Data": "SELF"
+    },
+    {
+      "R3Data": "ULTIMATE",
+      "R1Data": "ULTIMATE"
+    },
+    {
+      "R3Data": "OTHERS",
+      "R1Data": "OTHERS"
+    },
+    {
+      "R3Data": "CHILD",
+      "R1Data": "CHILD"
+    },
+    {
+      "R3Data": "SISTER",
+      "R1Data": "SISTER"
+    },
+    {
+      "R3Data": "BROTHER",
+      "R1Data": "BROTHER"
+    },
+    {
+      "R3Data": "SPOUSE",
+      "R1Data": "SPOUSE"
+    },
+    {
+      "R3Data": "SIBLING",
+      "R1Data": "SIBLING"
+    },
+    {
+      "R3Data": "FATHER",
+      "R1Data": "FATHER"
+    },
+    {
+      "R3Data": "MOTHER",
+      "R1Data": "MOTHER"
+    },
+    {
+      "R3Data": "AUNT",
+      "R1Data": "AUNT"
+    },
+    {
+      "R3Data": "UNCLE",
+      "R1Data": "UNCLE"
+    },
+    {
+      "R3Data": "GRANDFAT",
+      "R1Data": "GRANDFAT"
+    },
+    {
+      "R3Data": "GRANDMO",
+      "R1Data": "GRANDMO"
+    },
+    {
+      "R3Data": "SHARE",
+      "R1Data": "SHARE"
+    },
+    {
+      "R3Data": "DIREKSI",
+      "R1Data": "DIREKSI"
+    },
+    {
+      "R3Data": "KOMISARIS",
+      "R1Data": "KOMISARIS"
+    },
+    {
+      "R3Data": "OWNER",
+      "R1Data": "OWNER"
+    }
+  ],
+  "EmergencyRelation": [
+    {
+      "R3Data": "MAPPER-DEFAULT",
+      "R1Data": "OTHERS"
+    },
+    {
+      "R3Data": "CHILD",
+      "R1Data": "CHILD"
+    },
+    {
+      "R3Data": "SELF",
+      "R1Data": "SELF"
+    },
+    {
+      "R3Data": "SISTER",
+      "R1Data": "SISTER"
+    },
+    {
+      "R3Data": "BROTHER",
+      "R1Data": "BROTHER"
+    },
+    {
+      "R3Data": "SPOUSE",
+      "R1Data": "SPOUSE"
+    },
+    {
+      "R3Data": "SIBLING",
+      "R1Data": "SIBLING"
+    },
+    {
+      "R3Data": "FATHER",
+      "R1Data": "FATHER"
+    },
+    {
+      "R3Data": "MOTHER",
+      "R1Data": "MOTHER"
+    },
+    {
+      "R3Data": "AUNT",
+      "R1Data": "AUNT"
+    },
+    {
+      "R3Data": "UNCLE",
+      "R1Data": "UNCLE"
+    },
+    {
+      "R3Data": "GRANDFAT",
+      "R1Data": "GRANDFAT"
+    },
+    {
+      "R3Data": "GRANDMOT",
+      "R1Data": "GRANDMOT"
+    },
+    {
+      "R3Data": "OTHERS",
+      "R1Data": "OTHERS"
+    },
+    {
+      "R3Data": "SELF",
+      "R1Data": "SELF"
+    },
+    {
+      "R3Data": "CHILD",
+      "R1Data": "CHILD"
+    },
+    {
+      "R3Data": "SISTER",
+      "R1Data": "SISTER"
+    },
+    {
+      "R3Data": "BROTHER",
+      "R1Data": "BROTHER"
+    },
+    {
+      "R3Data": "SPOUSE",
+      "R1Data": "SPOUSE"
+    },
+    {
+      "R3Data": "SIBLING",
+      "R1Data": "SIBLING"
+    },
+    {
+      "R3Data": "FATHER",
+      "R1Data": "FATHER"
+    },
+    {
+      "R3Data": "MOTHER",
+      "R1Data": "MOTHER"
+    },
+    {
+      "R3Data": "AUNT",
+      "R1Data": "AUNT"
+    },
+    {
+      "R3Data": "UNCLE",
+      "R1Data": "UNCLE"
+    },
+    {
+      "R3Data": "GRANDFAT",
+      "R1Data": "GRANDFAT"
+    },
+    {
+      "R3Data": "GRANDMO",
+      "R1Data": "GRANDMO"
+    },
+    {
+      "R3Data": "SHARE",
+      "R1Data": "SHARE"
+    },
+    {
+      "R3Data": "DIREKSI",
+      "R1Data": "DIREKSI"
+    },
+    {
+      "R3Data": "KOMISARIS",
+      "R1Data": "KOMISARIS"
+    },
+    {
+      "R3Data": "OWNER",
+      "R1Data": "OWNER"
+    },
+    {
+      "R3Data": "ULTIMATE",
+      "R1Data": "ULTIMATE"
+    },
+    {
+      "R3Data": "OTHERS",
+      "R1Data": "OTHERS"
+    }
+  ],
+  "DebtGroupCode": [
+  	{
+			"R3Data": "MAPPER-DEFAULT-CUST-GRP",
+			"R1Data": "313"
+	},
+    {
+      "R3Data": "395",
+      "R1Data": "395"
+    },
+    {
+      "R3Data": "396",
+      "R1Data": "396"
+    },
+    {
+      "R3Data": "397",
+      "R1Data": "397"
+    },
+    {
+      "R3Data": "398",
+      "R1Data": "398"
+    },
+    {
+      "R3Data": "02",
+      "R1Data": "02"
+    },
+    {
+      "R3Data": "10",
+      "R1Data": "10"
+    },
+    {
+      "R3Data": "11",
+      "R1Data": "11"
+    },
+    {
+      "R3Data": "12",
+      "R1Data": "12"
+    },
+    {
+      "R3Data": "13",
+      "R1Data": "13"
+    },
+    {
+      "R3Data": "14",
+      "R1Data": "14"
+    },
+    {
+      "R3Data": "15",
+      "R1Data": "15"
+    },
+    {
+      "R3Data": "16",
+      "R1Data": "16"
+    },
+    {
+      "R3Data": "58",
+      "R1Data": "58"
+    },
+    {
+      "R3Data": "259",
+      "R1Data": "259"
+    },
+    {
+      "R3Data": "260",
+      "R1Data": "260"
+    },
+    {
+      "R3Data": "261",
+      "R1Data": "261"
+    },
+    {
+      "R3Data": "262",
+      "R1Data": "262"
+    },
+    {
+      "R3Data": "263",
+      "R1Data": "263"
+    },
+    {
+      "R3Data": "264",
+      "R1Data": "264"
+    },
+    {
+      "R3Data": "265",
+      "R1Data": "265"
+    },
+    {
+      "R3Data": "267",
+      "R1Data": "267"
+    },
+    {
+      "R3Data": "268",
+      "R1Data": "268"
+    },
+    {
+      "R3Data": "269",
+      "R1Data": "269"
+    },
+    {
+      "R3Data": "270",
+      "R1Data": "270"
+    },
+    {
+      "R3Data": "271",
+      "R1Data": "271"
+    },
+    {
+      "R3Data": "272",
+      "R1Data": "272"
+    },
+    {
+      "R3Data": "273",
+      "R1Data": "273"
+    },
+    {
+      "R3Data": "274",
+      "R1Data": "274"
+    },
+    {
+      "R3Data": "275",
+      "R1Data": "275"
+    },
+    {
+      "R3Data": "276",
+      "R1Data": "276"
+    },
+    {
+      "R3Data": "277",
+      "R1Data": "277"
+    },
+    {
+      "R3Data": "278",
+      "R1Data": "278"
+    },
+    {
+      "R3Data": "279",
+      "R1Data": "279"
+    },
+    {
+      "R3Data": "280",
+      "R1Data": "280"
+    },
+    {
+      "R3Data": "281",
+      "R1Data": "281"
+    },
+    {
+      "R3Data": "282",
+      "R1Data": "282"
+    },
+    {
+      "R3Data": "283",
+      "R1Data": "283"
+    },
+    {
+      "R3Data": "284",
+      "R1Data": "284"
+    },
+    {
+      "R3Data": "285",
+      "R1Data": "285"
+    },
+    {
+      "R3Data": "286",
+      "R1Data": "286"
+    },
+    {
+      "R3Data": "287",
+      "R1Data": "287"
+    },
+    {
+      "R3Data": "288",
+      "R1Data": "288"
+    },
+    {
+      "R3Data": "289",
+      "R1Data": "289"
+    },
+    {
+      "R3Data": "48",
+      "R1Data": "48"
+    },
+    {
+      "R3Data": "373",
+      "R1Data": "373"
+    },
+    {
+      "R3Data": "01",
+      "R1Data": "01"
+    },
+    {
+      "R3Data": "03",
+      "R1Data": "03"
+    },
+    {
+      "R3Data": "04",
+      "R1Data": "04"
+    },
+    {
+      "R3Data": "05",
+      "R1Data": "05"
+    },
+    {
+      "R3Data": "06",
+      "R1Data": "06"
+    },
+    {
+      "R3Data": "07",
+      "R1Data": "07"
+    },
+    {
+      "R3Data": "08",
+      "R1Data": "08"
+    },
+    {
+      "R3Data": "09",
+      "R1Data": "09"
+    },
+    {
+      "R3Data": "17",
+      "R1Data": "17"
+    },
+    {
+      "R3Data": "18",
+      "R1Data": "18"
+    },
+    {
+      "R3Data": "19",
+      "R1Data": "19"
+    },
+    {
+      "R3Data": "20",
+      "R1Data": "20"
+    },
+    {
+      "R3Data": "22",
+      "R1Data": "22"
+    },
+    {
+      "R3Data": "23",
+      "R1Data": "23"
+    },
+    {
+      "R3Data": "24",
+      "R1Data": "24"
+    },
+    {
+      "R3Data": "25",
+      "R1Data": "25"
+    },
+    {
+      "R3Data": "26",
+      "R1Data": "26"
+    },
+    {
+      "R3Data": "27",
+      "R1Data": "27"
+    },
+    {
+      "R3Data": "28",
+      "R1Data": "28"
+    },
+    {
+      "R3Data": "29",
+      "R1Data": "29"
+    },
+    {
+      "R3Data": "30",
+      "R1Data": "30"
+    },
+    {
+      "R3Data": "31",
+      "R1Data": "31"
+    },
+    {
+      "R3Data": "32",
+      "R1Data": "32"
+    },
+    {
+      "R3Data": "33",
+      "R1Data": "33"
+    },
+    {
+      "R3Data": "34",
+      "R1Data": "34"
+    },
+    {
+      "R3Data": "35",
+      "R1Data": "35"
+    },
+    {
+      "R3Data": "36",
+      "R1Data": "36"
+    },
+    {
+      "R3Data": "37",
+      "R1Data": "37"
+    },
+    {
+      "R3Data": "38",
+      "R1Data": "38"
+    },
+    {
+      "R3Data": "39",
+      "R1Data": "39"
+    },
+    {
+      "R3Data": "40",
+      "R1Data": "40"
+    },
+    {
+      "R3Data": "41",
+      "R1Data": "41"
+    },
+    {
+      "R3Data": "42",
+      "R1Data": "42"
+    },
+    {
+      "R3Data": "43",
+      "R1Data": "43"
+    },
+    {
+      "R3Data": "44",
+      "R1Data": "44"
+    },
+    {
+      "R3Data": "45",
+      "R1Data": "45"
+    },
+    {
+      "R3Data": "46",
+      "R1Data": "46"
+    },
+    {
+      "R3Data": "47",
+      "R1Data": "47"
+    },
+    {
+      "R3Data": "49",
+      "R1Data": "49"
+    },
+    {
+      "R3Data": "50",
+      "R1Data": "50"
+    },
+    {
+      "R3Data": "51",
+      "R1Data": "51"
+    },
+    {
+      "R3Data": "52",
+      "R1Data": "52"
+    },
+    {
+      "R3Data": "53",
+      "R1Data": "53"
+    },
+    {
+      "R3Data": "54",
+      "R1Data": "54"
+    },
+    {
+      "R3Data": "55",
+      "R1Data": "55"
+    },
+    {
+      "R3Data": "56",
+      "R1Data": "56"
+    },
+    {
+      "R3Data": "57",
+      "R1Data": "57"
+    },
+    {
+      "R3Data": "374",
+      "R1Data": "374"
+    },
+    {
+      "R3Data": "375",
+      "R1Data": "375"
+    },
+    {
+      "R3Data": "376",
+      "R1Data": "376"
+    },
+    {
+      "R3Data": "377",
+      "R1Data": "377"
+    },
+    {
+      "R3Data": "378",
+      "R1Data": "378"
+    },
+    {
+      "R3Data": "379",
+      "R1Data": "379"
+    },
+    {
+      "R3Data": "380",
+      "R1Data": "380"
+    },
+    {
+      "R3Data": "59",
+      "R1Data": "59"
+    },
+    {
+      "R3Data": "60",
+      "R1Data": "60"
+    },
+    {
+      "R3Data": "61",
+      "R1Data": "61"
+    },
+    {
+      "R3Data": "62",
+      "R1Data": "62"
+    },
+    {
+      "R3Data": "63",
+      "R1Data": "63"
+    },
+    {
+      "R3Data": "64",
+      "R1Data": "64"
+    },
+    {
+      "R3Data": "65",
+      "R1Data": "65"
+    },
+    {
+      "R3Data": "66",
+      "R1Data": "66"
+    },
+    {
+      "R3Data": "67",
+      "R1Data": "67"
+    },
+    {
+      "R3Data": "68",
+      "R1Data": "68"
+    },
+    {
+      "R3Data": "69",
+      "R1Data": "69"
+    },
+    {
+      "R3Data": "70",
+      "R1Data": "70"
+    },
+    {
+      "R3Data": "71",
+      "R1Data": "71"
+    },
+    {
+      "R3Data": "72",
+      "R1Data": "72"
+    },
+    {
+      "R3Data": "73",
+      "R1Data": "73"
+    },
+    {
+      "R3Data": "74",
+      "R1Data": "74"
+    },
+    {
+      "R3Data": "75",
+      "R1Data": "75"
+    },
+    {
+      "R3Data": "76",
+      "R1Data": "76"
+    },
+    {
+      "R3Data": "77",
+      "R1Data": "77"
+    },
+    {
+      "R3Data": "78",
+      "R1Data": "78"
+    },
+    {
+      "R3Data": "79",
+      "R1Data": "79"
+    },
+    {
+      "R3Data": "80",
+      "R1Data": "80"
+    },
+    {
+      "R3Data": "81",
+      "R1Data": "81"
+    },
+    {
+      "R3Data": "82",
+      "R1Data": "82"
+    },
+    {
+      "R3Data": "83",
+      "R1Data": "83"
+    },
+    {
+      "R3Data": "84",
+      "R1Data": "84"
+    },
+    {
+      "R3Data": "85",
+      "R1Data": "85"
+    },
+    {
+      "R3Data": "86",
+      "R1Data": "86"
+    },
+    {
+      "R3Data": "87",
+      "R1Data": "87"
+    },
+    {
+      "R3Data": "88",
+      "R1Data": "88"
+    },
+    {
+      "R3Data": "89",
+      "R1Data": "89"
+    },
+    {
+      "R3Data": "90",
+      "R1Data": "90"
+    },
+    {
+      "R3Data": "91",
+      "R1Data": "91"
+    },
+    {
+      "R3Data": "92",
+      "R1Data": "92"
+    },
+    {
+      "R3Data": "93",
+      "R1Data": "93"
+    },
+    {
+      "R3Data": "94",
+      "R1Data": "94"
+    },
+    {
+      "R3Data": "95",
+      "R1Data": "95"
+    },
+    {
+      "R3Data": "96",
+      "R1Data": "96"
+    },
+    {
+      "R3Data": "97",
+      "R1Data": "97"
+    },
+    {
+      "R3Data": "98",
+      "R1Data": "98"
+    },
+    {
+      "R3Data": "99",
+      "R1Data": "99"
+    },
+    {
+      "R3Data": "100",
+      "R1Data": "100"
+    },
+    {
+      "R3Data": "101",
+      "R1Data": "101"
+    },
+    {
+      "R3Data": "102",
+      "R1Data": "102"
+    },
+    {
+      "R3Data": "103",
+      "R1Data": "103"
+    },
+    {
+      "R3Data": "104",
+      "R1Data": "104"
+    },
+    {
+      "R3Data": "105",
+      "R1Data": "105"
+    },
+    {
+      "R3Data": "106",
+      "R1Data": "106"
+    },
+    {
+      "R3Data": "107",
+      "R1Data": "107"
+    },
+    {
+      "R3Data": "108",
+      "R1Data": "108"
+    },
+    {
+      "R3Data": "109",
+      "R1Data": "109"
+    },
+    {
+      "R3Data": "110",
+      "R1Data": "110"
+    },
+    {
+      "R3Data": "111",
+      "R1Data": "111"
+    },
+    {
+      "R3Data": "112",
+      "R1Data": "112"
+    },
+    {
+      "R3Data": "113",
+      "R1Data": "113"
+    },
+    {
+      "R3Data": "114",
+      "R1Data": "114"
+    },
+    {
+      "R3Data": "115",
+      "R1Data": "115"
+    },
+    {
+      "R3Data": "116",
+      "R1Data": "116"
+    },
+    {
+      "R3Data": "117",
+      "R1Data": "117"
+    },
+    {
+      "R3Data": "118",
+      "R1Data": "118"
+    },
+    {
+      "R3Data": "119",
+      "R1Data": "119"
+    },
+    {
+      "R3Data": "120",
+      "R1Data": "120"
+    },
+    {
+      "R3Data": "121",
+      "R1Data": "121"
+    },
+    {
+      "R3Data": "122",
+      "R1Data": "122"
+    },
+    {
+      "R3Data": "123",
+      "R1Data": "123"
+    },
+    {
+      "R3Data": "124",
+      "R1Data": "124"
+    },
+    {
+      "R3Data": "125",
+      "R1Data": "125"
+    },
+    {
+      "R3Data": "126",
+      "R1Data": "126"
+    },
+    {
+      "R3Data": "127",
+      "R1Data": "127"
+    },
+    {
+      "R3Data": "128",
+      "R1Data": "128"
+    },
+    {
+      "R3Data": "129",
+      "R1Data": "129"
+    },
+    {
+      "R3Data": "130",
+      "R1Data": "130"
+    },
+    {
+      "R3Data": "131",
+      "R1Data": "131"
+    },
+    {
+      "R3Data": "132",
+      "R1Data": "132"
+    },
+    {
+      "R3Data": "133",
+      "R1Data": "133"
+    },
+    {
+      "R3Data": "134",
+      "R1Data": "134"
+    },
+    {
+      "R3Data": "135",
+      "R1Data": "135"
+    },
+    {
+      "R3Data": "136",
+      "R1Data": "136"
+    },
+    {
+      "R3Data": "137",
+      "R1Data": "137"
+    },
+    {
+      "R3Data": "138",
+      "R1Data": "138"
+    },
+    {
+      "R3Data": "139",
+      "R1Data": "139"
+    },
+    {
+      "R3Data": "140",
+      "R1Data": "140"
+    },
+    {
+      "R3Data": "141",
+      "R1Data": "141"
+    },
+    {
+      "R3Data": "142",
+      "R1Data": "142"
+    },
+    {
+      "R3Data": "143",
+      "R1Data": "143"
+    },
+    {
+      "R3Data": "144",
+      "R1Data": "144"
+    },
+    {
+      "R3Data": "145",
+      "R1Data": "145"
+    },
+    {
+      "R3Data": "146",
+      "R1Data": "146"
+    },
+    {
+      "R3Data": "147",
+      "R1Data": "147"
+    },
+    {
+      "R3Data": "148",
+      "R1Data": "148"
+    },
+    {
+      "R3Data": "149",
+      "R1Data": "149"
+    },
+    {
+      "R3Data": "150",
+      "R1Data": "150"
+    },
+    {
+      "R3Data": "151",
+      "R1Data": "151"
+    },
+    {
+      "R3Data": "152",
+      "R1Data": "152"
+    },
+    {
+      "R3Data": "153",
+      "R1Data": "153"
+    },
+    {
+      "R3Data": "154",
+      "R1Data": "154"
+    },
+    {
+      "R3Data": "155",
+      "R1Data": "155"
+    },
+    {
+      "R3Data": "156",
+      "R1Data": "156"
+    },
+    {
+      "R3Data": "157",
+      "R1Data": "157"
+    },
+    {
+      "R3Data": "158",
+      "R1Data": "158"
+    },
+    {
+      "R3Data": "159",
+      "R1Data": "159"
+    },
+    {
+      "R3Data": "160",
+      "R1Data": "160"
+    },
+    {
+      "R3Data": "161",
+      "R1Data": "161"
+    },
+    {
+      "R3Data": "162",
+      "R1Data": "162"
+    },
+    {
+      "R3Data": "163",
+      "R1Data": "163"
+    },
+    {
+      "R3Data": "164",
+      "R1Data": "164"
+    },
+    {
+      "R3Data": "165",
+      "R1Data": "165"
+    },
+    {
+      "R3Data": "166",
+      "R1Data": "166"
+    },
+    {
+      "R3Data": "167",
+      "R1Data": "167"
+    },
+    {
+      "R3Data": "168",
+      "R1Data": "168"
+    },
+    {
+      "R3Data": "169",
+      "R1Data": "169"
+    },
+    {
+      "R3Data": "170",
+      "R1Data": "170"
+    },
+    {
+      "R3Data": "171",
+      "R1Data": "171"
+    },
+    {
+      "R3Data": "172",
+      "R1Data": "172"
+    },
+    {
+      "R3Data": "173",
+      "R1Data": "173"
+    },
+    {
+      "R3Data": "174",
+      "R1Data": "174"
+    },
+    {
+      "R3Data": "175",
+      "R1Data": "175"
+    },
+    {
+      "R3Data": "176",
+      "R1Data": "176"
+    },
+    {
+      "R3Data": "177",
+      "R1Data": "177"
+    },
+    {
+      "R3Data": "178",
+      "R1Data": "178"
+    },
+    {
+      "R3Data": "179",
+      "R1Data": "179"
+    },
+    {
+      "R3Data": "180",
+      "R1Data": "180"
+    },
+    {
+      "R3Data": "181",
+      "R1Data": "181"
+    },
+    {
+      "R3Data": "182",
+      "R1Data": "182"
+    },
+    {
+      "R3Data": "183",
+      "R1Data": "183"
+    },
+    {
+      "R3Data": "184",
+      "R1Data": "184"
+    },
+    {
+      "R3Data": "185",
+      "R1Data": "185"
+    },
+    {
+      "R3Data": "186",
+      "R1Data": "186"
+    },
+    {
+      "R3Data": "187",
+      "R1Data": "187"
+    },
+    {
+      "R3Data": "188",
+      "R1Data": "188"
+    },
+    {
+      "R3Data": "189",
+      "R1Data": "189"
+    },
+    {
+      "R3Data": "190",
+      "R1Data": "190"
+    },
+    {
+      "R3Data": "191",
+      "R1Data": "191"
+    },
+    {
+      "R3Data": "192",
+      "R1Data": "192"
+    },
+    {
+      "R3Data": "193",
+      "R1Data": "193"
+    },
+    {
+      "R3Data": "194",
+      "R1Data": "194"
+    },
+    {
+      "R3Data": "195",
+      "R1Data": "195"
+    },
+    {
+      "R3Data": "196",
+      "R1Data": "196"
+    },
+    {
+      "R3Data": "197",
+      "R1Data": "197"
+    },
+    {
+      "R3Data": "198",
+      "R1Data": "198"
+    },
+    {
+      "R3Data": "199",
+      "R1Data": "199"
+    },
+    {
+      "R3Data": "200",
+      "R1Data": "200"
+    },
+    {
+      "R3Data": "201",
+      "R1Data": "201"
+    },
+    {
+      "R3Data": "202",
+      "R1Data": "202"
+    },
+    {
+      "R3Data": "203",
+      "R1Data": "203"
+    },
+    {
+      "R3Data": "204",
+      "R1Data": "204"
+    },
+    {
+      "R3Data": "205",
+      "R1Data": "205"
+    },
+    {
+      "R3Data": "206",
+      "R1Data": "206"
+    },
+    {
+      "R3Data": "207",
+      "R1Data": "207"
+    },
+    {
+      "R3Data": "208",
+      "R1Data": "208"
+    },
+    {
+      "R3Data": "209",
+      "R1Data": "209"
+    },
+    {
+      "R3Data": "210",
+      "R1Data": "210"
+    },
+    {
+      "R3Data": "211",
+      "R1Data": "211"
+    },
+    {
+      "R3Data": "213",
+      "R1Data": "213"
+    },
+    {
+      "R3Data": "214",
+      "R1Data": "214"
+    },
+    {
+      "R3Data": "215",
+      "R1Data": "215"
+    },
+    {
+      "R3Data": "216",
+      "R1Data": "216"
+    },
+    {
+      "R3Data": "217",
+      "R1Data": "217"
+    },
+    {
+      "R3Data": "218",
+      "R1Data": "218"
+    },
+    {
+      "R3Data": "219",
+      "R1Data": "219"
+    },
+    {
+      "R3Data": "220",
+      "R1Data": "220"
+    },
+    {
+      "R3Data": "221",
+      "R1Data": "221"
+    },
+    {
+      "R3Data": "222",
+      "R1Data": "222"
+    },
+    {
+      "R3Data": "223",
+      "R1Data": "223"
+    },
+    {
+      "R3Data": "224",
+      "R1Data": "224"
+    },
+    {
+      "R3Data": "225",
+      "R1Data": "225"
+    },
+    {
+      "R3Data": "226",
+      "R1Data": "226"
+    },
+    {
+      "R3Data": "227",
+      "R1Data": "227"
+    },
+    {
+      "R3Data": "228",
+      "R1Data": "228"
+    },
+    {
+      "R3Data": "229",
+      "R1Data": "229"
+    },
+    {
+      "R3Data": "230",
+      "R1Data": "230"
+    },
+    {
+      "R3Data": "231",
+      "R1Data": "231"
+    },
+    {
+      "R3Data": "232",
+      "R1Data": "232"
+    },
+    {
+      "R3Data": "233",
+      "R1Data": "233"
+    },
+    {
+      "R3Data": "234",
+      "R1Data": "234"
+    },
+    {
+      "R3Data": "235",
+      "R1Data": "235"
+    },
+    {
+      "R3Data": "236",
+      "R1Data": "236"
+    },
+    {
+      "R3Data": "237",
+      "R1Data": "237"
+    },
+    {
+      "R3Data": "238",
+      "R1Data": "238"
+    },
+    {
+      "R3Data": "239",
+      "R1Data": "239"
+    },
+    {
+      "R3Data": "240",
+      "R1Data": "240"
+    },
+    {
+      "R3Data": "241",
+      "R1Data": "241"
+    },
+    {
+      "R3Data": "242",
+      "R1Data": "242"
+    },
+    {
+      "R3Data": "243",
+      "R1Data": "243"
+    },
+    {
+      "R3Data": "244",
+      "R1Data": "244"
+    },
+    {
+      "R3Data": "245",
+      "R1Data": "245"
+    },
+    {
+      "R3Data": "246",
+      "R1Data": "246"
+    },
+    {
+      "R3Data": "247",
+      "R1Data": "247"
+    },
+    {
+      "R3Data": "248",
+      "R1Data": "248"
+    },
+    {
+      "R3Data": "249",
+      "R1Data": "249"
+    },
+    {
+      "R3Data": "250",
+      "R1Data": "250"
+    },
+    {
+      "R3Data": "251",
+      "R1Data": "251"
+    },
+    {
+      "R3Data": "252",
+      "R1Data": "252"
+    },
+    {
+      "R3Data": "253",
+      "R1Data": "253"
+    },
+    {
+      "R3Data": "255",
+      "R1Data": "255"
+    },
+    {
+      "R3Data": "256",
+      "R1Data": "256"
+    },
+    {
+      "R3Data": "257",
+      "R1Data": "257"
+    },
+    {
+      "R3Data": "258",
+      "R1Data": "258"
+    },
+    {
+      "R3Data": "290",
+      "R1Data": "290"
+    },
+    {
+      "R3Data": "291",
+      "R1Data": "291"
+    },
+    {
+      "R3Data": "292",
+      "R1Data": "292"
+    },
+    {
+      "R3Data": "293",
+      "R1Data": "293"
+    },
+    {
+      "R3Data": "294",
+      "R1Data": "294"
+    },
+    {
+      "R3Data": "295",
+      "R1Data": "295"
+    },
+    {
+      "R3Data": "296",
+      "R1Data": "296"
+    },
+    {
+      "R3Data": "297",
+      "R1Data": "297"
+    },
+    {
+      "R3Data": "298",
+      "R1Data": "298"
+    },
+    {
+      "R3Data": "299",
+      "R1Data": "299"
+    },
+    {
+      "R3Data": "300",
+      "R1Data": "300"
+    },
+    {
+      "R3Data": "301",
+      "R1Data": "301"
+    },
+    {
+      "R3Data": "302",
+      "R1Data": "302"
+    },
+    {
+      "R3Data": "303",
+      "R1Data": "303"
+    },
+    {
+      "R3Data": "304",
+      "R1Data": "304"
+    },
+    {
+      "R3Data": "305",
+      "R1Data": "305"
+    },
+    {
+      "R3Data": "306",
+      "R1Data": "306"
+    },
+    {
+      "R3Data": "307",
+      "R1Data": "307"
+    },
+    {
+      "R3Data": "308",
+      "R1Data": "308"
+    },
+    {
+      "R3Data": "309",
+      "R1Data": "309"
+    },
+    {
+      "R3Data": "310",
+      "R1Data": "310"
+    },
+    {
+      "R3Data": "311",
+      "R1Data": "311"
+    },
+    {
+      "R3Data": "312",
+      "R1Data": "312"
+    },
+    {
+      "R3Data": "313",
+      "R1Data": "313"
+    },
+    {
+      "R3Data": "315",
+      "R1Data": "315"
+    },
+    {
+      "R3Data": "316",
+      "R1Data": "316"
+    },
+    {
+      "R3Data": "317",
+      "R1Data": "317"
+    },
+    {
+      "R3Data": "318",
+      "R1Data": "318"
+    },
+    {
+      "R3Data": "319",
+      "R1Data": "319"
+    },
+    {
+      "R3Data": "320",
+      "R1Data": "320"
+    },
+    {
+      "R3Data": "321",
+      "R1Data": "321"
+    },
+    {
+      "R3Data": "322",
+      "R1Data": "322"
+    },
+    {
+      "R3Data": "323",
+      "R1Data": "323"
+    },
+    {
+      "R3Data": "324",
+      "R1Data": "324"
+    },
+    {
+      "R3Data": "325",
+      "R1Data": "325"
+    },
+    {
+      "R3Data": "326",
+      "R1Data": "326"
+    },
+    {
+      "R3Data": "327",
+      "R1Data": "327"
+    },
+    {
+      "R3Data": "328",
+      "R1Data": "328"
+    },
+    {
+      "R3Data": "329",
+      "R1Data": "329"
+    },
+    {
+      "R3Data": "330",
+      "R1Data": "330"
+    },
+    {
+      "R3Data": "331",
+      "R1Data": "331"
+    },
+    {
+      "R3Data": "332",
+      "R1Data": "332"
+    },
+    {
+      "R3Data": "333",
+      "R1Data": "333"
+    },
+    {
+      "R3Data": "334",
+      "R1Data": "334"
+    },
+    {
+      "R3Data": "335",
+      "R1Data": "335"
+    },
+    {
+      "R3Data": "336",
+      "R1Data": "336"
+    },
+    {
+      "R3Data": "337",
+      "R1Data": "337"
+    },
+    {
+      "R3Data": "338",
+      "R1Data": "338"
+    },
+    {
+      "R3Data": "339",
+      "R1Data": "339"
+    },
+    {
+      "R3Data": "340",
+      "R1Data": "340"
+    },
+    {
+      "R3Data": "341",
+      "R1Data": "341"
+    },
+    {
+      "R3Data": "342",
+      "R1Data": "342"
+    },
+    {
+      "R3Data": "343",
+      "R1Data": "343"
+    },
+    {
+      "R3Data": "344",
+      "R1Data": "344"
+    },
+    {
+      "R3Data": "345",
+      "R1Data": "345"
+    },
+    {
+      "R3Data": "346",
+      "R1Data": "346"
+    },
+    {
+      "R3Data": "347",
+      "R1Data": "347"
+    },
+    {
+      "R3Data": "348",
+      "R1Data": "348"
+    },
+    {
+      "R3Data": "349",
+      "R1Data": "349"
+    },
+    {
+      "R3Data": "350",
+      "R1Data": "350"
+    },
+    {
+      "R3Data": "351",
+      "R1Data": "351"
+    },
+    {
+      "R3Data": "352",
+      "R1Data": "352"
+    },
+    {
+      "R3Data": "353",
+      "R1Data": "353"
+    },
+    {
+      "R3Data": "354",
+      "R1Data": "354"
+    },
+    {
+      "R3Data": "355",
+      "R1Data": "355"
+    },
+    {
+      "R3Data": "356",
+      "R1Data": "356"
+    },
+    {
+      "R3Data": "357",
+      "R1Data": "357"
+    },
+    {
+      "R3Data": "358",
+      "R1Data": "358"
+    },
+    {
+      "R3Data": "359",
+      "R1Data": "359"
+    },
+    {
+      "R3Data": "360",
+      "R1Data": "360"
+    },
+    {
+      "R3Data": "361",
+      "R1Data": "361"
+    },
+    {
+      "R3Data": "362",
+      "R1Data": "362"
+    },
+    {
+      "R3Data": "363",
+      "R1Data": "363"
+    },
+    {
+      "R3Data": "364",
+      "R1Data": "364"
+    },
+    {
+      "R3Data": "365",
+      "R1Data": "365"
+    },
+    {
+      "R3Data": "366",
+      "R1Data": "366"
+    },
+    {
+      "R3Data": "367",
+      "R1Data": "367"
+    },
+    {
+      "R3Data": "368",
+      "R1Data": "368"
+    },
+    {
+      "R3Data": "369",
+      "R1Data": "369"
+    },
+    {
+      "R3Data": "370",
+      "R1Data": "370"
+    },
+    {
+      "R3Data": "371",
+      "R1Data": "371"
+    },
+    {
+      "R3Data": "372",
+      "R1Data": "372"
+    },
+    {
+      "R3Data": "381",
+      "R1Data": "381"
+    },
+    {
+      "R3Data": "382",
+      "R1Data": "382"
+    },
+    {
+      "R3Data": "383",
+      "R1Data": "383"
+    },
+    {
+      "R3Data": "384",
+      "R1Data": "384"
+    },
+    {
+      "R3Data": "385",
+      "R1Data": "385"
+    },
+    {
+      "R3Data": "386",
+      "R1Data": "386"
+    },
+    {
+      "R3Data": "387",
+      "R1Data": "387"
+    },
+    {
+      "R3Data": "388",
+      "R1Data": "388"
+    },
+    {
+      "R3Data": "389",
+      "R1Data": "389"
+    },
+    {
+      "R3Data": "390",
+      "R1Data": "390"
+    },
+    {
+      "R3Data": "391",
+      "R1Data": "391"
+    },
+    {
+      "R3Data": "392",
+      "R1Data": "392"
+    },
+    {
+      "R3Data": "393",
+      "R1Data": "393"
+    },
+    {
+      "R3Data": "394",
+      "R1Data": "394"
+    },
+    {
+      "R3Data": "314",
+      "R1Data": "314"
+    }
+  ],
+  "IndustryTypeID": [
+    {
+      "R3Data": "MAPPER-DEFAULT",
+      "R1Data": ""
+    },
+    {
+      "R3Data": "MAPPER-DEFAULT-CUST-GRP",
+      "R1Data": "111.4"
+    },
+    {
+      "R3Data": "10.1",
+      "R1Data": "10.1"
+    },
+    {
+      "R3Data": "104.11X",
+      "R1Data": "104.11X"
+    },
+    {
+      "R3Data": "70112",
+      "R1Data": "70112"
+    },
+    {
+      "R3Data": "50100",
+      "R1Data": "50100"
+    },
+    {
+      "R3Data": "50101",
+      "R1Data": "50101"
+    },
+    {
+      "R3Data": "50102",
+      "R1Data": "50102"
+    },
+    {
+      "R3Data": "50103",
+      "R1Data": "50103"
+    },
+    {
+      "R3Data": "50104",
+      "R1Data": "50104"
+    },
+    {
+      "R3Data": "50105",
+      "R1Data": "50105"
+    },
+    {
+      "R3Data": "50106",
+      "R1Data": "50106"
+    },
+    {
+      "R3Data": "50107",
+      "R1Data": "50107"
+    },
+    {
+      "R3Data": "50108",
+      "R1Data": "50108"
+    },
+    {
+      "R3Data": "50109",
+      "R1Data": "50109"
+    },
+    {
+      "R3Data": "70100",
+      "R1Data": "70100"
+    },
+    {
+      "R3Data": "70101",
+      "R1Data": "70101"
+    },
+    {
+      "R3Data": "70102",
+      "R1Data": "70102"
+    },
+    {
+      "R3Data": "70103",
+      "R1Data": "70103"
+    },
+    {
+      "R3Data": "70104",
+      "R1Data": "70104"
+    },
+    {
+      "R3Data": "70105",
+      "R1Data": "70105"
+    },
+    {
+      "R3Data": "60.1X",
+      "R1Data": "60.1X"
+    },
+    {
+      "R3Data": "10.9",
+      "R1Data": "10.9"
+    },
+    {
+      "R3Data": "70106",
+      "R1Data": "70106"
+    },
+    {
+      "R3Data": "70107",
+      "R1Data": "70107"
+    },
+    {
+      "R3Data": "70108",
+      "R1Data": "70108"
+    },
+    {
+      "R3Data": "70109",
+      "R1Data": "70109"
+    },
+    {
+      "R3Data": "70110",
+      "R1Data": "70110"
+    },
+    {
+      "R3Data": "70111",
+      "R1Data": "70111"
+    },
+    {
+      "R3Data": "70113",
+      "R1Data": "70113"
+    },
+    {
+      "R3Data": "70114",
+      "R1Data": "70114"
+    },
+    {
+      "R3Data": "70115",
+      "R1Data": "70115"
+    },
+    {
+      "R3Data": "70116",
+      "R1Data": "70116"
+    },
+    {
+      "R3Data": "70117",
+      "R1Data": "70117"
+    },
+    {
+      "R3Data": "70118",
+      "R1Data": "70118"
+    },
+    {
+      "R3Data": "70119",
+      "R1Data": "70119"
+    },
+    {
+      "R3Data": "70120",
+      "R1Data": "70120"
+    },
+    {
+      "R3Data": "70121",
+      "R1Data": "70121"
+    },
+    {
+      "R3Data": "70122",
+      "R1Data": "70122"
+    },
+    {
+      "R3Data": "70123",
+      "R1Data": "70123"
+    },
+    {
+      "R3Data": "70124",
+      "R1Data": "70124"
+    },
+    {
+      "R3Data": "70125",
+      "R1Data": "70125"
+    },
+    {
+      "R3Data": "70126",
+      "R1Data": "70126"
+    },
+    {
+      "R3Data": "70127",
+      "R1Data": "70127"
+    },
+    {
+      "R3Data": "70128",
+      "R1Data": "70128"
+    },
+    {
+      "R3Data": "70129",
+      "R1Data": "70129"
+    },
+    {
+      "R3Data": "70130",
+      "R1Data": "70130"
+    },
+    {
+      "R3Data": "60.31",
+      "R1Data": "60.31"
+    },
+    {
+      "R3Data": "70.72",
+      "R1Data": "70.72"
+    },
+    {
+      "R3Data": "70.73",
+      "R1Data": "70.73"
+    },
+    {
+      "R3Data": "70.74",
+      "R1Data": "70.74"
+    },
+    {
+      "R3Data": "70.75",
+      "R1Data": "70.75"
+    },
+    {
+      "R3Data": "70.9",
+      "R1Data": "70.9"
+    },
+    {
+      "R3Data": "10.10",
+      "R1Data": "10.10"
+    },
+    {
+      "R3Data": "10.11",
+      "R1Data": "10.11"
+    },
+    {
+      "R3Data": "10.12",
+      "R1Data": "10.12"
+    },
+    {
+      "R3Data": "10.13",
+      "R1Data": "10.13"
+    },
+    {
+      "R3Data": "10.14",
+      "R1Data": "10.14"
+    },
+    {
+      "R3Data": "10.15",
+      "R1Data": "10.15"
+    },
+    {
+      "R3Data": "10.16",
+      "R1Data": "10.16"
+    },
+    {
+      "R3Data": "10.17",
+      "R1Data": "10.17"
+    },
+    {
+      "R3Data": "10.18",
+      "R1Data": "10.18"
+    },
+    {
+      "R3Data": "10.19",
+      "R1Data": "10.19"
+    },
+    {
+      "R3Data": "10.2",
+      "R1Data": "10.2"
+    },
+    {
+      "R3Data": "10.20",
+      "R1Data": "10.20"
+    },
+    {
+      "R3Data": "10.21",
+      "R1Data": "10.21"
+    },
+    {
+      "R3Data": "10.22",
+      "R1Data": "10.22"
+    },
+    {
+      "R3Data": "10.23",
+      "R1Data": "10.23"
+    },
+    {
+      "R3Data": "10.24",
+      "R1Data": "10.24"
+    },
+    {
+      "R3Data": "10.25",
+      "R1Data": "10.25"
+    },
+    {
+      "R3Data": "10.26",
+      "R1Data": "10.26"
+    },
+    {
+      "R3Data": "10.27",
+      "R1Data": "10.27"
+    },
+    {
+      "R3Data": "10.28",
+      "R1Data": "10.28"
+    },
+    {
+      "R3Data": "10.29",
+      "R1Data": "10.29"
+    },
+    {
+      "R3Data": "10.3",
+      "R1Data": "10.3"
+    },
+    {
+      "R3Data": "10.30",
+      "R1Data": "10.30"
+    },
+    {
+      "R3Data": "10.31",
+      "R1Data": "10.31"
+    },
+    {
+      "R3Data": "10.32",
+      "R1Data": "10.32"
+    },
+    {
+      "R3Data": "10.33",
+      "R1Data": "10.33"
+    },
+    {
+      "R3Data": "10.34",
+      "R1Data": "10.34"
+    },
+    {
+      "R3Data": "10.35",
+      "R1Data": "10.35"
+    },
+    {
+      "R3Data": "10.36",
+      "R1Data": "10.36"
+    },
+    {
+      "R3Data": "10.37",
+      "R1Data": "10.37"
+    },
+    {
+      "R3Data": "10.38",
+      "R1Data": "10.38"
+    },
+    {
+      "R3Data": "10.39",
+      "R1Data": "10.39"
+    },
+    {
+      "R3Data": "10.4",
+      "R1Data": "10.4"
+    },
+    {
+      "R3Data": "10.40",
+      "R1Data": "10.40"
+    },
+    {
+      "R3Data": "10.41",
+      "R1Data": "10.41"
+    },
+    {
+      "R3Data": "10.42",
+      "R1Data": "10.42"
+    },
+    {
+      "R3Data": "10.43",
+      "R1Data": "10.43"
+    },
+    {
+      "R3Data": "10.44",
+      "R1Data": "10.44"
+    },
+    {
+      "R3Data": "10.45",
+      "R1Data": "10.45"
+    },
+    {
+      "R3Data": "10.5",
+      "R1Data": "10.5"
+    },
+    {
+      "R3Data": "10.6",
+      "R1Data": "10.6"
+    },
+    {
+      "R3Data": "10.7",
+      "R1Data": "10.7"
+    },
+    {
+      "R3Data": "10.8",
+      "R1Data": "10.8"
+    },
+    {
+      "R3Data": "100.1",
+      "R1Data": "100.1"
+    },
+    {
+      "R3Data": "100.2",
+      "R1Data": "100.2"
+    },
+    {
+      "R3Data": "100.3",
+      "R1Data": "100.3"
+    },
+    {
+      "R3Data": "100.4",
+      "R1Data": "100.4"
+    },
+    {
+      "R3Data": "100.5",
+      "R1Data": "100.5"
+    },
+    {
+      "R3Data": "100.6",
+      "R1Data": "100.6"
+    },
+    {
+      "R3Data": "100.7",
+      "R1Data": "100.7"
+    },
+    {
+      "R3Data": "100.8",
+      "R1Data": "100.8"
+    },
+    {
+      "R3Data": "101.1",
+      "R1Data": "101.1"
+    },
+    {
+      "R3Data": "101.10",
+      "R1Data": "101.10"
+    },
+    {
+      "R3Data": "101.2",
+      "R1Data": "101.2"
+    },
+    {
+      "R3Data": "101.3",
+      "R1Data": "101.3"
+    },
+    {
+      "R3Data": "101.4",
+      "R1Data": "101.4"
+    },
+    {
+      "R3Data": "101.5",
+      "R1Data": "101.5"
+    },
+    {
+      "R3Data": "101.6",
+      "R1Data": "101.6"
+    },
+    {
+      "R3Data": "101.7",
+      "R1Data": "101.7"
+    },
+    {
+      "R3Data": "101.8",
+      "R1Data": "101.8"
+    },
+    {
+      "R3Data": "101.9",
+      "R1Data": "101.9"
+    },
+    {
+      "R3Data": "102.1",
+      "R1Data": "102.1"
+    },
+    {
+      "R3Data": "103.1",
+      "R1Data": "103.1"
+    },
+    {
+      "R3Data": "103.2",
+      "R1Data": "103.2"
+    },
+    {
+      "R3Data": "103.3",
+      "R1Data": "103.3"
+    },
+    {
+      "R3Data": "103.4",
+      "R1Data": "103.4"
+    },
+    {
+      "R3Data": "103.5",
+      "R1Data": "103.5"
+    },
+    {
+      "R3Data": "103.6",
+      "R1Data": "103.6"
+    },
+    {
+      "R3Data": "103.7",
+      "R1Data": "103.7"
+    },
+    {
+      "R3Data": "103.8",
+      "R1Data": "103.8"
+    },
+    {
+      "R3Data": "104.1",
+      "R1Data": "104.1"
+    },
+    {
+      "R3Data": "104.10",
+      "R1Data": "104.10"
+    },
+    {
+      "R3Data": "104.11",
+      "R1Data": "104.11"
+    },
+    {
+      "R3Data": "104.12",
+      "R1Data": "104.12"
+    },
+    {
+      "R3Data": "104.2",
+      "R1Data": "104.2"
+    },
+    {
+      "R3Data": "104.3",
+      "R1Data": "104.3"
+    },
+    {
+      "R3Data": "104.4",
+      "R1Data": "104.4"
+    },
+    {
+      "R3Data": "104.5",
+      "R1Data": "104.5"
+    },
+    {
+      "R3Data": "104.6",
+      "R1Data": "104.6"
+    },
+    {
+      "R3Data": "104.7",
+      "R1Data": "104.7"
+    },
+    {
+      "R3Data": "104.8",
+      "R1Data": "104.8"
+    },
+    {
+      "R3Data": "104.9",
+      "R1Data": "104.9"
+    },
+    {
+      "R3Data": "105.1",
+      "R1Data": "105.1"
+    },
+    {
+      "R3Data": "105.2",
+      "R1Data": "105.2"
+    },
+    {
+      "R3Data": "105.3",
+      "R1Data": "105.3"
+    },
+    {
+      "R3Data": "106.1",
+      "R1Data": "106.1"
+    },
+    {
+      "R3Data": "106.2",
+      "R1Data": "106.2"
+    },
+    {
+      "R3Data": "106.3",
+      "R1Data": "106.3"
+    },
+    {
+      "R3Data": "106.4",
+      "R1Data": "106.4"
+    },
+    {
+      "R3Data": "107.1",
+      "R1Data": "107.1"
+    },
+    {
+      "R3Data": "107.2",
+      "R1Data": "107.2"
+    },
+    {
+      "R3Data": "107.3",
+      "R1Data": "107.3"
+    },
+    {
+      "R3Data": "107.4",
+      "R1Data": "107.4"
+    },
+    {
+      "R3Data": "107.5",
+      "R1Data": "107.5"
+    },
+    {
+      "R3Data": "108.1",
+      "R1Data": "108.1"
+    },
+    {
+      "R3Data": "109.1",
+      "R1Data": "109.1"
+    },
+    {
+      "R3Data": "110.2",
+      "R1Data": "110.2"
+    },
+    {
+      "R3Data": "110.3",
+      "R1Data": "110.3"
+    },
+    {
+      "R3Data": "110.4",
+      "R1Data": "110.4"
+    },
+    {
+      "R3Data": "111.1",
+      "R1Data": "111.1"
+    },
+    {
+      "R3Data": "111.2",
+      "R1Data": "111.2"
+    },
+    {
+      "R3Data": "111.3",
+      "R1Data": "111.3"
+    },
+    {
+      "R3Data": "111.4",
+      "R1Data": "111.4"
+    },
+    {
+      "R3Data": "111.5",
+      "R1Data": "111.5"
+    },
+    {
+      "R3Data": "112.1",
+      "R1Data": "112.1"
+    },
+    {
+      "R3Data": "113.1",
+      "R1Data": "113.1"
+    },
+    {
+      "R3Data": "113.2",
+      "R1Data": "113.2"
+    },
+    {
+      "R3Data": "114.1",
+      "R1Data": "114.1"
+    },
+    {
+      "R3Data": "114.10",
+      "R1Data": "114.10"
+    },
+    {
+      "R3Data": "114.11",
+      "R1Data": "114.11"
+    },
+    {
+      "R3Data": "114.12",
+      "R1Data": "114.12"
+    },
+    {
+      "R3Data": "114.13",
+      "R1Data": "114.13"
+    },
+    {
+      "R3Data": "114.14",
+      "R1Data": "114.14"
+    },
+    {
+      "R3Data": "114.15",
+      "R1Data": "114.15"
+    },
+    {
+      "R3Data": "114.16",
+      "R1Data": "114.16"
+    },
+    {
+      "R3Data": "114.17",
+      "R1Data": "114.17"
+    },
+    {
+      "R3Data": "114.18",
+      "R1Data": "114.18"
+    },
+    {
+      "R3Data": "114.19",
+      "R1Data": "114.19"
+    },
+    {
+      "R3Data": "114.2",
+      "R1Data": "114.2"
+    },
+    {
+      "R3Data": "114.20",
+      "R1Data": "114.20"
+    },
+    {
+      "R3Data": "114.21",
+      "R1Data": "114.21"
+    },
+    {
+      "R3Data": "114.22",
+      "R1Data": "114.22"
+    },
+    {
+      "R3Data": "114.23",
+      "R1Data": "114.23"
+    },
+    {
+      "R3Data": "114.24",
+      "R1Data": "114.24"
+    },
+    {
+      "R3Data": "114.25",
+      "R1Data": "114.25"
+    },
+    {
+      "R3Data": "114.3",
+      "R1Data": "114.3"
+    },
+    {
+      "R3Data": "114.4",
+      "R1Data": "114.4"
+    },
+    {
+      "R3Data": "114.5",
+      "R1Data": "114.5"
+    },
+    {
+      "R3Data": "114.6",
+      "R1Data": "114.6"
+    },
+    {
+      "R3Data": "114.7",
+      "R1Data": "114.7"
+    },
+    {
+      "R3Data": "114.8",
+      "R1Data": "114.8"
+    },
+    {
+      "R3Data": "114.9",
+      "R1Data": "114.9"
+    },
+    {
+      "R3Data": "115.1",
+      "R1Data": "115.1"
+    },
+    {
+      "R3Data": "20.1",
+      "R1Data": "20.1"
+    },
+    {
+      "R3Data": "20.2",
+      "R1Data": "20.2"
+    },
+    {
+      "R3Data": "20.3",
+      "R1Data": "20.3"
+    },
+    {
+      "R3Data": "20.4",
+      "R1Data": "20.4"
+    },
+    {
+      "R3Data": "20.5",
+      "R1Data": "20.5"
+    },
+    {
+      "R3Data": "30.1",
+      "R1Data": "30.1"
+    },
+    {
+      "R3Data": "30.10",
+      "R1Data": "30.10"
+    },
+    {
+      "R3Data": "30.11",
+      "R1Data": "30.11"
+    },
+    {
+      "R3Data": "30.12",
+      "R1Data": "30.12"
+    },
+    {
+      "R3Data": "30.13",
+      "R1Data": "30.13"
+    },
+    {
+      "R3Data": "30.14",
+      "R1Data": "30.14"
+    },
+    {
+      "R3Data": "30.15",
+      "R1Data": "30.15"
+    },
+    {
+      "R3Data": "30.16",
+      "R1Data": "30.16"
+    },
+    {
+      "R3Data": "30.17",
+      "R1Data": "30.17"
+    },
+    {
+      "R3Data": "30.18",
+      "R1Data": "30.18"
+    },
+    {
+      "R3Data": "30.19",
+      "R1Data": "30.19"
+    },
+    {
+      "R3Data": "30.2",
+      "R1Data": "30.2"
+    },
+    {
+      "R3Data": "30.20",
+      "R1Data": "30.20"
+    },
+    {
+      "R3Data": "30.3",
+      "R1Data": "30.3"
+    },
+    {
+      "R3Data": "30.4",
+      "R1Data": "30.4"
+    },
+    {
+      "R3Data": "30.5",
+      "R1Data": "30.5"
+    },
+    {
+      "R3Data": "110.4X",
+      "R1Data": "110.4X"
+    },
+    {
+      "R3Data": "30.6",
+      "R1Data": "30.6"
+    },
+    {
+      "R3Data": "30.7",
+      "R1Data": "30.7"
+    },
+    {
+      "R3Data": "30.8",
+      "R1Data": "30.8"
+    },
+    {
+      "R3Data": "30.9",
+      "R1Data": "30.9"
+    },
+    {
+      "R3Data": "40.1",
+      "R1Data": "40.1"
+    },
+    {
+      "R3Data": "40.10",
+      "R1Data": "40.10"
+    },
+    {
+      "R3Data": "40.11",
+      "R1Data": "40.11"
+    },
+    {
+      "R3Data": "40.12",
+      "R1Data": "40.12"
+    },
+    {
+      "R3Data": "40.13",
+      "R1Data": "40.13"
+    },
+    {
+      "R3Data": "40.14",
+      "R1Data": "40.14"
+    },
+    {
+      "R3Data": "40.15",
+      "R1Data": "40.15"
+    },
+    {
+      "R3Data": "40.16",
+      "R1Data": "40.16"
+    },
+    {
+      "R3Data": "40.17",
+      "R1Data": "40.17"
+    },
+    {
+      "R3Data": "40.18",
+      "R1Data": "40.18"
+    },
+    {
+      "R3Data": "40.2",
+      "R1Data": "40.2"
+    },
+    {
+      "R3Data": "40.3",
+      "R1Data": "40.3"
+    },
+    {
+      "R3Data": "40.4",
+      "R1Data": "40.4"
+    },
+    {
+      "R3Data": "40.5",
+      "R1Data": "40.5"
+    },
+    {
+      "R3Data": "40.6",
+      "R1Data": "40.6"
+    },
+    {
+      "R3Data": "40.7",
+      "R1Data": "40.7"
+    },
+    {
+      "R3Data": "40.8",
+      "R1Data": "40.8"
+    },
+    {
+      "R3Data": "40.9",
+      "R1Data": "40.9"
+    },
+    {
+      "R3Data": "50.1",
+      "R1Data": "50.1"
+    },
+    {
+      "R3Data": "50.10",
+      "R1Data": "50.10"
+    },
+    {
+      "R3Data": "50.100",
+      "R1Data": "50.100"
+    },
+    {
+      "R3Data": "50.101",
+      "R1Data": "50.101"
+    },
+    {
+      "R3Data": "50.102",
+      "R1Data": "50.102"
+    },
+    {
+      "R3Data": "50.103",
+      "R1Data": "50.103"
+    },
+    {
+      "R3Data": "50.104",
+      "R1Data": "50.104"
+    },
+    {
+      "R3Data": "50.105",
+      "R1Data": "50.105"
+    },
+    {
+      "R3Data": "50.106",
+      "R1Data": "50.106"
+    },
+    {
+      "R3Data": "50.107",
+      "R1Data": "50.107"
+    },
+    {
+      "R3Data": "50.108",
+      "R1Data": "50.108"
+    },
+    {
+      "R3Data": "50.109",
+      "R1Data": "50.109"
+    },
+    {
+      "R3Data": "50.11",
+      "R1Data": "50.11"
+    },
+    {
+      "R3Data": "50.12",
+      "R1Data": "50.12"
+    },
+    {
+      "R3Data": "50.13",
+      "R1Data": "50.13"
+    },
+    {
+      "R3Data": "50.14",
+      "R1Data": "50.14"
+    },
+    {
+      "R3Data": "50.15",
+      "R1Data": "50.15"
+    },
+    {
+      "R3Data": "50.16",
+      "R1Data": "50.16"
+    },
+    {
+      "R3Data": "50.17",
+      "R1Data": "50.17"
+    },
+    {
+      "R3Data": "50.18",
+      "R1Data": "50.18"
+    },
+    {
+      "R3Data": "50.19",
+      "R1Data": "50.19"
+    },
+    {
+      "R3Data": "50.2",
+      "R1Data": "50.2"
+    },
+    {
+      "R3Data": "50.20",
+      "R1Data": "50.20"
+    },
+    {
+      "R3Data": "50.21",
+      "R1Data": "50.21"
+    },
+    {
+      "R3Data": "50.22",
+      "R1Data": "50.22"
+    },
+    {
+      "R3Data": "50.23",
+      "R1Data": "50.23"
+    },
+    {
+      "R3Data": "50.24",
+      "R1Data": "50.24"
+    },
+    {
+      "R3Data": "50.25",
+      "R1Data": "50.25"
+    },
+    {
+      "R3Data": "50.26",
+      "R1Data": "50.26"
+    },
+    {
+      "R3Data": "50.27",
+      "R1Data": "50.27"
+    },
+    {
+      "R3Data": "50.28",
+      "R1Data": "50.28"
+    },
+    {
+      "R3Data": "50.29",
+      "R1Data": "50.29"
+    },
+    {
+      "R3Data": "50.3",
+      "R1Data": "50.3"
+    },
+    {
+      "R3Data": "50.30",
+      "R1Data": "50.30"
+    },
+    {
+      "R3Data": "50.31",
+      "R1Data": "50.31"
+    },
+    {
+      "R3Data": "50.32",
+      "R1Data": "50.32"
+    },
+    {
+      "R3Data": "50.33",
+      "R1Data": "50.33"
+    },
+    {
+      "R3Data": "50.34",
+      "R1Data": "50.34"
+    },
+    {
+      "R3Data": "50.35",
+      "R1Data": "50.35"
+    },
+    {
+      "R3Data": "50.36",
+      "R1Data": "50.36"
+    },
+    {
+      "R3Data": "50.37",
+      "R1Data": "50.37"
+    },
+    {
+      "R3Data": "50.38",
+      "R1Data": "50.38"
+    },
+    {
+      "R3Data": "50.39",
+      "R1Data": "50.39"
+    },
+    {
+      "R3Data": "50.4",
+      "R1Data": "50.4"
+    },
+    {
+      "R3Data": "50.40",
+      "R1Data": "50.40"
+    },
+    {
+      "R3Data": "50.41",
+      "R1Data": "50.41"
+    },
+    {
+      "R3Data": "50.42",
+      "R1Data": "50.42"
+    },
+    {
+      "R3Data": "50.43",
+      "R1Data": "50.43"
+    },
+    {
+      "R3Data": "50.44",
+      "R1Data": "50.44"
+    },
+    {
+      "R3Data": "50.45",
+      "R1Data": "50.45"
+    },
+    {
+      "R3Data": "50.46",
+      "R1Data": "50.46"
+    },
+    {
+      "R3Data": "50.47",
+      "R1Data": "50.47"
+    },
+    {
+      "R3Data": "50.48",
+      "R1Data": "50.48"
+    },
+    {
+      "R3Data": "50.49",
+      "R1Data": "50.49"
+    },
+    {
+      "R3Data": "50.5",
+      "R1Data": "50.5"
+    },
+    {
+      "R3Data": "50.50",
+      "R1Data": "50.50"
+    },
+    {
+      "R3Data": "50.51",
+      "R1Data": "50.51"
+    },
+    {
+      "R3Data": "50.52",
+      "R1Data": "50.52"
+    },
+    {
+      "R3Data": "50.53",
+      "R1Data": "50.53"
+    },
+    {
+      "R3Data": "50.54",
+      "R1Data": "50.54"
+    },
+    {
+      "R3Data": "50.55",
+      "R1Data": "50.55"
+    },
+    {
+      "R3Data": "50.56",
+      "R1Data": "50.56"
+    },
+    {
+      "R3Data": "50.57",
+      "R1Data": "50.57"
+    },
+    {
+      "R3Data": "50.58",
+      "R1Data": "50.58"
+    },
+    {
+      "R3Data": "50.59",
+      "R1Data": "50.59"
+    },
+    {
+      "R3Data": "50.6",
+      "R1Data": "50.6"
+    },
+    {
+      "R3Data": "50.60",
+      "R1Data": "50.60"
+    },
+    {
+      "R3Data": "50.61",
+      "R1Data": "50.61"
+    },
+    {
+      "R3Data": "50.62",
+      "R1Data": "50.62"
+    },
+    {
+      "R3Data": "50.63",
+      "R1Data": "50.63"
+    },
+    {
+      "R3Data": "50.64",
+      "R1Data": "50.64"
+    },
+    {
+      "R3Data": "50.65",
+      "R1Data": "50.65"
+    },
+    {
+      "R3Data": "50.66",
+      "R1Data": "50.66"
+    },
+    {
+      "R3Data": "50.67",
+      "R1Data": "50.67"
+    },
+    {
+      "R3Data": "50.68",
+      "R1Data": "50.68"
+    },
+    {
+      "R3Data": "50.69",
+      "R1Data": "50.69"
+    },
+    {
+      "R3Data": "50.7",
+      "R1Data": "50.7"
+    },
+    {
+      "R3Data": "50.70",
+      "R1Data": "50.70"
+    },
+    {
+      "R3Data": "50.71",
+      "R1Data": "50.71"
+    },
+    {
+      "R3Data": "50.72",
+      "R1Data": "50.72"
+    },
+    {
+      "R3Data": "50.73",
+      "R1Data": "50.73"
+    },
+    {
+      "R3Data": "50.74",
+      "R1Data": "50.74"
+    },
+    {
+      "R3Data": "50.75",
+      "R1Data": "50.75"
+    },
+    {
+      "R3Data": "50.76",
+      "R1Data": "50.76"
+    },
+    {
+      "R3Data": "50.77",
+      "R1Data": "50.77"
+    },
+    {
+      "R3Data": "50.78",
+      "R1Data": "50.78"
+    },
+    {
+      "R3Data": "50.79",
+      "R1Data": "50.79"
+    },
+    {
+      "R3Data": "50.8",
+      "R1Data": "50.8"
+    },
+    {
+      "R3Data": "50.80",
+      "R1Data": "50.80"
+    },
+    {
+      "R3Data": "50.81",
+      "R1Data": "50.81"
+    },
+    {
+      "R3Data": "50.82",
+      "R1Data": "50.82"
+    },
+    {
+      "R3Data": "50.83",
+      "R1Data": "50.83"
+    },
+    {
+      "R3Data": "50.84",
+      "R1Data": "50.84"
+    },
+    {
+      "R3Data": "50.85",
+      "R1Data": "50.85"
+    },
+    {
+      "R3Data": "50.86",
+      "R1Data": "50.86"
+    },
+    {
+      "R3Data": "50.87",
+      "R1Data": "50.87"
+    },
+    {
+      "R3Data": "50.88",
+      "R1Data": "50.88"
+    },
+    {
+      "R3Data": "50.89",
+      "R1Data": "50.89"
+    },
+    {
+      "R3Data": "50.9",
+      "R1Data": "50.9"
+    },
+    {
+      "R3Data": "50.90",
+      "R1Data": "50.90"
+    },
+    {
+      "R3Data": "50.91",
+      "R1Data": "50.91"
+    },
+    {
+      "R3Data": "50.92",
+      "R1Data": "50.92"
+    },
+    {
+      "R3Data": "50.93",
+      "R1Data": "50.93"
+    },
+    {
+      "R3Data": "50.94",
+      "R1Data": "50.94"
+    },
+    {
+      "R3Data": "50.95",
+      "R1Data": "50.95"
+    },
+    {
+      "R3Data": "50.96",
+      "R1Data": "50.96"
+    },
+    {
+      "R3Data": "50.97",
+      "R1Data": "50.97"
+    },
+    {
+      "R3Data": "50.98",
+      "R1Data": "50.98"
+    },
+    {
+      "R3Data": "50.99",
+      "R1Data": "50.99"
+    },
+    {
+      "R3Data": "60.1",
+      "R1Data": "60.1"
+    },
+    {
+      "R3Data": "60.10",
+      "R1Data": "60.10"
+    },
+    {
+      "R3Data": "60.11",
+      "R1Data": "60.11"
+    },
+    {
+      "R3Data": "60.12",
+      "R1Data": "60.12"
+    },
+    {
+      "R3Data": "60.13",
+      "R1Data": "60.13"
+    },
+    {
+      "R3Data": "60.14",
+      "R1Data": "60.14"
+    },
+    {
+      "R3Data": "60.15",
+      "R1Data": "60.15"
+    },
+    {
+      "R3Data": "60.16",
+      "R1Data": "60.16"
+    },
+    {
+      "R3Data": "60.17",
+      "R1Data": "60.17"
+    },
+    {
+      "R3Data": "60.18",
+      "R1Data": "60.18"
+    },
+    {
+      "R3Data": "60.19",
+      "R1Data": "60.19"
+    },
+    {
+      "R3Data": "60.2",
+      "R1Data": "60.2"
+    },
+    {
+      "R3Data": "60.20",
+      "R1Data": "60.20"
+    },
+    {
+      "R3Data": "60.21",
+      "R1Data": "60.21"
+    },
+    {
+      "R3Data": "60.22",
+      "R1Data": "60.22"
+    },
+    {
+      "R3Data": "60.23",
+      "R1Data": "60.23"
+    },
+    {
+      "R3Data": "60.24",
+      "R1Data": "60.24"
+    },
+    {
+      "R3Data": "60.25",
+      "R1Data": "60.25"
+    },
+    {
+      "R3Data": "60.26",
+      "R1Data": "60.26"
+    },
+    {
+      "R3Data": "60.27",
+      "R1Data": "60.27"
+    },
+    {
+      "R3Data": "60.28",
+      "R1Data": "60.28"
+    },
+    {
+      "R3Data": "60.29",
+      "R1Data": "60.29"
+    },
+    {
+      "R3Data": "60.3",
+      "R1Data": "60.3"
+    },
+    {
+      "R3Data": "60.30",
+      "R1Data": "60.30"
+    },
+    {
+      "R3Data": "60.32",
+      "R1Data": "60.32"
+    },
+    {
+      "R3Data": "60.33",
+      "R1Data": "60.33"
+    },
+    {
+      "R3Data": "60.4",
+      "R1Data": "60.4"
+    },
+    {
+      "R3Data": "60.5",
+      "R1Data": "60.5"
+    },
+    {
+      "R3Data": "60.6",
+      "R1Data": "60.6"
+    },
+    {
+      "R3Data": "60.7",
+      "R1Data": "60.7"
+    },
+    {
+      "R3Data": "60.8",
+      "R1Data": "60.8"
+    },
+    {
+      "R3Data": "60.9",
+      "R1Data": "60.9"
+    },
+    {
+      "R3Data": "70.1",
+      "R1Data": "70.1"
+    },
+    {
+      "R3Data": "70.10",
+      "R1Data": "70.10"
+    },
+    {
+      "R3Data": "70.100",
+      "R1Data": "70.100"
+    },
+    {
+      "R3Data": "70.101",
+      "R1Data": "70.101"
+    },
+    {
+      "R3Data": "70.102",
+      "R1Data": "70.102"
+    },
+    {
+      "R3Data": "70.103",
+      "R1Data": "70.103"
+    },
+    {
+      "R3Data": "70.104",
+      "R1Data": "70.104"
+    },
+    {
+      "R3Data": "70.105",
+      "R1Data": "70.105"
+    },
+    {
+      "R3Data": "70.106",
+      "R1Data": "70.106"
+    },
+    {
+      "R3Data": "70.107",
+      "R1Data": "70.107"
+    },
+    {
+      "R3Data": "70.108",
+      "R1Data": "70.108"
+    },
+    {
+      "R3Data": "70.109",
+      "R1Data": "70.109"
+    },
+    {
+      "R3Data": "70.11",
+      "R1Data": "70.11"
+    },
+    {
+      "R3Data": "70.110",
+      "R1Data": "70.110"
+    },
+    {
+      "R3Data": "70.111",
+      "R1Data": "70.111"
+    },
+    {
+      "R3Data": "70.112",
+      "R1Data": "70.112"
+    },
+    {
+      "R3Data": "70.113",
+      "R1Data": "70.113"
+    },
+    {
+      "R3Data": "70.114",
+      "R1Data": "70.114"
+    },
+    {
+      "R3Data": "70.115",
+      "R1Data": "70.115"
+    },
+    {
+      "R3Data": "70.116",
+      "R1Data": "70.116"
+    },
+    {
+      "R3Data": "70.117",
+      "R1Data": "70.117"
+    },
+    {
+      "R3Data": "70.118",
+      "R1Data": "70.118"
+    },
+    {
+      "R3Data": "70.119",
+      "R1Data": "70.119"
+    },
+    {
+      "R3Data": "70.12",
+      "R1Data": "70.12"
+    },
+    {
+      "R3Data": "70.120",
+      "R1Data": "70.120"
+    },
+    {
+      "R3Data": "70.121",
+      "R1Data": "70.121"
+    },
+    {
+      "R3Data": "70.122",
+      "R1Data": "70.122"
+    },
+    {
+      "R3Data": "70.123",
+      "R1Data": "70.123"
+    },
+    {
+      "R3Data": "70.124",
+      "R1Data": "70.124"
+    },
+    {
+      "R3Data": "70.125",
+      "R1Data": "70.125"
+    },
+    {
+      "R3Data": "70.126",
+      "R1Data": "70.126"
+    },
+    {
+      "R3Data": "70.127",
+      "R1Data": "70.127"
+    },
+    {
+      "R3Data": "70.128",
+      "R1Data": "70.128"
+    },
+    {
+      "R3Data": "70.129",
+      "R1Data": "70.129"
+    },
+    {
+      "R3Data": "70.13",
+      "R1Data": "70.13"
+    },
+    {
+      "R3Data": "70.130",
+      "R1Data": "70.130"
+    },
+    {
+      "R3Data": "70.14",
+      "R1Data": "70.14"
+    },
+    {
+      "R3Data": "70.15",
+      "R1Data": "70.15"
+    },
+    {
+      "R3Data": "70.16",
+      "R1Data": "70.16"
+    },
+    {
+      "R3Data": "70.17",
+      "R1Data": "70.17"
+    },
+    {
+      "R3Data": "70.18",
+      "R1Data": "70.18"
+    },
+    {
+      "R3Data": "70.19",
+      "R1Data": "70.19"
+    },
+    {
+      "R3Data": "70.2",
+      "R1Data": "70.2"
+    },
+    {
+      "R3Data": "70.20",
+      "R1Data": "70.20"
+    },
+    {
+      "R3Data": "70.21",
+      "R1Data": "70.21"
+    },
+    {
+      "R3Data": "70.22",
+      "R1Data": "70.22"
+    },
+    {
+      "R3Data": "70.23",
+      "R1Data": "70.23"
+    },
+    {
+      "R3Data": "70.24",
+      "R1Data": "70.24"
+    },
+    {
+      "R3Data": "70.25",
+      "R1Data": "70.25"
+    },
+    {
+      "R3Data": "70.26",
+      "R1Data": "70.26"
+    },
+    {
+      "R3Data": "70.27",
+      "R1Data": "70.27"
+    },
+    {
+      "R3Data": "70.28",
+      "R1Data": "70.28"
+    },
+    {
+      "R3Data": "70.29",
+      "R1Data": "70.29"
+    },
+    {
+      "R3Data": "70.3",
+      "R1Data": "70.3"
+    },
+    {
+      "R3Data": "70.30",
+      "R1Data": "70.30"
+    },
+    {
+      "R3Data": "70.31",
+      "R1Data": "70.31"
+    },
+    {
+      "R3Data": "70.32",
+      "R1Data": "70.32"
+    },
+    {
+      "R3Data": "70.33",
+      "R1Data": "70.33"
+    },
+    {
+      "R3Data": "70.34",
+      "R1Data": "70.34"
+    },
+    {
+      "R3Data": "70.35",
+      "R1Data": "70.35"
+    },
+    {
+      "R3Data": "70.36",
+      "R1Data": "70.36"
+    },
+    {
+      "R3Data": "70.37",
+      "R1Data": "70.37"
+    },
+    {
+      "R3Data": "70.38",
+      "R1Data": "70.38"
+    },
+    {
+      "R3Data": "70.39",
+      "R1Data": "70.39"
+    },
+    {
+      "R3Data": "70.4",
+      "R1Data": "70.4"
+    },
+    {
+      "R3Data": "70.40",
+      "R1Data": "70.40"
+    },
+    {
+      "R3Data": "70.41",
+      "R1Data": "70.41"
+    },
+    {
+      "R3Data": "70.42",
+      "R1Data": "70.42"
+    },
+    {
+      "R3Data": "70.43",
+      "R1Data": "70.43"
+    },
+    {
+      "R3Data": "70.44",
+      "R1Data": "70.44"
+    },
+    {
+      "R3Data": "70.45",
+      "R1Data": "70.45"
+    },
+    {
+      "R3Data": "70.46",
+      "R1Data": "70.46"
+    },
+    {
+      "R3Data": "70.47",
+      "R1Data": "70.47"
+    },
+    {
+      "R3Data": "70.48",
+      "R1Data": "70.48"
+    },
+    {
+      "R3Data": "70.49",
+      "R1Data": "70.49"
+    },
+    {
+      "R3Data": "70.5",
+      "R1Data": "70.5"
+    },
+    {
+      "R3Data": "70.50",
+      "R1Data": "70.50"
+    },
+    {
+      "R3Data": "70.51",
+      "R1Data": "70.51"
+    },
+    {
+      "R3Data": "70.52",
+      "R1Data": "70.52"
+    },
+    {
+      "R3Data": "70.53",
+      "R1Data": "70.53"
+    },
+    {
+      "R3Data": "70.54",
+      "R1Data": "70.54"
+    },
+    {
+      "R3Data": "70.55",
+      "R1Data": "70.55"
+    },
+    {
+      "R3Data": "70.56",
+      "R1Data": "70.56"
+    },
+    {
+      "R3Data": "70.57",
+      "R1Data": "70.57"
+    },
+    {
+      "R3Data": "70.58",
+      "R1Data": "70.58"
+    },
+    {
+      "R3Data": "70.59",
+      "R1Data": "70.59"
+    },
+    {
+      "R3Data": "70.6",
+      "R1Data": "70.6"
+    },
+    {
+      "R3Data": "70.60",
+      "R1Data": "70.60"
+    },
+    {
+      "R3Data": "70.61",
+      "R1Data": "70.61"
+    },
+    {
+      "R3Data": "70.62",
+      "R1Data": "70.62"
+    },
+    {
+      "R3Data": "70.63",
+      "R1Data": "70.63"
+    },
+    {
+      "R3Data": "70.64",
+      "R1Data": "70.64"
+    },
+    {
+      "R3Data": "70.65",
+      "R1Data": "70.65"
+    },
+    {
+      "R3Data": "70.66",
+      "R1Data": "70.66"
+    },
+    {
+      "R3Data": "70.67",
+      "R1Data": "70.67"
+    },
+    {
+      "R3Data": "70.68",
+      "R1Data": "70.68"
+    },
+    {
+      "R3Data": "70.69",
+      "R1Data": "70.69"
+    },
+    {
+      "R3Data": "70.7",
+      "R1Data": "70.7"
+    },
+    {
+      "R3Data": "70.70",
+      "R1Data": "70.70"
+    },
+    {
+      "R3Data": "70.71",
+      "R1Data": "70.71"
+    },
+    {
+      "R3Data": "70.76",
+      "R1Data": "70.76"
+    },
+    {
+      "R3Data": "70.77",
+      "R1Data": "70.77"
+    },
+    {
+      "R3Data": "70.78",
+      "R1Data": "70.78"
+    },
+    {
+      "R3Data": "70.79",
+      "R1Data": "70.79"
+    },
+    {
+      "R3Data": "70.8",
+      "R1Data": "70.8"
+    },
+    {
+      "R3Data": "70.80",
+      "R1Data": "70.80"
+    },
+    {
+      "R3Data": "70.81",
+      "R1Data": "70.81"
+    },
+    {
+      "R3Data": "70.82",
+      "R1Data": "70.82"
+    },
+    {
+      "R3Data": "70.83",
+      "R1Data": "70.83"
+    },
+    {
+      "R3Data": "70.84",
+      "R1Data": "70.84"
+    },
+    {
+      "R3Data": "70.85",
+      "R1Data": "70.85"
+    },
+    {
+      "R3Data": "70.86",
+      "R1Data": "70.86"
+    },
+    {
+      "R3Data": "70.87",
+      "R1Data": "70.87"
+    },
+    {
+      "R3Data": "70.88",
+      "R1Data": "70.88"
+    },
+    {
+      "R3Data": "70.89",
+      "R1Data": "70.89"
+    },
+    {
+      "R3Data": "70.90",
+      "R1Data": "70.90"
+    },
+    {
+      "R3Data": "70.91",
+      "R1Data": "70.91"
+    },
+    {
+      "R3Data": "70.92",
+      "R1Data": "70.92"
+    },
+    {
+      "R3Data": "70.93",
+      "R1Data": "70.93"
+    },
+    {
+      "R3Data": "70.94",
+      "R1Data": "70.94"
+    },
+    {
+      "R3Data": "70.95",
+      "R1Data": "70.95"
+    },
+    {
+      "R3Data": "70.96",
+      "R1Data": "70.96"
+    },
+    {
+      "R3Data": "70.97",
+      "R1Data": "70.97"
+    },
+    {
+      "R3Data": "70.98",
+      "R1Data": "70.98"
+    },
+    {
+      "R3Data": "70.99",
+      "R1Data": "70.99"
+    },
+    {
+      "R3Data": "80.1",
+      "R1Data": "80.1"
+    },
+    {
+      "R3Data": "80.2",
+      "R1Data": "80.2"
+    },
+    {
+      "R3Data": "80.3",
+      "R1Data": "80.3"
+    },
+    {
+      "R3Data": "80.4",
+      "R1Data": "80.4"
+    },
+    {
+      "R3Data": "80.5",
+      "R1Data": "80.5"
+    },
+    {
+      "R3Data": "107.1X",
+      "R1Data": "107.1X"
+    },
+    {
+      "R3Data": "107.2X",
+      "R1Data": "107.2X"
+    },
+    {
+      "R3Data": "107.3X",
+      "R1Data": "107.3X"
+    },
+    {
+      "R3Data": "107.4X",
+      "R1Data": "107.4X"
+    },
+    {
+      "R3Data": "107.5X",
+      "R1Data": "107.5X"
+    },
+    {
+      "R3Data": "108.1X",
+      "R1Data": "108.1X"
+    },
+    {
+      "R3Data": "109.1X",
+      "R1Data": "109.1X"
+    },
+    {
+      "R3Data": "110.2X",
+      "R1Data": "110.2X"
+    },
+    {
+      "R3Data": "110.3X",
+      "R1Data": "110.3X"
+    },
+    {
+      "R3Data": "50.98X",
+      "R1Data": "50.98X"
+    },
+    {
+      "R3Data": "100.1X",
+      "R1Data": "100.1X"
+    },
+    {
+      "R3Data": "100.2X",
+      "R1Data": "100.2X"
+    },
+    {
+      "R3Data": "100.3X",
+      "R1Data": "100.3X"
+    },
+    {
+      "R3Data": "100.4X",
+      "R1Data": "100.4X"
+    },
+    {
+      "R3Data": "100.5X",
+      "R1Data": "100.5X"
+    },
+    {
+      "R3Data": "100.6X",
+      "R1Data": "100.6X"
+    },
+    {
+      "R3Data": "100.7X",
+      "R1Data": "100.7X"
+    },
+    {
+      "R3Data": "100.8X",
+      "R1Data": "100.8X"
+    },
+    {
+      "R3Data": "101.1X",
+      "R1Data": "101.1X"
+    },
+    {
+      "R3Data": "101.2X",
+      "R1Data": "101.2X"
+    },
+    {
+      "R3Data": "101.3X",
+      "R1Data": "101.3X"
+    },
+    {
+      "R3Data": "101.4X",
+      "R1Data": "101.4X"
+    },
+    {
+      "R3Data": "101.5X",
+      "R1Data": "101.5X"
+    },
+    {
+      "R3Data": "101.6X",
+      "R1Data": "101.6X"
+    },
+    {
+      "R3Data": "103.6X",
+      "R1Data": "103.6X"
+    },
+    {
+      "R3Data": "103.7X",
+      "R1Data": "103.7X"
+    },
+    {
+      "R3Data": "10.15X",
+      "R1Data": "10.15X"
+    },
+    {
+      "R3Data": "10.18X",
+      "R1Data": "10.18X"
+    },
+    {
+      "R3Data": "103.8X",
+      "R1Data": "103.8X"
+    },
+    {
+      "R3Data": "104.1X",
+      "R1Data": "104.1X"
+    },
+    {
+      "R3Data": "104.12X",
+      "R1Data": "104.12X"
+    },
+    {
+      "R3Data": "104.2X",
+      "R1Data": "104.2X"
+    },
+    {
+      "R3Data": "104.3X",
+      "R1Data": "104.3X"
+    },
+    {
+      "R3Data": "104.4X",
+      "R1Data": "104.4X"
+    },
+    {
+      "R3Data": "104.5X",
+      "R1Data": "104.5X"
+    },
+    {
+      "R3Data": "104.6X",
+      "R1Data": "104.6X"
+    },
+    {
+      "R3Data": "104.7X",
+      "R1Data": "104.7X"
+    },
+    {
+      "R3Data": "104.8X",
+      "R1Data": "104.8X"
+    },
+    {
+      "R3Data": "104.9X",
+      "R1Data": "104.9X"
+    },
+    {
+      "R3Data": "105.1X",
+      "R1Data": "105.1X"
+    },
+    {
+      "R3Data": "105.2X",
+      "R1Data": "105.2X"
+    },
+    {
+      "R3Data": "105.3X",
+      "R1Data": "105.3X"
+    },
+    {
+      "R3Data": "106.1X",
+      "R1Data": "106.1X"
+    },
+    {
+      "R3Data": "106.2X",
+      "R1Data": "106.2X"
+    },
+    {
+      "R3Data": "106.3X",
+      "R1Data": "106.3X"
+    },
+    {
+      "R3Data": "106.4X",
+      "R1Data": "106.4X"
+    },
+    {
+      "R3Data": "111.1X",
+      "R1Data": "111.1X"
+    },
+    {
+      "R3Data": "111.2X",
+      "R1Data": "111.2X"
+    },
+    {
+      "R3Data": "111.3X",
+      "R1Data": "111.3X"
+    },
+    {
+      "R3Data": "111.4X",
+      "R1Data": "111.4X"
+    },
+    {
+      "R3Data": "111.5X",
+      "R1Data": "111.5X"
+    },
+    {
+      "R3Data": "112.1X",
+      "R1Data": "112.1X"
+    },
+    {
+      "R3Data": "113.1X",
+      "R1Data": "113.1X"
+    },
+    {
+      "R3Data": "113.2X",
+      "R1Data": "113.2X"
+    },
+    {
+      "R3Data": "114.1X",
+      "R1Data": "114.1X"
+    },
+    {
+      "R3Data": "114.11X",
+      "R1Data": "114.11X"
+    },
+    {
+      "R3Data": "114.12X",
+      "R1Data": "114.12X"
+    },
+    {
+      "R3Data": "114.13X",
+      "R1Data": "114.13X"
+    },
+    {
+      "R3Data": "114.14X",
+      "R1Data": "114.14X"
+    },
+    {
+      "R3Data": "114.15X",
+      "R1Data": "114.15X"
+    },
+    {
+      "R3Data": "114.16X",
+      "R1Data": "114.16X"
+    },
+    {
+      "R3Data": "40.8X",
+      "R1Data": "40.8X"
+    },
+    {
+      "R3Data": "114.17X",
+      "R1Data": "114.17X"
+    },
+    {
+      "R3Data": "114.18X",
+      "R1Data": "114.18X"
+    },
+    {
+      "R3Data": "114.19X",
+      "R1Data": "114.19X"
+    },
+    {
+      "R3Data": "114.2X",
+      "R1Data": "114.2X"
+    },
+    {
+      "R3Data": "114.21X",
+      "R1Data": "114.21X"
+    },
+    {
+      "R3Data": "114.22X",
+      "R1Data": "114.22X"
+    },
+    {
+      "R3Data": "114.23X",
+      "R1Data": "114.23X"
+    },
+    {
+      "R3Data": "114.24X",
+      "R1Data": "114.24X"
+    },
+    {
+      "R3Data": "114.25X",
+      "R1Data": "114.25X"
+    },
+    {
+      "R3Data": "114.3X",
+      "R1Data": "114.3X"
+    },
+    {
+      "R3Data": "114.4X",
+      "R1Data": "114.4X"
+    },
+    {
+      "R3Data": "114.5X",
+      "R1Data": "114.5X"
+    },
+    {
+      "R3Data": "114.6X",
+      "R1Data": "114.6X"
+    },
+    {
+      "R3Data": "114.7X",
+      "R1Data": "114.7X"
+    },
+    {
+      "R3Data": "114.8X",
+      "R1Data": "114.8X"
+    },
+    {
+      "R3Data": "114.9X",
+      "R1Data": "114.9X"
+    },
+    {
+      "R3Data": "115.1X",
+      "R1Data": "115.1X"
+    },
+    {
+      "R3Data": "20.1X",
+      "R1Data": "20.1X"
+    },
+    {
+      "R3Data": "20.2X",
+      "R1Data": "20.2X"
+    },
+    {
+      "R3Data": "20.3X",
+      "R1Data": "20.3X"
+    },
+    {
+      "R3Data": "20.4X",
+      "R1Data": "20.4X"
+    },
+    {
+      "R3Data": "20.5X",
+      "R1Data": "20.5X"
+    },
+    {
+      "R3Data": "30.1X",
+      "R1Data": "30.1X"
+    },
+    {
+      "R3Data": "30.11X",
+      "R1Data": "30.11X"
+    },
+    {
+      "R3Data": "30.12X",
+      "R1Data": "30.12X"
+    },
+    {
+      "R3Data": "30.13X",
+      "R1Data": "30.13X"
+    },
+    {
+      "R3Data": "30.14X",
+      "R1Data": "30.14X"
+    },
+    {
+      "R3Data": "30.15X",
+      "R1Data": "30.15X"
+    },
+    {
+      "R3Data": "30.16X",
+      "R1Data": "30.16X"
+    },
+    {
+      "R3Data": "30.17X",
+      "R1Data": "30.17X"
+    },
+    {
+      "R3Data": "30.18X",
+      "R1Data": "30.18X"
+    },
+    {
+      "R3Data": "30.19X",
+      "R1Data": "30.19X"
+    },
+    {
+      "R3Data": "30.2X",
+      "R1Data": "30.2X"
+    },
+    {
+      "R3Data": "30.3X",
+      "R1Data": "30.3X"
+    },
+    {
+      "R3Data": "30.4X",
+      "R1Data": "30.4X"
+    },
+    {
+      "R3Data": "30.5X",
+      "R1Data": "30.5X"
+    },
+    {
+      "R3Data": "30.6X",
+      "R1Data": "30.6X"
+    },
+    {
+      "R3Data": "30.7X",
+      "R1Data": "30.7X"
+    },
+    {
+      "R3Data": "30.8X",
+      "R1Data": "30.8X"
+    },
+    {
+      "R3Data": "30.9X",
+      "R1Data": "30.9X"
+    },
+    {
+      "R3Data": "40.1X",
+      "R1Data": "40.1X"
+    },
+    {
+      "R3Data": "40.11X",
+      "R1Data": "40.11X"
+    },
+    {
+      "R3Data": "40.12X",
+      "R1Data": "40.12X"
+    },
+    {
+      "R3Data": "40.13X",
+      "R1Data": "40.13X"
+    },
+    {
+      "R3Data": "40.14X",
+      "R1Data": "40.14X"
+    },
+    {
+      "R3Data": "40.15X",
+      "R1Data": "40.15X"
+    },
+    {
+      "R3Data": "40.16X",
+      "R1Data": "40.16X"
+    },
+    {
+      "R3Data": "40.17X",
+      "R1Data": "40.17X"
+    },
+    {
+      "R3Data": "40.18X",
+      "R1Data": "40.18X"
+    },
+    {
+      "R3Data": "40.2X",
+      "R1Data": "40.2X"
+    },
+    {
+      "R3Data": "40.3X",
+      "R1Data": "40.3X"
+    },
+    {
+      "R3Data": "40.4X",
+      "R1Data": "40.4X"
+    },
+    {
+      "R3Data": "40.5X",
+      "R1Data": "40.5X"
+    },
+    {
+      "R3Data": "40.6X",
+      "R1Data": "40.6X"
+    },
+    {
+      "R3Data": "40.7X",
+      "R1Data": "40.7X"
+    },
+    {
+      "R3Data": "40.9X",
+      "R1Data": "40.9X"
+    },
+    {
+      "R3Data": "50.1X",
+      "R1Data": "50.1X"
+    },
+    {
+      "R3Data": "50.6X",
+      "R1Data": "50.6X"
+    },
+    {
+      "R3Data": "50.11X",
+      "R1Data": "50.11X"
+    },
+    {
+      "R3Data": "50.12X",
+      "R1Data": "50.12X"
+    },
+    {
+      "R3Data": "50.13X",
+      "R1Data": "50.13X"
+    },
+    {
+      "R3Data": "50.14X",
+      "R1Data": "50.14X"
+    },
+    {
+      "R3Data": "50.15X",
+      "R1Data": "50.15X"
+    },
+    {
+      "R3Data": "50.16X",
+      "R1Data": "50.16X"
+    },
+    {
+      "R3Data": "50.17X",
+      "R1Data": "50.17X"
+    },
+    {
+      "R3Data": "50.18X",
+      "R1Data": "50.18X"
+    },
+    {
+      "R3Data": "50.19X",
+      "R1Data": "50.19X"
+    },
+    {
+      "R3Data": "50.2X",
+      "R1Data": "50.2X"
+    },
+    {
+      "R3Data": "50.21X",
+      "R1Data": "50.21X"
+    },
+    {
+      "R3Data": "50.22X",
+      "R1Data": "50.22X"
+    },
+    {
+      "R3Data": "50.23X",
+      "R1Data": "50.23X"
+    },
+    {
+      "R3Data": "50.24X",
+      "R1Data": "50.24X"
+    },
+    {
+      "R3Data": "50.25X",
+      "R1Data": "50.25X"
+    },
+    {
+      "R3Data": "50.26X",
+      "R1Data": "50.26X"
+    },
+    {
+      "R3Data": "50.27X",
+      "R1Data": "50.27X"
+    },
+    {
+      "R3Data": "50.28X",
+      "R1Data": "50.28X"
+    },
+    {
+      "R3Data": "50.29X",
+      "R1Data": "50.29X"
+    },
+    {
+      "R3Data": "50.3X",
+      "R1Data": "50.3X"
+    },
+    {
+      "R3Data": "50.31X",
+      "R1Data": "50.31X"
+    },
+    {
+      "R3Data": "50.32X",
+      "R1Data": "50.32X"
+    },
+    {
+      "R3Data": "50.33X",
+      "R1Data": "50.33X"
+    },
+    {
+      "R3Data": "50.34X",
+      "R1Data": "50.34X"
+    },
+    {
+      "R3Data": "50.35X",
+      "R1Data": "50.35X"
+    },
+    {
+      "R3Data": "50.36X",
+      "R1Data": "50.36X"
+    },
+    {
+      "R3Data": "50.37X",
+      "R1Data": "50.37X"
+    },
+    {
+      "R3Data": "50.38X",
+      "R1Data": "50.38X"
+    },
+    {
+      "R3Data": "50.39X",
+      "R1Data": "50.39X"
+    },
+    {
+      "R3Data": "50.4X",
+      "R1Data": "50.4X"
+    },
+    {
+      "R3Data": "50.41X",
+      "R1Data": "50.41X"
+    },
+    {
+      "R3Data": "50.42X",
+      "R1Data": "50.42X"
+    },
+    {
+      "R3Data": "50.43X",
+      "R1Data": "50.43X"
+    },
+    {
+      "R3Data": "50.44X",
+      "R1Data": "50.44X"
+    },
+    {
+      "R3Data": "50.45X",
+      "R1Data": "50.45X"
+    },
+    {
+      "R3Data": "50.46X",
+      "R1Data": "50.46X"
+    },
+    {
+      "R3Data": "50.47X",
+      "R1Data": "50.47X"
+    },
+    {
+      "R3Data": "50.48X",
+      "R1Data": "50.48X"
+    },
+    {
+      "R3Data": "50.49X",
+      "R1Data": "50.49X"
+    },
+    {
+      "R3Data": "50.5X",
+      "R1Data": "50.5X"
+    },
+    {
+      "R3Data": "50.51X",
+      "R1Data": "50.51X"
+    },
+    {
+      "R3Data": "50.52X",
+      "R1Data": "50.52X"
+    },
+    {
+      "R3Data": "50.53X",
+      "R1Data": "50.53X"
+    },
+    {
+      "R3Data": "50.54X",
+      "R1Data": "50.54X"
+    },
+    {
+      "R3Data": "50.55X",
+      "R1Data": "50.55X"
+    },
+    {
+      "R3Data": "50.56X",
+      "R1Data": "50.56X"
+    },
+    {
+      "R3Data": "50.57X",
+      "R1Data": "50.57X"
+    },
+    {
+      "R3Data": "50.58X",
+      "R1Data": "50.58X"
+    },
+    {
+      "R3Data": "50.59X",
+      "R1Data": "50.59X"
+    },
+    {
+      "R3Data": "50.61X",
+      "R1Data": "50.61X"
+    },
+    {
+      "R3Data": "50.62X",
+      "R1Data": "50.62X"
+    },
+    {
+      "R3Data": "50.63X",
+      "R1Data": "50.63X"
+    },
+    {
+      "R3Data": "50.64X",
+      "R1Data": "50.64X"
+    },
+    {
+      "R3Data": "50.65X",
+      "R1Data": "50.65X"
+    },
+    {
+      "R3Data": "50.66X",
+      "R1Data": "50.66X"
+    },
+    {
+      "R3Data": "50.67X",
+      "R1Data": "50.67X"
+    },
+    {
+      "R3Data": "50.68X",
+      "R1Data": "50.68X"
+    },
+    {
+      "R3Data": "50.69X",
+      "R1Data": "50.69X"
+    },
+    {
+      "R3Data": "50.7X",
+      "R1Data": "50.7X"
+    },
+    {
+      "R3Data": "50.71X",
+      "R1Data": "50.71X"
+    },
+    {
+      "R3Data": "50.72X",
+      "R1Data": "50.72X"
+    },
+    {
+      "R3Data": "50.73X",
+      "R1Data": "50.73X"
+    },
+    {
+      "R3Data": "50.74X",
+      "R1Data": "50.74X"
+    },
+    {
+      "R3Data": "50.75X",
+      "R1Data": "50.75X"
+    },
+    {
+      "R3Data": "50.76X",
+      "R1Data": "50.76X"
+    },
+    {
+      "R3Data": "50.77X",
+      "R1Data": "50.77X"
+    },
+    {
+      "R3Data": "50.78X",
+      "R1Data": "50.78X"
+    },
+    {
+      "R3Data": "50.79X",
+      "R1Data": "50.79X"
+    },
+    {
+      "R3Data": "50.8X",
+      "R1Data": "50.8X"
+    },
+    {
+      "R3Data": "50.81X",
+      "R1Data": "50.81X"
+    },
+    {
+      "R3Data": "50.82X",
+      "R1Data": "50.82X"
+    },
+    {
+      "R3Data": "50.83X",
+      "R1Data": "50.83X"
+    },
+    {
+      "R3Data": "50.84X",
+      "R1Data": "50.84X"
+    },
+    {
+      "R3Data": "50.85X",
+      "R1Data": "50.85X"
+    },
+    {
+      "R3Data": "50.86X",
+      "R1Data": "50.86X"
+    },
+    {
+      "R3Data": "50.87X",
+      "R1Data": "50.87X"
+    },
+    {
+      "R3Data": "50.88X",
+      "R1Data": "50.88X"
+    },
+    {
+      "R3Data": "50.89X",
+      "R1Data": "50.89X"
+    },
+    {
+      "R3Data": "50.9X",
+      "R1Data": "50.9X"
+    },
+    {
+      "R3Data": "50.91X",
+      "R1Data": "50.91X"
+    },
+    {
+      "R3Data": "50.92X",
+      "R1Data": "50.92X"
+    },
+    {
+      "R3Data": "50.93X",
+      "R1Data": "50.93X"
+    },
+    {
+      "R3Data": "50.94X",
+      "R1Data": "50.94X"
+    },
+    {
+      "R3Data": "50.95X",
+      "R1Data": "50.95X"
+    },
+    {
+      "R3Data": "50.96X",
+      "R1Data": "50.96X"
+    },
+    {
+      "R3Data": "50.97X",
+      "R1Data": "50.97X"
+    },
+    {
+      "R3Data": "50.99X",
+      "R1Data": "50.99X"
+    },
+    {
+      "R3Data": "60.11X",
+      "R1Data": "60.11X"
+    },
+    {
+      "R3Data": "60.12X",
+      "R1Data": "60.12X"
+    },
+    {
+      "R3Data": "60.13X",
+      "R1Data": "60.13X"
+    },
+    {
+      "R3Data": "60.14X",
+      "R1Data": "60.14X"
+    },
+    {
+      "R3Data": "60.15X",
+      "R1Data": "60.15X"
+    },
+    {
+      "R3Data": "60.16X",
+      "R1Data": "60.16X"
+    },
+    {
+      "R3Data": "60.17X",
+      "R1Data": "60.17X"
+    },
+    {
+      "R3Data": "60.18X",
+      "R1Data": "60.18X"
+    },
+    {
+      "R3Data": "60.19X",
+      "R1Data": "60.19X"
+    },
+    {
+      "R3Data": "60.2X",
+      "R1Data": "60.2X"
+    },
+    {
+      "R3Data": "60.21X",
+      "R1Data": "60.21X"
+    },
+    {
+      "R3Data": "60.22X",
+      "R1Data": "60.22X"
+    },
+    {
+      "R3Data": "60.23X",
+      "R1Data": "60.23X"
+    },
+    {
+      "R3Data": "60.24X",
+      "R1Data": "60.24X"
+    },
+    {
+      "R3Data": "60.25X",
+      "R1Data": "60.25X"
+    },
+    {
+      "R3Data": "60.26X",
+      "R1Data": "60.26X"
+    },
+    {
+      "R3Data": "60.27X",
+      "R1Data": "60.27X"
+    },
+    {
+      "R3Data": "60.28X",
+      "R1Data": "60.28X"
+    },
+    {
+      "R3Data": "60.29X",
+      "R1Data": "60.29X"
+    },
+    {
+      "R3Data": "60.31X",
+      "R1Data": "60.31X"
+    },
+    {
+      "R3Data": "60.32X",
+      "R1Data": "60.32X"
+    },
+    {
+      "R3Data": "60.33X",
+      "R1Data": "60.33X"
+    },
+    {
+      "R3Data": "60.4X",
+      "R1Data": "60.4X"
+    },
+    {
+      "R3Data": "60.5X",
+      "R1Data": "60.5X"
+    },
+    {
+      "R3Data": "60.6X",
+      "R1Data": "60.6X"
+    },
+    {
+      "R3Data": "60.7X",
+      "R1Data": "60.7X"
+    },
+    {
+      "R3Data": "60.8X",
+      "R1Data": "60.8X"
+    },
+    {
+      "R3Data": "60.9X",
+      "R1Data": "60.9X"
+    },
+    {
+      "R3Data": "70.1X",
+      "R1Data": "70.1X"
+    },
+    {
+      "R3Data": "70.11X",
+      "R1Data": "70.11X"
+    },
+    {
+      "R3Data": "70.12X",
+      "R1Data": "70.12X"
+    },
+    {
+      "R3Data": "70.14X",
+      "R1Data": "70.14X"
+    },
+    {
+      "R3Data": "70.15X",
+      "R1Data": "70.15X"
+    },
+    {
+      "R3Data": "70.16X",
+      "R1Data": "70.16X"
+    },
+    {
+      "R3Data": "70.17X",
+      "R1Data": "70.17X"
+    },
+    {
+      "R3Data": "70.18X",
+      "R1Data": "70.18X"
+    },
+    {
+      "R3Data": "70.19X",
+      "R1Data": "70.19X"
+    },
+    {
+      "R3Data": "70.2X",
+      "R1Data": "70.2X"
+    },
+    {
+      "R3Data": "70.21X",
+      "R1Data": "70.21X"
+    },
+    {
+      "R3Data": "70.22X",
+      "R1Data": "70.22X"
+    },
+    {
+      "R3Data": "70.23X",
+      "R1Data": "70.23X"
+    },
+    {
+      "R3Data": "70.24X",
+      "R1Data": "70.24X"
+    },
+    {
+      "R3Data": "70.25X",
+      "R1Data": "70.25X"
+    },
+    {
+      "R3Data": "70.26X",
+      "R1Data": "70.26X"
+    },
+    {
+      "R3Data": "70.27X",
+      "R1Data": "70.27X"
+    },
+    {
+      "R3Data": "70.28X",
+      "R1Data": "70.28X"
+    },
+    {
+      "R3Data": "70.29X",
+      "R1Data": "70.29X"
+    },
+    {
+      "R3Data": "70.3X",
+      "R1Data": "70.3X"
+    },
+    {
+      "R3Data": "70.31X",
+      "R1Data": "70.31X"
+    },
+    {
+      "R3Data": "70.32X",
+      "R1Data": "70.32X"
+    },
+    {
+      "R3Data": "70.33X",
+      "R1Data": "70.33X"
+    },
+    {
+      "R3Data": "70.34X",
+      "R1Data": "70.34X"
+    },
+    {
+      "R3Data": "70.35X",
+      "R1Data": "70.35X"
+    },
+    {
+      "R3Data": "70.36X",
+      "R1Data": "70.36X"
+    },
+    {
+      "R3Data": "70.37X",
+      "R1Data": "70.37X"
+    },
+    {
+      "R3Data": "70.38X",
+      "R1Data": "70.38X"
+    },
+    {
+      "R3Data": "70.39X",
+      "R1Data": "70.39X"
+    },
+    {
+      "R3Data": "70.4X",
+      "R1Data": "70.4X"
+    },
+    {
+      "R3Data": "70.41X",
+      "R1Data": "70.41X"
+    },
+    {
+      "R3Data": "70.42X",
+      "R1Data": "70.42X"
+    },
+    {
+      "R3Data": "70.13X",
+      "R1Data": "70.13X"
+    },
+    {
+      "R3Data": "70.43X",
+      "R1Data": "70.43X"
+    },
+    {
+      "R3Data": "70.44X",
+      "R1Data": "70.44X"
+    },
+    {
+      "R3Data": "70.45X",
+      "R1Data": "70.45X"
+    },
+    {
+      "R3Data": "70.46X",
+      "R1Data": "70.46X"
+    },
+    {
+      "R3Data": "70.47X",
+      "R1Data": "70.47X"
+    },
+    {
+      "R3Data": "70.48X",
+      "R1Data": "70.48X"
+    },
+    {
+      "R3Data": "70.49X",
+      "R1Data": "70.49X"
+    },
+    {
+      "R3Data": "70.5X",
+      "R1Data": "70.5X"
+    },
+    {
+      "R3Data": "70.51X",
+      "R1Data": "70.51X"
+    },
+    {
+      "R3Data": "70.52X",
+      "R1Data": "70.52X"
+    },
+    {
+      "R3Data": "70.53X",
+      "R1Data": "70.53X"
+    },
+    {
+      "R3Data": "70.54X",
+      "R1Data": "70.54X"
+    },
+    {
+      "R3Data": "70.55X",
+      "R1Data": "70.55X"
+    },
+    {
+      "R3Data": "70.56X",
+      "R1Data": "70.56X"
+    },
+    {
+      "R3Data": "70.57X",
+      "R1Data": "70.57X"
+    },
+    {
+      "R3Data": "70.58X",
+      "R1Data": "70.58X"
+    },
+    {
+      "R3Data": "70.59X",
+      "R1Data": "70.59X"
+    },
+    {
+      "R3Data": "70.6X",
+      "R1Data": "70.6X"
+    },
+    {
+      "R3Data": "70.61X",
+      "R1Data": "70.61X"
+    },
+    {
+      "R3Data": "70.62X",
+      "R1Data": "70.62X"
+    },
+    {
+      "R3Data": "70.63X",
+      "R1Data": "70.63X"
+    },
+    {
+      "R3Data": "70.65X",
+      "R1Data": "70.65X"
+    },
+    {
+      "R3Data": "70.66X",
+      "R1Data": "70.66X"
+    },
+    {
+      "R3Data": "70.67X",
+      "R1Data": "70.67X"
+    },
+    {
+      "R3Data": "70.68X",
+      "R1Data": "70.68X"
+    },
+    {
+      "R3Data": "70.69X",
+      "R1Data": "70.69X"
+    },
+    {
+      "R3Data": "70.7X",
+      "R1Data": "70.7X"
+    },
+    {
+      "R3Data": "70.71X",
+      "R1Data": "70.71X"
+    },
+    {
+      "R3Data": "70.73X",
+      "R1Data": "70.73X"
+    },
+    {
+      "R3Data": "70.74X",
+      "R1Data": "70.74X"
+    },
+    {
+      "R3Data": "70.75X",
+      "R1Data": "70.75X"
+    },
+    {
+      "R3Data": "70.76X",
+      "R1Data": "70.76X"
+    },
+    {
+      "R3Data": "70.77X",
+      "R1Data": "70.77X"
+    },
+    {
+      "R3Data": "70.78X",
+      "R1Data": "70.78X"
+    },
+    {
+      "R3Data": "70.79X",
+      "R1Data": "70.79X"
+    },
+    {
+      "R3Data": "70.8X",
+      "R1Data": "70.8X"
+    },
+    {
+      "R3Data": "70.81X",
+      "R1Data": "70.81X"
+    },
+    {
+      "R3Data": "70.82X",
+      "R1Data": "70.82X"
+    },
+    {
+      "R3Data": "70.83X",
+      "R1Data": "70.83X"
+    },
+    {
+      "R3Data": "70.84X",
+      "R1Data": "70.84X"
+    },
+    {
+      "R3Data": "70.85X",
+      "R1Data": "70.85X"
+    },
+    {
+      "R3Data": "70.86X",
+      "R1Data": "70.86X"
+    },
+    {
+      "R3Data": "70.87X",
+      "R1Data": "70.87X"
+    },
+    {
+      "R3Data": "70.88X",
+      "R1Data": "70.88X"
+    },
+    {
+      "R3Data": "70.89X",
+      "R1Data": "70.89X"
+    },
+    {
+      "R3Data": "70.9X",
+      "R1Data": "70.9X"
+    },
+    {
+      "R3Data": "70.91X",
+      "R1Data": "70.91X"
+    },
+    {
+      "R3Data": "70.92X",
+      "R1Data": "70.92X"
+    },
+    {
+      "R3Data": "70.64X",
+      "R1Data": "70.64X"
+    },
+    {
+      "R3Data": "70.93X",
+      "R1Data": "70.93X"
+    },
+    {
+      "R3Data": "70.94X",
+      "R1Data": "70.94X"
+    },
+    {
+      "R3Data": "70.95X",
+      "R1Data": "70.95X"
+    },
+    {
+      "R3Data": "70.96X",
+      "R1Data": "70.96X"
+    },
+    {
+      "R3Data": "70.97X",
+      "R1Data": "70.97X"
+    },
+    {
+      "R3Data": "70.98X",
+      "R1Data": "70.98X"
+    },
+    {
+      "R3Data": "70.99X",
+      "R1Data": "70.99X"
+    },
+    {
+      "R3Data": "80.1X",
+      "R1Data": "80.1X"
+    },
+    {
+      "R3Data": "80.2X",
+      "R1Data": "80.2X"
+    },
+    {
+      "R3Data": "80.3X",
+      "R1Data": "80.3X"
+    },
+    {
+      "R3Data": "80.4X",
+      "R1Data": "80.4X"
+    },
+    {
+      "R3Data": "80.5X",
+      "R1Data": "80.5X"
+    },
+    {
+      "R3Data": "90.1X",
+      "R1Data": "90.1X"
+    },
+    {
+      "R3Data": "90.11X",
+      "R1Data": "90.11X"
+    },
+    {
+      "R3Data": "90.12X",
+      "R1Data": "90.12X"
+    },
+    {
+      "R3Data": "90.13X",
+      "R1Data": "90.13X"
+    },
+    {
+      "R3Data": "90.14X",
+      "R1Data": "90.14X"
+    },
+    {
+      "R3Data": "90.15X",
+      "R1Data": "90.15X"
+    },
+    {
+      "R3Data": "90.16X",
+      "R1Data": "90.16X"
+    },
+    {
+      "R3Data": "90.17X",
+      "R1Data": "90.17X"
+    },
+    {
+      "R3Data": "90.18X",
+      "R1Data": "90.18X"
+    },
+    {
+      "R3Data": "90.19X",
+      "R1Data": "90.19X"
+    },
+    {
+      "R3Data": "90.2X",
+      "R1Data": "90.2X"
+    },
+    {
+      "R3Data": "90.21X",
+      "R1Data": "90.21X"
+    },
+    {
+      "R3Data": "90.3X",
+      "R1Data": "90.3X"
+    },
+    {
+      "R3Data": "90.4X",
+      "R1Data": "90.4X"
+    },
+    {
+      "R3Data": "90.5X",
+      "R1Data": "90.5X"
+    },
+    {
+      "R3Data": "90.6X",
+      "R1Data": "90.6X"
+    },
+    {
+      "R3Data": "90.7X",
+      "R1Data": "90.7X"
+    },
+    {
+      "R3Data": "90.8X",
+      "R1Data": "90.8X"
+    },
+    {
+      "R3Data": "90.9X",
+      "R1Data": "90.9X"
+    },
+    {
+      "R3Data": "10.11X",
+      "R1Data": "10.11X"
+    },
+    {
+      "R3Data": "10.12X",
+      "R1Data": "10.12X"
+    },
+    {
+      "R3Data": "10.13X",
+      "R1Data": "10.13X"
+    },
+    {
+      "R3Data": "10.14X",
+      "R1Data": "10.14X"
+    },
+    {
+      "R3Data": "10.36X",
+      "R1Data": "10.36X"
+    },
+    {
+      "R3Data": "10.1X",
+      "R1Data": "10.1X"
+    },
+    {
+      "R3Data": "10.37X",
+      "R1Data": "10.37X"
+    },
+    {
+      "R3Data": "10.38X",
+      "R1Data": "10.38X"
+    },
+    {
+      "R3Data": "10.39X",
+      "R1Data": "10.39X"
+    },
+    {
+      "R3Data": "10.4X",
+      "R1Data": "10.4X"
+    },
+    {
+      "R3Data": "10.41X",
+      "R1Data": "10.41X"
+    },
+    {
+      "R3Data": "10.42X",
+      "R1Data": "10.42X"
+    },
+    {
+      "R3Data": "10.43X",
+      "R1Data": "10.43X"
+    },
+    {
+      "R3Data": "10.44X",
+      "R1Data": "10.44X"
+    },
+    {
+      "R3Data": "10.45X",
+      "R1Data": "10.45X"
+    },
+    {
+      "R3Data": "10.5X",
+      "R1Data": "10.5X"
+    },
+    {
+      "R3Data": "10.6X",
+      "R1Data": "10.6X"
+    },
+    {
+      "R3Data": "10.7X",
+      "R1Data": "10.7X"
+    },
+    {
+      "R3Data": "10.8X",
+      "R1Data": "10.8X"
+    },
+    {
+      "R3Data": "10.9X",
+      "R1Data": "10.9X"
+    },
+    {
+      "R3Data": "101.7X",
+      "R1Data": "101.7X"
+    },
+    {
+      "R3Data": "101.8X",
+      "R1Data": "101.8X"
+    },
+    {
+      "R3Data": "101.9X",
+      "R1Data": "101.9X"
+    },
+    {
+      "R3Data": "102.1X",
+      "R1Data": "102.1X"
+    },
+    {
+      "R3Data": "103.1X",
+      "R1Data": "103.1X"
+    },
+    {
+      "R3Data": "103.2X",
+      "R1Data": "103.2X"
+    },
+    {
+      "R3Data": "103.3X",
+      "R1Data": "103.3X"
+    },
+    {
+      "R3Data": "103.4X",
+      "R1Data": "103.4X"
+    },
+    {
+      "R3Data": "103.5X",
+      "R1Data": "103.5X"
+    },
+    {
+      "R3Data": "10.33X",
+      "R1Data": "10.33X"
+    },
+    {
+      "R3Data": "60.3X",
+      "R1Data": "60.3X"
+    },
+    {
+      "R3Data": "70.72X",
+      "R1Data": "70.72X"
+    },
+    {
+      "R3Data": "10.19X",
+      "R1Data": "10.19X"
+    },
+    {
+      "R3Data": "10.2X",
+      "R1Data": "10.2X"
+    },
+    {
+      "R3Data": "10.21X",
+      "R1Data": "10.21X"
+    },
+    {
+      "R3Data": "10.22X",
+      "R1Data": "10.22X"
+    },
+    {
+      "R3Data": "10.23X",
+      "R1Data": "10.23X"
+    },
+    {
+      "R3Data": "10.24X",
+      "R1Data": "10.24X"
+    },
+    {
+      "R3Data": "10.25X",
+      "R1Data": "10.25X"
+    },
+    {
+      "R3Data": "10.26X",
+      "R1Data": "10.26X"
+    },
+    {
+      "R3Data": "10.27X",
+      "R1Data": "10.27X"
+    },
+    {
+      "R3Data": "10.28X",
+      "R1Data": "10.28X"
+    },
+    {
+      "R3Data": "10.29X",
+      "R1Data": "10.29X"
+    },
+    {
+      "R3Data": "10.3X",
+      "R1Data": "10.3X"
+    },
+    {
+      "R3Data": "10.31X",
+      "R1Data": "10.31X"
+    },
+    {
+      "R3Data": "10.32X",
+      "R1Data": "10.32X"
+    },
+    {
+      "R3Data": "10.34X",
+      "R1Data": "10.34X"
+    },
+    {
+      "R3Data": "10.35X",
+      "R1Data": "10.35X"
+    },
+    {
+      "R3Data": "90.1",
+      "R1Data": "90.1"
+    },
+    {
+      "R3Data": "90.10",
+      "R1Data": "90.10"
+    },
+    {
+      "R3Data": "90.11",
+      "R1Data": "90.11"
+    },
+    {
+      "R3Data": "90.12",
+      "R1Data": "90.12"
+    },
+    {
+      "R3Data": "90.13",
+      "R1Data": "90.13"
+    },
+    {
+      "R3Data": "90.14",
+      "R1Data": "90.14"
+    },
+    {
+      "R3Data": "90.15",
+      "R1Data": "90.15"
+    },
+    {
+      "R3Data": "90.16",
+      "R1Data": "90.16"
+    },
+    {
+      "R3Data": "90.17",
+      "R1Data": "90.17"
+    },
+    {
+      "R3Data": "90.18",
+      "R1Data": "90.18"
+    },
+    {
+      "R3Data": "90.19",
+      "R1Data": "90.19"
+    },
+    {
+      "R3Data": "90.2",
+      "R1Data": "90.2"
+    },
+    {
+      "R3Data": "90.20",
+      "R1Data": "90.20"
+    },
+    {
+      "R3Data": "90.21",
+      "R1Data": "90.21"
+    },
+    {
+      "R3Data": "90.3",
+      "R1Data": "90.3"
+    },
+    {
+      "R3Data": "90.4",
+      "R1Data": "90.4"
+    },
+    {
+      "R3Data": "90.5",
+      "R1Data": "90.5"
+    },
+    {
+      "R3Data": "90.6",
+      "R1Data": "90.6"
+    },
+    {
+      "R3Data": "90.7",
+      "R1Data": "90.7"
+    },
+    {
+      "R3Data": "90.8",
+      "R1Data": "90.8"
+    },
+    {
+      "R3Data": "90.9",
+      "R1Data": "90.9"
+    }
+  ]
+}
